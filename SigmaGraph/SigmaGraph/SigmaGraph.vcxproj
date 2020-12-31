@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FAB6757C-8B9B-4039-B88C-F471F1C4B85B}</ProjectGuid>
+    <RootNamespace>SigmaGraph</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <BasePlatformToolset>v140_xp</BasePlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../output/bin/</OutDir>
+    <IntDir>../../output/obj/SigmaGraph/</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <TargetName>SigmaGraph</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../LibScintilla/include/</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>NoIPO</InterproceduralOptimization>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)SigmaGraph.exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>htmlhelp.lib;psapi.lib;gdiplus.lib;LibMath.lib;LibElec.lib;LibPlot.lib;LibFile.lib;Lua.lib;SciLexer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)../lib/</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddCurveDlg.cpp" />
+    <ClCompile Include="AnalysisDlg.cpp" />
+    <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="ChildFrmData.cpp" />
+    <ClCompile Include="ChildFrmDataFit.cpp" />
+    <ClCompile Include="ChildFrmPlot.cpp" />
+    <ClCompile Include="ColumnDlg.cpp" />
+    <ClCompile Include="ComboBoxColor.cpp" />
+    <ClCompile Include="ComboBoxConnect.cpp" />
+    <ClCompile Include="ComboBoxDot.cpp" />
+    <ClCompile Include="ComboBoxLine.cpp" />
+    <ClCompile Include="ConsoleEdit.cpp" />
+    <ClCompile Include="Datasheet.cpp" />
+    <ClCompile Include="EditInteger.cpp" />
+    <ClCompile Include="EditOutput.cpp" />
+    <ClCompile Include="EditReal.cpp" />
+    <ClCompile Include="ErrorBarDlg.cpp" />
+    <ClCompile Include="FavoritesDlg.cpp" />
+    <ClCompile Include="Fitter.cpp" />
+    <ClCompile Include="FitterMask.cpp" />
+    <ClCompile Include="FitterModel.cpp" />
+    <ClCompile Include="FitterOptions.cpp" />
+    <ClCompile Include="FitterReport.cpp" />
+    <ClCompile Include="FitterUserDlg.cpp" />
+    <ClCompile Include="FlatButton.cpp" />
+    <ClCompile Include="FormulaDlg.cpp" />
+    <ClCompile Include="GeometricLineDlg.cpp" />
+    <ClCompile Include="GeometricRectDlg.cpp" />
+    <ClCompile Include="ImportDlg.cpp" />
+    <ClCompile Include="ImportDropDlg.cpp" />
+    <ClCompile Include="InEdit.cpp" />
+    <ClCompile Include="InputRealDlg.cpp" />
+    <ClCompile Include="InputTextDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="NumPadDlg.cpp" />
+    <ClCompile Include="PlotFrame.cpp" />
+    <ClCompile Include="Plotopt.cpp" />
+    <ClCompile Include="PlotoptAxis.cpp" />
+    <ClCompile Include="PlotoptCurve.cpp" />
+    <ClCompile Include="PlotoptGeneral.cpp" />
+    <ClCompile Include="PlotoptLine.cpp" />
+    <ClCompile Include="PlotoptScale.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="ReadonlyEdit.cpp" />
+    <ClCompile Include="ScintillaCtrl.cpp" />
+    <ClCompile Include="ScriptColorsDlg.cpp" />
+    <ClCompile Include="ScriptEdit.cpp" />
+    <ClCompile Include="ScriptFunctions.cpp" />
+    <ClCompile Include="ScriptOutput.cpp" />
+    <ClCompile Include="ScriptSamples.cpp" />
+    <ClCompile Include="ScriptWindow.cpp" />
+    <ClCompile Include="SeriesDlg.cpp" />
+    <ClCompile Include="Sigma.cpp" />
+    <ClCompile Include="SigmaConsole.cpp" />
+    <ClCompile Include="SigmaDoc.cpp" />
+    <ClCompile Include="SigmaNote.cpp" />
+    <ClCompile Include="SigmaOutput.cpp" />
+    <ClCompile Include="SigmaStats.cpp" />
+    <ClCompile Include="SigmaToolBar.cpp" />
+    <ClCompile Include="SigmaViewData.cpp" />
+    <ClCompile Include="SigmaViewDataFit.cpp" />
+    <ClCompile Include="SigmaViewPlot.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TemplatesDlg.cpp" />
+    <ClCompile Include="TextDlg.cpp" />
+    <ClCompile Include="VarDlg.cpp" />
+    <ClCompile Include="VarlistDlg.cpp" />
+    <ClCompile Include="VarsetDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddCurveDlg.h" />
+    <ClInclude Include="AnalysisDlg.h" />
+    <ClInclude Include="Cell.h" />
+    <ClInclude Include="CellRange.h" />
+    <ClInclude Include="ChildFrmData.h" />
+    <ClInclude Include="ChildFrmDataFit.h" />
+    <ClInclude Include="ChildFrmPlot.h" />
+    <ClInclude Include="ColumnDlg.h" />
+    <ClInclude Include="ComboBoxColor.h" />
+    <ClInclude Include="ComboBoxConnect.h" />
+    <ClInclude Include="ComboBoxDot.h" />
+    <ClInclude Include="ComboBoxLine.h" />
+    <ClInclude Include="ConsoleEdit.h" />
+    <ClInclude Include="Datasheet.h" />
+    <ClInclude Include="EditInteger.h" />
+    <ClInclude Include="EditOutput.h" />
+    <ClInclude Include="EditReal.h" />
+    <ClInclude Include="ErrorBarDlg.h" />
+    <ClInclude Include="FavoritesDlg.h" />
+    <ClInclude Include="Fitter.h" />
+    <ClInclude Include="FitterMask.h" />
+    <ClInclude Include="FitterModel.h" />
+    <ClInclude Include="FitterOptions.h" />
+    <ClInclude Include="FitterReport.h" />
+    <ClInclude Include="FitterUserDlg.h" />
+    <ClInclude Include="FlatButton.h" />
+    <ClInclude Include="FormulaDlg.h" />
+    <ClInclude Include="GeometricLineDlg.h" />
+    <ClInclude Include="GeometricRectDlg.h" />
+    <ClInclude Include="ImportDlg.h" />
+    <ClInclude Include="ImportDropDlg.h" />
+    <ClInclude Include="InEdit.h" />
+    <ClInclude Include="InputRealDlg.h" />
+    <ClInclude Include="InputTextDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="NumPadDlg.h" />
+    <ClInclude Include="PlotFrame.h" />
+    <ClInclude Include="Plotopt.h" />
+    <ClInclude Include="PlotoptAxis.h" />
+    <ClInclude Include="PlotoptCurve.h" />
+    <ClInclude Include="PlotoptGeneral.h" />
+    <ClInclude Include="PlotoptLine.h" />
+    <ClInclude Include="PlotoptScale.h" />
+    <ClInclude Include="ProgressBar.h" />
+    <ClInclude Include="ReadonlyEdit.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScintillaCtrl.h" />
+    <ClInclude Include="ScriptColorsDlg.h" />
+    <ClInclude Include="ScriptEdit.h" />
+    <ClInclude Include="ScriptOutput.h" />
+    <ClInclude Include="ScriptWindow.h" />
+    <ClInclude Include="SeriesDlg.h" />
+    <ClInclude Include="Sigma.h" />
+    <ClInclude Include="SigmaConsole.h" />
+    <ClInclude Include="SigmaDC.h" />
+    <ClInclude Include="SigmaDefine.h" />
+    <ClInclude Include="SigmaDoc.h" />
+    <ClInclude Include="SigmaNote.h" />
+    <ClInclude Include="SigmaOutput.h" />
+    <ClInclude Include="SigmaStats.h" />
+    <ClInclude Include="SigmaToolBar.h" />
+    <ClInclude Include="SigmaUndo.h" />
+    <ClInclude Include="SigmaViewData.h" />
+    <ClInclude Include="SigmaViewDataFit.h" />
+    <ClInclude Include="SigmaViewPlot.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TemplatesDlg.h" />
+    <ClInclude Include="TextDlg.h" />
+    <ClInclude Include="VarDlg.h" />
+    <ClInclude Include="VarlistDlg.h" />
+    <ClInclude Include="VarsetDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\addcurve.ico" />
+    <Image Include="res\appendcol.ico" />
+    <Image Include="res\arrow00.bmp" />
+    <Image Include="res\arrow00x.bmp" />
+    <Image Include="res\arrow01.bmp" />
+    <Image Include="res\autoscale.ico" />
+    <Image Include="res\average.ico" />
+    <Image Include="res\colors.ico" />
+    <Image Include="res\console.ico" />
+    <Image Include="res\copy.ico" />
+    <Image Include="res\datamask.ico" />
+    <Image Include="res\dataunmask.ico" />
+    <Image Include="res\differentiate.ico" />
+    <Image Include="res\ellipse.ico" />
+    <Image Include="res\favorite.ico" />
+    <Image Include="res\fft.ico" />
+    <Image Include="res\find.ico" />
+    <Image Include="res\fitter.ico" />
+    <Image Include="res\fitter01.bmp" />
+    <Image Include="res\fitter02.bmp" />
+    <Image Include="res\fitter03.bmp" />
+    <Image Include="res\fitter04.bmp" />
+    <Image Include="res\fitter05.bmp" />
+    <Image Include="res\fitter06.bmp" />
+    <Image Include="res\fitter07.bmp" />
+    <Image Include="res\fitter08.bmp" />
+    <Image Include="res\fitter09.bmp" />
+    <Image Include="res\fitter10.bmp" />
+    <Image Include="res\fitter11.bmp" />
+    <Image Include="res\fitter12.bmp" />
+    <Image Include="res\fitter13.bmp" />
+    <Image Include="res\fitter14.bmp" />
+    <Image Include="res\fitter15.bmp" />
+    <Image Include="res\fitter16.bmp" />
+    <Image Include="res\fitter17.bmp" />
+    <Image Include="res\fitter18.bmp" />
+    <Image Include="res\fitter19.bmp" />
+    <Image Include="res\fitter20.bmp" />
+    <Image Include="res\fitter21.bmp" />
+    <Image Include="res\fitter22.bmp" />
+    <Image Include="res\fitter23.bmp" />
+    <Image Include="res\fitter24.bmp" />
+    <Image Include="res\fitter255.bmp" />
+    <Image Include="res\fitter99.bmp" />
+    <Image Include="res\formula.ico" />
+    <Image Include="res\goto.ico" />
+    <Image Include="res\help.ico" />
+    <Image Include="res\import.ico" />
+    <Image Include="res\importdlg.ico" />
+    <Image Include="res\input.ico" />
+    <Image Include="res\integrate.ico" />
+    <Image Include="res\itemremove.ico" />
+    <Image Include="res\line.ico" />
+    <Image Include="res\linespacing100.ico" />
+    <Image Include="res\linespacing175.ico" />
+    <Image Include="res\mainfram.bmp" />
+    <Image Include="res\markeradd.ico" />
+    <Image Include="res\markernext.ico" />
+    <Image Include="res\markerprev.ico" />
+    <Image Include="res\new.ico" />
+    <Image Include="res\note.ico" />
+    <Image Include="res\open.ico" />
+    <Image Include="res\output.ico" />
+    <Image Include="res\outputlarge.ico" />
+    <Image Include="res\outputmed.ico" />
+    <Image Include="res\outputsm.ico" />
+    <Image Include="res\param.ico" />
+    <Image Include="res\paste.ico" />
+    <Image Include="res\plotfit.ico" />
+    <Image Include="res\plotoptions.ico" />
+    <Image Include="res\rect.ico" />
+    <Image Include="res\redo.ico" />
+    <Image Include="res\replace.ico" />
+    <Image Include="res\run.ico" />
+    <Image Include="res\save.ico" />
+    <Image Include="res\script.ico" />
+    <Image Include="res\setup.ico" />
+    <Image Include="res\sigma.ico" />
+    <Image Include="res\sigmadata.ico" />
+    <Image Include="res\sigmaplot.ico" />
+    <Image Include="res\text.ico" />
+    <Image Include="res\toolbarData.bmp" />
+    <Image Include="res\toolbarFile.bmp" />
+    <Image Include="res\toolbarPlot.bmp" />
+    <Image Include="res\toolbarScript.bmp" />
+    <Image Include="res\undo.ico" />
+    <Image Include="res\windowcascade.ico" />
+    <Image Include="res\windowdup.ico" />
+    <Image Include="res\windowtile.ico" />
+    <Image Include="res\zoomin.ico" />
+    <Image Include="res\zoomout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sigma.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sigma.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="sigma.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

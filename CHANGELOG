@@ -1,0 +1,59 @@
+SigmaGraph: Plotting and Analysis Software
+Copyright(C) 1997-2020  Pr. Sidi HAMADY
+http://www.hamady.org
+sidi@hamady.org
+
+
+* SigmaGraph v2.6.10 (release: november 23, 2018)  
+Source code released under the MIT license. Available in github.  
+Added an auto-export option to automatically save data in ASCII format and plot in SVG format.  
+Bugfixes.  
+
+
+* SigmaGraph v2.6.9 (release: january 05, 2017)  
+Multi-peak fitting updated;  
+New 'Auto Export' option, to automatically save data in text file and plot in SVG format;  
+Bugfixes.  
+
+
+* SigmaGraph v2.6.8 (release: january 01, 2017)  
+bugfixes.  
+autoscale improved.  
+
+
+* SigmaGraph v2.6.8 (release: february 21, 2016)  
+Improvements and bug fixes, including:  
+SVG support improved with Unicode support.  
+Datasheet performance improved.  
+Plot autoscale function rewritten with a new fast algorithm.  
+
+
+* SigmaGraph v2.6.6 (release: december 28, 2015)  
+bugfixes;  
+EMF and SVG vector format.  
+
+
+* SigmaGraph v2.6.4 (release: october 30, 2014)  
+bugfixes;  
+Keyboard arrows to move graphical objects.  
+
+
+* SigmaGraph v2.6 (release: may 13, 2014)  
+New fitting functions: Multi-peak Gauss and Lorentz (up to 5 peaks);  
+Scripting engine updated with new mathematical and statistical functions;  
+Script editor enhanced with new options: syntax highlighting, line numbers, markers, autocompletion, ...  
+Data importing new options;  
+Graph printing bug on some devices corrected;  
+Help system redesigned (integrated HTML Help and PDF);  
+User interface enhancements;  
+Performance improvement.  
+Bugfixes.  
+
+
+* SigmaGraph v2.4 (release: january 06, 2010)  
+First public release.  
+
+
+* SigmaGraph v1.0 up to v2.2 (release: 1998 up to 2010): non-public versions.  
+Used only in my own academic projects to replace commercial tools.  
+The first public version (v2.4) was released back in 2010.  

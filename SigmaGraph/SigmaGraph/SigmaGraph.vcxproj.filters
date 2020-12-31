@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ComboBoxLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrmData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrmDataFit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrmPlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColumnDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBoxColor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBoxConnect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBoxDot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCurveDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditReal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Datasheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorBarDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FavoritesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FitterMask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FitterModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FitterOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FitterReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FitterUserDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FlatButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricRectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricLineDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportDropDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputRealDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputTextDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NumPadDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plotopt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotoptAxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotoptCurve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotoptGeneral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotoptLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotoptScale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptColorsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScintillaCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptSamples.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SeriesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaConsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaNote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaStats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaViewData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaViewDataFit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmaViewPlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplatesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VarDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VarlistDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VarsetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sigma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadonlyEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnalysisDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddCurveDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CellRange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrmData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrmDataFit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrmPlot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColumnDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxColor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxConnect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxDot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Datasheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditReal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorBarDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FavoritesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FitterMask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FitterModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FitterOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FitterReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FitterUserDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlatButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricLineDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricRectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportDropDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputRealDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputTextDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plotopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotoptAxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotoptCurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotoptGeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotoptLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotoptScale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadonlyEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScintillaCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptColorsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SeriesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sigma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaConsole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaNote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaStats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaUndo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaViewData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaViewDataFit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmaViewPlot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplatesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VarDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VarlistDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VarsetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NumPadDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\rect.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\addcurve.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\appendcol.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\arrow00.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\arrow00x.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\arrow01.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\autoscale.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\average.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\console.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\copy.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\datamask.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dataunmask.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\differentiate.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ellipse.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\favorite.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fft.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\find.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter01.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter02.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter03.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter04.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter05.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter06.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter07.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter08.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter09.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter13.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter14.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter15.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter17.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter99.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter255.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\formula.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\goto.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\help.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\import.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\importdlg.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\input.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\integrate.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\itemremove.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\line.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainfram.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\new.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\note.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\open.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\output.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\param.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\paste.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\plotfit.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\plotoptions.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\replace.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\redo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\run.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\save.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\script.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\setup.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sigma.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sigmadata.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sigmaplot.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\text.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbarFile.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\undo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\windowcascade.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\windowdup.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\windowtile.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\zoomin.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\zoomout.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\markeradd.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\markernext.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\markerprev.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\linespacing100.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\linespacing175.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\outputsm.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\outputmed.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\outputlarge.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\colors.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter18.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter19.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter20.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter21.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter22.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter23.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fitter24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbarData.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbarPlot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbarScript.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bf0f95a8-ee6f-4399-9a17-65b02756f8c6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bf0afe37-240d-42bf-9d0f-acbf937da0af}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b21fcfec-bfeb-4ea0-82b8-11cc2bb11b14}</UniqueIdentifier>
+      <Extensions>rc;bmp;ico</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sigma.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sigma.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

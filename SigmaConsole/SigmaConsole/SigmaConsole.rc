@@ -1,0 +1,486 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "../Target/targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONSOLE DIALOGEX 0, 0, 277, 78
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Mathematical Console"
+MENU IDM_CONSOLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_CONSOLE,0,0,276,78,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_NUMPAD DIALOGEX 0, 0, 85, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Numeric Keypad"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "=",ID_INPUT_EQUAL,64,80,17,16,BS_FLAT
+    PUSHBUTTON      "0",ID_INPUT_ZERO,4,61,17,16,BS_FLAT
+    PUSHBUTTON      "1",ID_INPUT_ONE,4,42,17,16,BS_FLAT
+    PUSHBUTTON      "2",ID_INPUT_TWO,24,42,17,16,BS_FLAT
+    PUSHBUTTON      "3",ID_INPUT_THREE,44,42,17,16,BS_FLAT
+    PUSHBUTTON      "4",ID_INPUT_FOUR,4,23,17,16,BS_FLAT
+    PUSHBUTTON      "5",ID_INPUT_FIVE,24,23,17,16,BS_FLAT
+    PUSHBUTTON      "6",ID_INPUT_SIX,44,23,17,16,BS_FLAT
+    PUSHBUTTON      "7",ID_INPUT_SEVEN,4,4,17,16,BS_FLAT
+    PUSHBUTTON      "8",ID_INPUT_EIGHT,24,4,17,16,BS_FLAT
+    PUSHBUTTON      "9",ID_INPUT_NINE,44,4,17,16,BS_FLAT
+    PUSHBUTTON      "/",ID_INPUT_DIV,64,4,17,16,BS_FLAT
+    PUSHBUTTON      "*",ID_INPUT_MULT,64,23,17,16,BS_FLAT
+    PUSHBUTTON      "-",ID_INPUT_MINUS,64,42,17,16,BS_FLAT
+    PUSHBUTTON      "+",ID_INPUT_PLUS,64,61,17,16,BS_FLAT
+    PUSHBUTTON      ".",ID_INPUT_DOT,44,61,17,16,BS_FLAT
+    PUSHBUTTON      "E",ID_INPUT_EXP,24,61,17,16,BS_FLAT
+    PUSHBUTTON      "(",ID_INPUT_PARENTH1,4,80,17,16,BS_FLAT
+    PUSHBUTTON      ")",ID_INPUT_PARENTH2,24,80,17,16,BS_FLAT
+    PUSHBUTTON      "C",ID_INPUT_BACK,44,80,17,16,BS_FLAT
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 203, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SigmaConsole"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,-1,5,8,20,20
+    DEFPUSHBUTTON   "OK",IDOK,146,60,50,14,WS_GROUP
+    LTEXT           "SigmaConsole, version 2.6.10",-1,32,7,132,8,SS_NOPREFIX
+    LTEXT           "Copyright(C) 1997-2014 Sidi OULD SAAD HAMADY",-1,32,19,143,8
+    LTEXT           "All rights reserved.",-1,32,31,129,8
+    LTEXT           "http://www.hamady.org",-1,32,43,95,8
+    LTEXT           "sidi@hamady.org",-1,32,55,78,8
+END
+
+IDD_VARLIST DIALOGEX 0, 0, 111, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Variables"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDL_VARLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,111,111
+    PUSHBUTTON      "&Refresh",ID_VARLIST_REFRESH,0,114,34,14
+    PUSHBUTTON      "&Add",ID_VARLIST_SET,38,114,34,14
+    PUSHBUTTON      "&Delete",ID_VARLIST_UNSET,76,114,34,14
+END
+
+IDD_INPUT_VARIABLE DIALOGEX 0, 0, 143, 23
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Variable Value"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_INPUT,5,6,76,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,87,5,52,14
+END
+
+IDD_INPUT_VARSET DIALOGEX 0, 0, 178, 31
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Variable"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_INPUT_NAME,4,15,55,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_INPUT_VALUE,62,15,64,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,128,14,45,14
+    LTEXT           "Name",IDC_STATIC,4,3,19,8
+    LTEXT           "Value",IDC_STATIC,62,3,18,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_CONSOLE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Save As...\tCtrl+S",         ID_CONSOLE_SAVEAS
+        MENUITEM "&Open...\tCtrl+O",            ID_CONSOLE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_CONSOLE_CLOSE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy",                       ID_CONSOLE_COPY
+        MENUITEM "C&ut",                        ID_CONSOLE_CUT
+        MENUITEM "&Paste",                      ID_CONSOLE_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Rese&t",                      ID_CONSOLE_RESET
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Numeric Keypad\tF4",         ID_VIEW_INPUT
+        MENUITEM "&Variables\tF5",              ID_VIEW_VARLIST
+    END
+    POPUP "F&unctions"
+    BEGIN
+        MENUITEM "&exp",                        ID_PARSER_FUNC20
+        MENUITEM "&ln",                         ID_PARSER_FUNC10
+        MENUITEM SEPARATOR
+        MENUITEM "&sqrt",                       ID_PARSER_FUNC80
+        MENUITEM "&pow",                        ID_PARSER_FUNC30
+        MENUITEM SEPARATOR
+        POPUP "&Trigonometric"
+        BEGIN
+            MENUITEM "sin",                         ID_PARSER_FUNC01
+            MENUITEM "cos",                         ID_PARSER_FUNC02
+            MENUITEM "tan",                         ID_PARSER_FUNC03
+            MENUITEM "asin",                        ID_PARSER_FUNC04
+            MENUITEM "acos",                        ID_PARSER_FUNC05
+            MENUITEM "atan",                        ID_PARSER_FUNC06
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&abs",                        ID_PARSER_FUNC81
+        MENUITEM "&ceil",                       ID_PARSER_FUNC83
+        MENUITEM "&int",                        ID_PARSER_FUNC84
+    END
+    POPUP "&Constants"
+    BEGIN
+        MENUITEM "PI\t3.14159...",              ID_PARSER_CONST01
+        MENUITEM SEPARATOR
+        MENUITEM "Electron charge\t_q",         ID_PARSER_CONST10
+        MENUITEM "Electron mass\t_m",           ID_PARSER_CONST11
+        MENUITEM "Boltzmann\t_k",               ID_PARSER_CONST12
+        MENUITEM "Planck\t_h",                  ID_PARSER_CONST13
+        MENUITEM "Speed of Light\t_c",          ID_PARSER_CONST14
+        MENUITEM "Permittivity\t_e",            ID_PARSER_CONST15
+        MENUITEM "Avogadro\t_n",                ID_PARSER_CONST16
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Radian",                     ID_PARSER_RAD, CHECKED
+        MENUITEM "&Degree",                     ID_PARSER_DEG
+        MENUITEM "&Gradian",                    ID_PARSER_GRAD
+        MENUITEM SEPARATOR
+        MENUITEM "&Font...",                    ID_CONSOLE_FONT
+        MENUITEM "Font &Color...",              ID_CONSOLE_FONTCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Topmost Window",             ID_OPTIONS_TOPMOST
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   ID_CONSOLE_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About SigmaConsole",         ID_APP_ABOUT
+    END
+END
+
+IDM_CONSOLE_POP MENU 
+BEGIN
+    POPUP "Console"
+    BEGIN
+        MENUITEM "&Copy",                       ID_CONSOLE_COPY
+        MENUITEM "&Paste",                      ID_CONSOLE_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Rese&t",                      ID_CONSOLE_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "&Save As...",                 ID_CONSOLE_SAVEAS
+        MENUITEM "&Open...",                    ID_CONSOLE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Radians",                    ID_PARSER_RAD, CHECKED
+        MENUITEM "&Degrees",                    ID_PARSER_DEG
+        MENUITEM "&Gradian",                    ID_PARSER_GRAD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,6,10,0
+ PRODUCTVERSION 2,6,10,0
+ FILEFLAGSMASK 0x1fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Mathematical Console"
+            VALUE "CompanyName", "Sidi OULD SAAD HAMADY"
+            VALUE "FileDescription", "Mathematical Console"
+            VALUE "FileVersion", "2.6.10.0"
+            VALUE "InternalName", "SigmaConsole.exe"
+            VALUE "LegalCopyright", "Copyright(C) 1997-2020  Pr. Sidi HAMADY"
+            VALUE "LegalTrademarks", "Sidi OULD SAAD HAMADY"
+            VALUE "OriginalFilename", "SigmaConsole.exe"
+            VALUE "ProductName", "SigmaConsole"
+            VALUE "ProductVersion", "2.6.10.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONSOLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+    END
+
+    IDD_NUMPAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_VARLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\sigma.ico"
+IDI_HELP                ICON                    "res\\help.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About SigmaConsole..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PARSER_CONST13       "Planck constant (Js)"
+    ID_PARSER_CONST14       "Speed of Light in vacuum (m/s)"
+    ID_PARSER_CONST15       "Dielectric permittivity in vacuum (F/m)"
+    ID_PARSER_CONST16       "Avogadro constant (mole-1)"
+    ID_CONSOLE_RESET        "Reset console content"
+    ID_PARSER_RAD           "Angle in radian"
+    ID_PARSER_DEG           "Angle in degree"
+    ID_PARSER_GRAD          "Angle in grad"
+    ID_CONSOLE_FONT         "Set the console font"
+    ID_CONSOLE_FONTCOLOR    "Set the console font color"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONSOLE_SAVEAS       "Save console content"
+    ID_CONSOLE_OPEN         "Open console file"
+    ID_CONSOLE_CLOSE        "Close the console window"
+    ID_PARSER_CONST10       "Elementary charge (C)"
+    ID_PARSER_CONST11       "Electron mass (kg)"
+    ID_PARSER_CONST12       "Boltzmann constant (J/K)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PARSER_FUNC20        "exp(x)"
+    ID_PARSER_FUNC30        "x^y"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PARSER_FUNC10        "ln(x)"
+    ID_PARSER_FUNC01        "sin(x)"
+    ID_PARSER_FUNC02        "cos(x)"
+    ID_PARSER_FUNC03        "tan(x)"
+    ID_PARSER_FUNC04        "asin(x)"
+    ID_PARSER_FUNC05        "acos(x)"
+    ID_PARSER_FUNC06        "atan(x)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PARSER_FUNC80        "sqrt(x)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PARSER_CONST01       "3.14159..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONSOLE_CUT          "Cut"
+    ID_CONSOLE_COPY         "Copy"
+    ID_CONSOLE_PASTE        "Paste"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_ANGLEUNIT  "Radian  "
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_INPUT           "Show the Numeric Keypad\nShow the Numeric Keypad"
+    ID_VIEW_VARLIST         "Show the Variables List\nShow the Variables List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""../Target/targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SigmaConsole.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F4,          ID_VIEW_INPUT,          VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_VARLIST,        VIRTKEY, NOINVERT
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SigmaConsole.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

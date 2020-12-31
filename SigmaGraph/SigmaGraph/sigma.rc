@@ -1,0 +1,2490 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "../Target/targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\sigma.ico"
+IDR_DOCTYPE_DATA        ICON                    "res\\sigmadata.ico"
+IDR_DOCTYPE_PLOT        ICON                    "res\\sigmaplot.ico"
+IDI_CONSOLE             ICON                    "res\\console.ico"
+IDI_OUTPUT              ICON                    "res\\output.ico"
+IDI_NOTE                ICON                    "res\\note.ico"
+IDI_FITTER              ICON                    "res\\fitter.ico"
+IDI_IMPORT              ICON                    "res\\import.ico"
+IDI_FORMULA             ICON                    "res\\formula.ico"
+IDI_TEXT                ICON                    "res\\Text.ico"
+IDI_INPUT               ICON                    "res\\Input.ico"
+IDI_LINE                ICON                    "res\\line.ico"
+IDI_RECT                ICON                    "res\\rect.ico"
+IDI_SCRIPT              ICON                    "res\\script.ico"
+ID_FILE_OPEN            ICON                    "res\\open.ico"
+ID_FILE_NEW             ICON                    "res\\new.ico"
+ID_FILE_SAVE            ICON                    "res\\save.ico"
+ID_SCRIPT_OPEN          ICON                    "res\\open.ico"
+ID_SCRIPT_NEW           ICON                    "res\\new.ico"
+ID_SCRIPT_SAVE          ICON                    "res\\save.ico"
+ID_EDIT_FIND            ICON                    "res\\find.ico"
+ID_EDIT_REPLACE         ICON                    "res\\replace.ico"
+ID_EDIT_COPY            ICON                    "res\\copy.ico"
+ID_SCRIPT_ADDMARKER     ICON                    "res\\markeradd.ico"
+ID_SCRIPT_NEXTMARKER    ICON                    "res\\markernext.ico"
+ID_SCRIPT_PREVMARKER    ICON                    "res\\markerprev.ico"
+ID_SCRIPT_LINESPACING_100 ICON                  "res\\linespacing100.ico"
+ID_SCRIPT_LINESPACING_175 ICON                  "res\\linespacing175.ico"
+ID_SCRIPT_OUTPUTSIZE_SMALL ICON                 "res\\outputsm.ico"
+ID_SCRIPT_OUTPUTSIZE_MEDIUM ICON                "res\\outputmed.ico"
+ID_SCRIPT_OUTPUTSIZE_LARGE ICON                 "res\\outputlarge.ico"
+ID_SCRIPT_SAMPLE01      ICON                    "res\\script.ico"
+ID_SCRIPT_COLORS        ICON                    "res\\colors.ico"
+ID_EDIT_PASTE           ICON                    "res\\paste.ico"
+ID_EDIT_UNDO            ICON                    "res\\undo.ico"
+ID_EDIT_REDO            ICON                    "res\\redo.ico"
+ID_VIEW_OUTPUT          ICON                    "res\\output.ico"
+ID_VIEW_CONSOLE         ICON                    "res\\console.ico"
+ID_VIEW_SCRIPT          ICON                    "res\\script.ico"
+ID_VIEW_NOTE            ICON                    "res\\note.ico"
+ID_PLOT_ZOOMIN          ICON                    "res\\zoomin.ico"
+ID_PLOT_ZOOMOUT         ICON                    "res\\zoomout.ico"
+ID_SCRIPT_ZOOMIN        ICON                    "res\\zoomin.ico"
+ID_SCRIPT_ZOOMOUT       ICON                    "res\\zoomout.ico"
+ID_VIEW_DATA            ICON                    "res\\sigmadata.ico"
+ID_VIEW_PLOT            ICON                    "res\\sigmaplot.ico"
+ID_PLOT_ADDCURVE        ICON                    "res\\addcurve.ico"
+ID_DATA_IMPORT          ICON                    "res\\import.ico"
+ID_DATA_IMPORTDLG       ICON                    "res\\importdlg.ico"
+ID_DATA_APPENDCOL       ICON                    "res\\appendcol.ico"
+ID_PLOT_AUTOSCALE       ICON                    "res\\autoscale.ico"
+ID_FITTER_NONLINEAR     ICON                    "res\\fitter.ico"
+ID_PLOT_OPTIONS         ICON                    "res\\plotoptions.ico"
+ID_ANALYSIS_INTEGRATE   ICON                    "res\\integrate.ico"
+ID_ANALYSIS_DIFF        ICON                    "res\\differentiate.ico"
+ID_WINDOW_DUP           ICON                    "res\\windowdup.ico"
+ID_APP_ABOUT            ICON                    "res\\sigma.ico"
+ID_ANALYSIS_AVERAGE     ICON                    "res\\average.ico"
+ID_WINDOW_CASCADE       ICON                    "res\\windowcascade.ico"
+ID_WINDOW_TILE_HORZ     ICON                    "res\\windowtile.ico"
+ID_EDIT_CELLCOPY        ICON                    "res\\copy.ico"
+ID_EDIT_CELLPASTE       ICON                    "res\\paste.ico"
+ID_DATA_MASK            ICON                    "res\\datamask.ico"
+ID_DATA_UNMASK          ICON                    "res\\dataunmask.ico"
+ID_CURVE_PROPERTIES     ICON                    "res\\plotoptions.ico"
+ID_ITEM_REMOVE          ICON                    "res\\itemremove.ico"
+ID_PLOT_ADDTEXT         ICON                    "res\\text.ico"
+ID_PLOT_ADDLINE         ICON                    "res\\line.ico"
+ID_PLOT_ADDRECT         ICON                    "res\\rect.ico"
+ID_PLOT_ADDELLIPSE      ICON                    "res\\ellipse.ico"
+ID_SCRIPT_FAVORITE      ICON                    "res\\favorite.ico"
+ID_SCRIPT_RUN           ICON                    "res\\run.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FITTER_MODEL01      BITMAP                  "res\\fitter01.bmp"
+IDB_FITTER_MODEL02      BITMAP                  "res\\fitter02.bmp"
+IDB_FITTER_MODEL03      BITMAP                  "res\\fitter03.bmp"
+IDB_FITTER_MODEL04      BITMAP                  "res\\fitter04.bmp"
+IDB_FITTER_MODEL05      BITMAP                  "res\\fitter05.bmp"
+IDB_FITTER_MODEL06      BITMAP                  "res\\fitter06.bmp"
+IDB_FITTER_MODEL07      BITMAP                  "res\\fitter07.bmp"
+IDB_FITTER_MODEL08      BITMAP                  "res\\fitter08.bmp"
+IDB_FITTER_MODEL09      BITMAP                  "res\\fitter09.bmp"
+IDB_FITTER_MODEL10      BITMAP                  "res\\fitter10.bmp"
+IDB_FITTER_MODEL11      BITMAP                  "res\\fitter11.bmp"
+IDB_FITTER_MODEL12      BITMAP                  "res\\fitter12.bmp"
+IDB_FITTER_MODEL13      BITMAP                  "res\\fitter13.bmp"
+IDB_FITTER_MODEL14      BITMAP                  "res\\fitter14.bmp"
+IDB_FITTER_MODEL15      BITMAP                  "res\\fitter15.bmp"
+IDB_FITTER_MODEL16      BITMAP                  "res\\fitter16.bmp"
+IDB_FITTER_MODEL17      BITMAP                  "res\\fitter17.bmp"
+IDB_FITTER_MODEL18      BITMAP                  "res\\fitter18.bmp"
+IDB_FITTER_MODEL19      BITMAP                  "res\\fitter19.bmp"
+IDB_FITTER_MODEL20      BITMAP                  "res\\fitter20.bmp"
+IDB_FITTER_MODEL21      BITMAP                  "res\\fitter21.bmp"
+IDB_FITTER_MODEL22      BITMAP                  "res\\fitter22.bmp"
+IDB_FITTER_MODEL23      BITMAP                  "res\\fitter23.bmp"
+IDB_FITTER_MODEL24      BITMAP                  "res\\fitter24.bmp"
+IDB_FITTER_MODEL99      BITMAP                  "res\\fitter99.bmp"
+IDB_FITTER_MODEL255     BITMAP                  "res\\fitter255.bmp"
+IDB_ARROW_STYLE00       BITMAP                  "res\\arrow00.bmp"
+IDB_ARROW_STYLE01       BITMAP                  "res\\arrow01.bmp"
+IDB_TOOLBAR_FILE        BITMAP                  "res\\toolbarFile.bmp"
+IDB_TOOLBAR_DATA        BITMAP                  "res\\toolbarData.bmp"
+IDB_TOOLBAR_PLOT        BITMAP                  "res\\toolbarPlot.bmp"
+IDB_TOOLBAR_SCRIPT      BITMAP                  "res\\toolbarScript.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_VIEW_CONSOLE
+    BUTTON      ID_VIEW_NOTE
+END
+
+IDR_TOOLBAR_DATA TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_VIEW_PLOT
+    SEPARATOR
+    BUTTON      ID_PLOT_ADDCURVE
+    SEPARATOR
+    BUTTON      ID_DATA_IMPORT
+    BUTTON      ID_DATA_IMPORTDLG
+    SEPARATOR
+    BUTTON      ID_DATA_APPENDCOL
+    SEPARATOR
+    BUTTON      ID_DATA_MASK
+    BUTTON      ID_DATA_UNMASK
+END
+
+IDR_TOOLBAR_PLOT TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_VIEW_DATA
+    SEPARATOR
+    BUTTON      ID_PLOT_AUTOSCALE
+    BUTTON      ID_PLOT_ZOOMIN
+    BUTTON      ID_PLOT_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_FITTER_NONLINEAR
+    SEPARATOR
+    BUTTON      ID_PLOT_ADDTEXT
+    BUTTON      ID_PLOT_ADDLINE
+    BUTTON      ID_PLOT_ADDRECT
+    BUTTON      ID_PLOT_ADDELLIPSE
+    SEPARATOR
+    BUTTON      ID_PLOT_OPTIONS
+END
+
+IDR_TOOLBAR_SCRIPT TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_SCRIPT_NEW
+    BUTTON      ID_SCRIPT_OPEN
+    BUTTON      ID_SCRIPT_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_FIND
+    BUTTON      ID_EDIT_REPLACE
+    BUTTON      ID_EDIT_GOTO
+    SEPARATOR
+    BUTTON      ID_SCRIPT_RUN
+    SEPARATOR
+    BUTTON      ID_SCRIPT_ADDMARKER
+    BUTTON      ID_SCRIPT_PREVMARKER
+    BUTTON      ID_SCRIPT_NEXTMARKER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "  &New\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "  &Open...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "  &Close",                    ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "  P&rint Setup...",           ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "  Recent File",               ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "  E&xit",                     ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "  &Console Window\tF9",       ID_VIEW_CONSOLE
+        MENUITEM "  &Script Window\tF11",       ID_VIEW_SCRIPT
+        MENUITEM "  &Output Window",            ID_VIEW_OUTPUT
+        MENUITEM SEPARATOR
+        POPUP "  &Toolbar"
+        BEGIN
+            MENUITEM "&Main",                       ID_VIEW_TOOLBAR
+            MENUITEM "&Datasheet",                  ID_VIEW_TOOLBAR_DATA
+            MENUITEM "&Graph",                      ID_VIEW_TOOLBAR_PLOT
+        END
+        MENUITEM "  St&atusbar",                ID_VIEW_STATUSBAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "  &Contents",                 ID_HELP_CONTENTS
+        MENUITEM "  &Index",                    ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "  &Contents (PDF)",           ID_HELP_CONTENTS_PDF
+        MENUITEM SEPARATOR
+        MENUITEM "  &About SigmaGraph",         ID_APP_ABOUT
+    END
+END
+
+IDR_DOCTYPE_PLOT MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "  &New\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "  &Open...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "  &Close",                    ID_FILE_CLOSE
+        MENUITEM "  &Save\tCtrl+S",             ID_FILE_SAVE
+        MENUITEM "  Save &As...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "  &Export Graph...",          ID_FILE_EXPORTG
+        MENUITEM "  Auto Export",               ID_FILE_AUTOEXPORT, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "  &Print...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "  Print Pre&view",            ID_FILE_PRINT_PREVIEW
+        MENUITEM "  P&rint Setup...",           ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "  Recent File",               ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "  E&xit",                     ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "  &Undo\tCtrl+Z",             ID_EDIT_UNDO
+        MENUITEM "  &Redo\tCtrl+Y",             ID_EDIT_REDO
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "  &Datasheet\tF6",            ID_VIEW_DATA
+        MENUITEM "  &Fit Datasheet\tF7",        ID_VIEW_DATAFIT
+        MENUITEM "  Fit &Report",               ID_VIEW_FITREPORT
+        MENUITEM "  &Graph\tF8",                ID_VIEW_PLOT
+        MENUITEM SEPARATOR
+        MENUITEM "  &Note...",                  ID_VIEW_NOTE
+        MENUITEM SEPARATOR
+        MENUITEM "  &Console Window\tF9",       ID_VIEW_CONSOLE
+        MENUITEM "  &Script Window\tF11",       ID_VIEW_SCRIPT
+        MENUITEM "  &Output Window",            ID_VIEW_OUTPUT
+        MENUITEM SEPARATOR
+        POPUP "  &Toolbar"
+        BEGIN
+            MENUITEM "&Main",                       ID_VIEW_TOOLBAR
+            MENUITEM "&Datasheet",                  ID_VIEW_TOOLBAR_DATA
+            MENUITEM "&Graph",                      ID_VIEW_TOOLBAR_PLOT
+        END
+        MENUITEM "  St&atusbar",                ID_VIEW_STATUSBAR
+    END
+    POPUP "&Graph"
+    BEGIN
+        MENUITEM "  &Zoom In",                  ID_PLOT_ZOOMIN
+        MENUITEM "  Zoom Out",                  ID_PLOT_ZOOMOUT
+        MENUITEM SEPARATOR
+        MENUITEM "  Add &Text",                 ID_PLOT_ADDTEXT
+        MENUITEM "  Add &Line",                 ID_PLOT_ADDLINE
+        MENUITEM "  Add &Rectangle",            ID_PLOT_ADDRECT
+        MENUITEM "  Add &Ellipse",              ID_PLOT_ADDELLIPSE
+        MENUITEM SEPARATOR
+        MENUITEM "  A&uto Scale",               ID_PLOT_AUTOSCALE
+        MENUITEM SEPARATOR
+        MENUITEM "  Error &Bars...",            ID_GRAPH_ERRORBAR
+        MENUITEM SEPARATOR
+        MENUITEM "  Graph &Options...",         ID_PLOT_OPTIONS
+        MENUITEM "  Tem&plates...",             ID_PLOT_TEMPLATES
+    END
+    POPUP "&Analysis"
+    BEGIN
+        MENUITEM "  &Integrate...",             ID_ANALYSIS_INTEGRATE
+        MENUITEM "  &Differentiate...",         ID_ANALYSIS_DIFF
+        MENUITEM "  &Average...",               ID_ANALYSIS_AVERAGE
+        MENUITEM "  &FFT...",                   ID_ANALYSIS_FFT
+        MENUITEM "  Auto&correlation...",       ID_ANALYSIS_AUTOCORR
+    END
+    POPUP "F&itting"
+    BEGIN
+        MENUITEM "  &Linear..",                 ID_FITTER_LINEAR
+        MENUITEM "  &Polynomial...",            ID_FITTER_POLYNOMIAL
+        MENUITEM "  &Gaussian...",              ID_FITTER_GAUSSIAN
+        MENUITEM "  Lo&rentizian...",           ID_FITTER_LORENTZIAN
+        MENUITEM "  &Exponential...",           ID_FITTER_EXPONENTIAL
+        MENUITEM "  Log&arithmic...",           ID_FITTER_LOGARITHMIC
+        MENUITEM "  Po&wer...",                 ID_FITTER_POWER
+        MENUITEM SEPARATOR
+        MENUITEM "  &Nonlinear Fit...",         ID_FITTER_NONLINEAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "  &Cascade",                  ID_WINDOW_CASCADE
+        MENUITEM "  &Tile",                     ID_WINDOW_TILE_HORZ
+        MENUITEM "  &Arrange Icons",            ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "  Copy &Format",              ID_WINDOW_COPYFORMAT
+        MENUITEM "  Paste F&ormat",             ID_WINDOW_PASTEFORMAT
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Documents",         ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "  &Contents",                 ID_HELP_CONTENTS
+        MENUITEM "  &Index",                    ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "  &Contents (PDF)",           ID_HELP_CONTENTS_PDF
+        MENUITEM SEPARATOR
+        MENUITEM "  &About SigmaGraph",         ID_APP_ABOUT
+    END
+END
+
+IDM_PLOTPOP_MAIN MENU
+BEGIN
+    POPUP "Graph"
+    BEGIN
+        MENUITEM "  &Zoom In",                  ID_PLOT_ZOOMIN
+        MENUITEM "  Zoom Out",                  ID_PLOT_ZOOMOUT
+        MENUITEM SEPARATOR
+        MENUITEM "  Add &Text",                 ID_PLOT_ADDTEXT
+        MENUITEM "  Add &Line",                 ID_PLOT_ADDLINE
+        MENUITEM "  Add &Rectangle",            ID_PLOT_ADDRECT
+        MENUITEM "  Add &Ellipse",              ID_PLOT_ADDELLIPSE
+        MENUITEM SEPARATOR
+        MENUITEM "  Add &Vert. Line",           ID_PLOT_ADDVLINE
+        MENUITEM "  Add &Horiz. Line",          ID_PLOT_ADDHLINE
+        MENUITEM SEPARATOR
+        MENUITEM "  &Paste",                    ID_ITEM_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "  &Auto Scale", ID_PLOT_AUTOSCALE
+        MENUITEM SEPARATOR
+        MENUITEM "  Mask to here\t>>]",         ID_PLOT_MASKTO
+        MENUITEM "  &Mask from here\t[>>",      ID_PLOT_MASKFROM
+        MENUITEM "  U&nmask all",               ID_PLOT_UNMASK
+        MENUITEM SEPARATOR
+        MENUITEM "  Tem&plates...",             ID_PLOT_TEMPLATES
+        MENUITEM "  Graph &Options...",         ID_PLOT_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "  View &Data",                ID_VIEW_DATA
+    END
+END
+
+IDM_CONSOLE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Reset",                      ID_CONSOLE_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "&Open...",                    ID_CONSOLE_OPEN
+        MENUITEM "&Save As...",                 ID_CONSOLE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_CONSOLE_CLOSE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_CONSOLE_COPY
+        MENUITEM "C&ut\tCtrl+X",                ID_CONSOLE_CUT
+        MENUITEM "&Paste\tCtrl+V",              ID_CONSOLE_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset",                      ID_CONSOLE_RESET
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Numeric Keypad\tF4",         ID_VIEW_INPUT
+        MENUITEM "&Variables\tF5",              ID_VIEW_VARLIST
+    END
+    POPUP "F&unctions"
+    BEGIN
+        MENUITEM "&exp",                        ID_PARSER_FUNC20
+        MENUITEM "&ln",                         ID_PARSER_FUNC10
+        MENUITEM SEPARATOR
+        MENUITEM "&sqrt",                       ID_PARSER_FUNC80
+        MENUITEM "&pow",                        ID_PARSER_FUNC30
+        MENUITEM SEPARATOR
+        POPUP "&Trigonometric"
+        BEGIN
+            MENUITEM "sin",                         ID_PARSER_FUNC01
+            MENUITEM "cos",                         ID_PARSER_FUNC02
+            MENUITEM "tan",                         ID_PARSER_FUNC03
+            MENUITEM "asin",                        ID_PARSER_FUNC04
+            MENUITEM "acos",                        ID_PARSER_FUNC05
+            MENUITEM "atan",                        ID_PARSER_FUNC06
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&abs",                        ID_PARSER_FUNC81
+        MENUITEM "&ceil",                       ID_PARSER_FUNC83
+        MENUITEM "&int",                        ID_PARSER_FUNC84
+    END
+    POPUP "&Constants"
+    BEGIN
+        MENUITEM "PI\t3.14159...",              ID_PARSER_CONST01
+        MENUITEM SEPARATOR
+        MENUITEM "Electron charge\t_q",         ID_PARSER_CONST10
+        MENUITEM "Electron mass\t_m",           ID_PARSER_CONST11
+        MENUITEM "Boltzmann\t_k",               ID_PARSER_CONST12
+        MENUITEM "Planck\t_h",                  ID_PARSER_CONST13
+        MENUITEM "Speed of Light\t_c",          ID_PARSER_CONST14
+        MENUITEM "Permittivity\t_e",            ID_PARSER_CONST15
+        MENUITEM "Avogadro\t_n",                ID_PARSER_CONST16
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Radian",                     ID_PARSER_RAD, CHECKED
+        MENUITEM "&Degree",                     ID_PARSER_DEG
+        MENUITEM "&Gradian",                    ID_PARSER_GRAD
+        MENUITEM SEPARATOR
+        MENUITEM "&Font...",                    ID_CONSOLE_FONT
+        MENUITEM "Font &Color...",              ID_CONSOLE_FONTCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "Topmost Window",              ID_CONSOLE_TOPMOST
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "  &Contents",                 ID_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&About SigmaGraph",           ID_APP_ABOUT
+    END
+END
+
+IDM_CONSOLE_POP MENU
+BEGIN
+    POPUP "Console"
+    BEGIN
+        MENUITEM "&Copy",                       ID_CONSOLE_COPY
+        MENUITEM "&Paste",                      ID_CONSOLE_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Rese&t",                      ID_CONSOLE_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "&Save As...",                 ID_CONSOLE_SAVEAS
+        MENUITEM "&Open...",                    ID_CONSOLE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Radians",                    ID_PARSER_RAD, CHECKED
+        MENUITEM "&Degrees",                    ID_PARSER_DEG
+        MENUITEM "&Gradian",                    ID_PARSER_GRAD
+    END
+END
+
+IDM_DATAPOP_COLUMN MENU
+BEGIN
+    POPUP "Column"
+    BEGIN
+        MENUITEM "  &Add/Remove Curve",         ID_PLOT_ADDCURVE
+        MENUITEM SEPARATOR
+        MENUITEM "  &Copy",                     ID_EDIT_COPY
+        MENUITEM "  &Paste",                    ID_EDIT_PASTE
+        MENUITEM "  &Clear",                    ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "  &Insert Column",            ID_DATA_INSERTCOL
+        MENUITEM "  &Delete Column",            ID_DATA_DELETECOL
+        MENUITEM "  Appe&nd Columns...",        ID_DATA_APPENDCOL
+        MENUITEM SEPARATOR
+        MENUITEM "  Import ASCII...",           ID_DATA_IMPORT
+        MENUITEM "  Import ASCII Dialo&g...",   ID_DATA_IMPORTDLG
+        MENUITEM SEPARATOR
+        MENUITEM "  Set Column &Values...",     ID_DATA_SETCOLVAL
+        MENUITEM "  Create &Series...",         ID_DATA_CREATESERIES
+        MENUITEM SEPARATOR
+        MENUITEM "  S&ort Column - Ascending",  ID_DATA_SORTASC
+        MENUITEM "  Sort Co&lumn - Descending", ID_DATA_SORTDESC
+        MENUITEM SEPARATOR
+        MENUITEM "  &Mask",                     ID_DATA_MASK
+        MENUITEM "  &Unmask",                   ID_DATA_UNMASK
+        MENUITEM "  Invert Mas&k",              ID_DATA_INVERTMASK
+        MENUITEM SEPARATOR
+        MENUITEM "  St&atistics...",            ID_DATA_STATS
+        MENUITEM SEPARATOR
+        MENUITEM "  Proper&ties...",            ID_DATA_PROPERTIES
+    END
+END
+
+IDR_DOCTYPE_DATA MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "  &New\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "  &Open...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "  &Close",                    ID_FILE_CLOSE
+        MENUITEM "  &Save\tCtrl+S",             ID_FILE_SAVE
+        MENUITEM "  Save &As...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "  &Export Data...",           ID_FILE_EXPORTD
+        MENUITEM "  Auto Export",               ID_FILE_AUTOEXPORT, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "  &Print...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "  Print Pre&view",            ID_FILE_PRINT_PREVIEW
+        MENUITEM "  P&rint Setup...",           ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "  Recent File",               ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "  E&xit",                     ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "  &Undo\tCtrl+Z",             ID_EDIT_UNDO
+        MENUITEM "  &Redo\tCtrl+Y",             ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "  &Copy\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "  &Paste\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "  Clear",                     ID_EDIT_CLEAR
+        END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "  &Datasheet\tF6",            ID_VIEW_DATA
+        MENUITEM "  &Fit Datasheet\tF7",        ID_VIEW_DATAFIT
+        MENUITEM "  Fit &Report",               ID_VIEW_FITREPORT
+        MENUITEM "  &Graph\tF8",                ID_VIEW_PLOT
+        MENUITEM SEPARATOR
+        MENUITEM "  &Note...",                  ID_VIEW_NOTE
+        MENUITEM SEPARATOR
+        MENUITEM "  &Console Window\tF9",       ID_VIEW_CONSOLE
+        MENUITEM "  &Script Window\tF11",       ID_VIEW_SCRIPT
+        MENUITEM "  &Output Window",            ID_VIEW_OUTPUT
+        MENUITEM SEPARATOR
+        POPUP "  &Toolbar"
+        BEGIN
+            MENUITEM "&Main",                       ID_VIEW_TOOLBAR
+            MENUITEM "&Datasheet",                  ID_VIEW_TOOLBAR_DATA
+            MENUITEM "&Graph",                      ID_VIEW_TOOLBAR_PLOT
+        END
+        MENUITEM "  St&atusbar",                ID_VIEW_STATUSBAR
+    END
+    POPUP "&Graph"
+    BEGIN
+        MENUITEM "  &Add/Remove Curve",         ID_PLOT_ADDCURVE
+    END
+    POPUP "&Datasheet"
+    BEGIN
+        MENUITEM "  &Copy",                     ID_EDIT_COPY
+        MENUITEM "  &Paste",                    ID_EDIT_PASTE
+        MENUITEM "  Clear",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "  &Insert Columns",           ID_DATA_INSERTCOL
+        MENUITEM "  &Delete Columns",           ID_DATA_DELETECOL
+        MENUITEM "  Appe&nd Columns",           ID_DATA_APPENDCOL
+        MENUITEM "  Insert Ro&w",               ID_DATA_INSERTROW
+        MENUITEM "  D&elete Row",               ID_DATA_DELETEROW
+        MENUITEM "  Append &Rows...",           ID_DATA_APPENDROW
+        MENUITEM "  AutoResize",                ID_DATA_AUTORESIZE
+        MENUITEM SEPARATOR
+        MENUITEM "  Import ASCII...",           ID_DATA_IMPORT
+        MENUITEM "  Import ASCII Dialo&g...",   ID_DATA_IMPORTDLG
+        MENUITEM SEPARATOR
+        MENUITEM "  Set Column &Values...",     ID_DATA_SETCOLVAL
+        MENUITEM "  Create &Series...",         ID_DATA_CREATESERIES
+        MENUITEM SEPARATOR
+        MENUITEM "  S&ort Column - Ascending",  ID_DATA_SORTASC
+        MENUITEM "  Sort Co&lumn - Descending", ID_DATA_SORTDESC
+        MENUITEM SEPARATOR
+        MENUITEM "  &Mask",                     ID_DATA_MASK
+        MENUITEM "  &Unmask",                   ID_DATA_UNMASK
+        MENUITEM "  Invert Mas&k",              ID_DATA_INVERTMASK
+        MENUITEM SEPARATOR
+        MENUITEM "  St&atistics...",            ID_DATA_STATS
+        MENUITEM SEPARATOR
+        MENUITEM "  Proper&ties...",            ID_DATA_PROPERTIES
+    END
+    POPUP "&Analysis"
+    BEGIN
+        MENUITEM "  &Integrate...",             ID_ANALYSIS_INTEGRATE
+        MENUITEM "  &Differentiate...",         ID_ANALYSIS_DIFF
+        MENUITEM "  &Average...",               ID_ANALYSIS_AVERAGE
+        MENUITEM "  &FFT...",                   ID_ANALYSIS_FFT
+        MENUITEM "  Auto&correlation...",       ID_ANALYSIS_AUTOCORR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "  &Duplicate",                ID_WINDOW_DUP
+        MENUITEM "  &Cascade",                  ID_WINDOW_CASCADE
+        MENUITEM "  &Tile",                     ID_WINDOW_TILE_HORZ
+        MENUITEM "  &Arrange Icons",            ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Documents",         ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "  &Contents",                 ID_HELP_CONTENTS
+        MENUITEM "  &Index",                    ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "  &Contents (PDF)",           ID_HELP_CONTENTS_PDF
+        MENUITEM SEPARATOR
+        MENUITEM "  &About SigmaGraph",         ID_APP_ABOUT
+    END
+END
+
+IDM_FORMULA MENU
+BEGIN
+    POPUP "F&unctions"
+    BEGIN
+        MENUITEM "&exp",                        ID_PARSER_FUNC20
+        MENUITEM "&ln",                         ID_PARSER_FUNC10
+        MENUITEM SEPARATOR
+        MENUITEM "&sqrt",                       ID_PARSER_FUNC80
+        MENUITEM "&pow",                        ID_PARSER_FUNC30
+        MENUITEM SEPARATOR
+        POPUP "&Trigonometric"
+        BEGIN
+            MENUITEM "sin",                         ID_PARSER_FUNC01
+            MENUITEM "cos",                         ID_PARSER_FUNC02
+            MENUITEM "tan",                         ID_PARSER_FUNC03
+            MENUITEM "asin",                        ID_PARSER_FUNC04
+            MENUITEM "acos",                        ID_PARSER_FUNC05
+            MENUITEM "atan",                        ID_PARSER_FUNC06
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&abs",                        ID_PARSER_FUNC81
+        MENUITEM "&ceil",                       ID_PARSER_FUNC83
+        MENUITEM "&int",                        ID_PARSER_FUNC84
+    END
+    POPUP "&Constants"
+    BEGIN
+        MENUITEM "PI\t3.14159...",              ID_PARSER_CONST01
+        MENUITEM SEPARATOR
+        MENUITEM "Electron charge\t_q",         ID_PARSER_CONST10
+        MENUITEM "Electron mass\t_m",           ID_PARSER_CONST11
+        MENUITEM "Boltzmann\t_k",               ID_PARSER_CONST12
+        MENUITEM "Planck\t_h",                  ID_PARSER_CONST13
+        MENUITEM "Speed of Light\t_c",          ID_PARSER_CONST14
+        MENUITEM "Permittivity\t_e",            ID_PARSER_CONST15
+        MENUITEM "Avogadro\t_n",                ID_PARSER_CONST16
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Radian",                     ID_PARSER_RAD, CHECKED
+        MENUITEM "&Degree",                     ID_PARSER_DEG
+        MENUITEM "&Gradian",                    ID_PARSER_GRAD
+    END
+END
+
+IDM_DATAPOP_ROW MENU
+BEGIN
+    POPUP "Row"
+    BEGIN
+        MENUITEM "  &Copy",                     ID_EDIT_COPY
+        MENUITEM "  &Paste",                    ID_EDIT_PASTE
+        MENUITEM "  Clear",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "  Insert Ro&w",               ID_DATA_INSERTROW
+        MENUITEM "  D&elete Row",               ID_DATA_DELETEROW
+        MENUITEM "  Append &Rows...",           ID_DATA_APPENDROW
+        MENUITEM SEPARATOR
+        MENUITEM "  &Mask",                     ID_DATA_MASK
+        MENUITEM "  &Unmask",                   ID_DATA_UNMASK
+        MENUITEM "  Invert M&ask",              ID_DATA_INVERTMASK
+    END
+END
+
+IDM_DATAPOP_CELL MENU
+BEGIN
+    POPUP "Cell"
+    BEGIN
+        MENUITEM "  &Copy",                     ID_EDIT_CELLCOPY
+        MENUITEM "  &Paste",                    ID_EDIT_CELLPASTE
+        MENUITEM "  &Clear",                    ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "  &Mask",                     ID_DATA_MASK
+        MENUITEM "  &Unmask",                   ID_DATA_UNMASK
+        MENUITEM "  Invert Mas&k",              ID_DATA_INVERTMASK
+    END
+END
+
+IDM_PLOTPOP_ITEM MENU
+BEGIN
+    POPUP "Item"
+    BEGIN
+        MENUITEM "  &Remove",                   ID_ITEM_REMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "  &Copy",                     ID_ITEM_COPY
+    END
+END
+
+IDM_PLOTPOP_CURVE MENU
+BEGIN
+    POPUP "Curve"
+    BEGIN
+        MENUITEM "  &Set Active",               ID_CURVE_ACTIVE
+        MENUITEM "  &Hide/Show",                ID_CURVE_HIDE
+        MENUITEM "  &Remove",                   ID_CURVE_REMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "  &Properties",               ID_CURVE_PROPERTIES
+    END
+END
+
+IDM_DATAPOP_CELL_RO MENU
+BEGIN
+    POPUP "Cell"
+    BEGIN
+        MENUITEM "  &Copy",                     ID_EDIT_CELLCOPY
+        MENUITEM "  &Paste",                    ID_EDIT_CELLPASTE
+    END
+END
+
+IDM_DATAPOP_COLUMN_RO MENU
+BEGIN
+    POPUP "Column"
+    BEGIN
+        MENUITEM "  &Copy",                     ID_EDIT_COPY
+        MENUITEM "  &Paste",                    ID_EDIT_PASTE
+        MENUITEM "  Clear",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "  &Delete Column",            ID_DATA_DELETECOL
+        MENUITEM SEPARATOR
+        MENUITEM "  St&atistics...",            ID_DATA_STATS
+    END
+END
+
+IDM_DATAPOP_ROW_RO MENU
+BEGIN
+    POPUP "Row"
+    BEGIN
+        MENUITEM "  &Copy",                     ID_EDIT_COPY
+        MENUITEM "  &Paste",                    ID_EDIT_PASTE
+        MENUITEM "  Clear",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "  D&elete Row",               ID_DATA_DELETEROW
+    END
+END
+
+IDM_OUTPUTPOP MENU
+BEGIN
+    POPUP "Output"
+    BEGIN
+        MENUITEM "&Clear",                      ID_OUTPUT_CLEAR
+    END
+END
+
+IDM_PLOTPOP MENU
+BEGIN
+    POPUP "Plot"
+    BEGIN
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "&Print...",                   ID_FILE_PRINT
+        MENUITEM "E&xport...",                  ID_FILE_EXPORTG
+        MENUITEM SEPARATOR
+        MENUITEM "  Copy &Format",              ID_WINDOW_COPYFORMAT
+        MENUITEM "  Paste &Format",             ID_WINDOW_PASTEFORMAT
+    END
+END
+
+IDM_DATAPOP_MAIN MENU
+BEGIN
+    POPUP "Column"
+    BEGIN
+        MENUITEM "  Appe&nd Columns...",        ID_DATA_APPENDCOL
+        MENUITEM "  Append &Rows...",           ID_DATA_APPENDROW
+        MENUITEM "  AutoResize",                ID_DATA_AUTORESIZE
+        MENUITEM SEPARATOR
+        MENUITEM "  Import ASCII...",           ID_DATA_IMPORT
+        MENUITEM "  Import ASCII Dialo&g...",   ID_DATA_IMPORTDLG
+    END
+END
+
+IDM_SCRIPT MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "  &New\tCtrl+N",              ID_SCRIPT_NEW
+        MENUITEM "  &Open\tCtrl+O",             ID_SCRIPT_OPEN
+        MENUITEM "  &Reload\tCtrl+R",           ID_SCRIPT_RELOAD
+        MENUITEM SEPARATOR
+        MENUITEM "  &Save\tCtrl+S",             ID_SCRIPT_SAVE
+        MENUITEM "  Save &As...",               ID_SCRIPT_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "  &Close",                    ID_SCRIPT_CLOSE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "  U&ndo\tCtrl+Z",             ID_EDIT_UNDO
+        MENUITEM "  &Redo\tCtrl+Y",             ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "  &Copy\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "  C&ut\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "  &Paste\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "  Clear",                     ID_EDIT_CLEAR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "  &Zoom In\tCtrl +",          ID_SCRIPT_ZOOMIN
+        MENUITEM "  Zoom &Out\tCtrl -",         ID_SCRIPT_ZOOMOUT
+        MENUITEM "  &Normal Viewing\tCtrl 0",   ID_SCRIPT_ZOOMNONE
+        POPUP "  Output Area"
+        BEGIN
+            MENUITEM "  Small",                     ID_SCRIPT_OUTPUTSIZE_SMALL
+            MENUITEM "  Medium",                    ID_SCRIPT_OUTPUTSIZE_MEDIUM
+            MENUITEM "  Large",                     ID_SCRIPT_OUTPUTSIZE_LARGE
+            MENUITEM SEPARATOR
+            MENUITEM "  Hide",                      ID_SCRIPT_OUTPUT_VIEW
+            MENUITEM "  Clear",                     ID_SCRIPT_CLEAROUTPUT
+        END
+    END
+    POPUP "&Search"
+    BEGIN
+        MENUITEM "  &Find...\tCtrl+F",          ID_EDIT_FIND
+        MENUITEM "  &Replace...\tCtrl+H",       ID_EDIT_REPLACE
+        MENUITEM "  &Go to...\tCtrl+G",         ID_EDIT_GOTO
+        MENUITEM SEPARATOR
+        MENUITEM "  Add/Remove &Marker",        ID_SCRIPT_ADDMARKER
+        MENUITEM "  &Previous Marker\tShift+F2", ID_SCRIPT_PREVMARKER
+        MENUITEM "  &Next Marker\tF2",          ID_SCRIPT_NEXTMARKER
+        MENUITEM "  Remove All Markers",        ID_SCRIPT_DELETEALLMARKERS
+    END
+    POPUP "F&avorites"
+    BEGIN
+        MENUITEM "  Script #1",                 ID_FAVORITE_ONE
+        MENUITEM "  Script #2",                 ID_FAVORITE_TWO
+        MENUITEM "  Script #3",                 ID_FAVORITE_THREE
+        MENUITEM "  Script #4",                 ID_FAVORITE_FOUR
+        MENUITEM SEPARATOR
+        MENUITEM "  &Add to Favorites",         ID_SCRIPT_ADDFAV
+        MENUITEM SEPARATOR
+        MENUITEM "  &Favorites Manager...",     ID_SCRIPT_FAVORITE
+    END
+    POPUP "&Run"
+    BEGIN
+        MENUITEM "  &Run\tF12",                 ID_SCRIPT_RUN
+    END
+    POPUP "  &Options"
+    BEGIN
+        MENUITEM "  &Font...",                  ID_SCRIPT_FONT
+        MENUITEM "  &Colors and Style...",      ID_SCRIPT_COLORS
+        MENUITEM "  Show &Line Numbers",        ID_SCRIPT_LINENUMBERS
+        MENUITEM "  Disable &Autocompletion",   ID_SCRIPT_AUTOCOMPLETE
+        POPUP "  Line &Spacing"
+        BEGIN
+            MENUITEM "  1.00",                      ID_SCRIPT_LINESPACING_100
+            MENUITEM "  1.25",                      ID_SCRIPT_LINESPACING_125
+            MENUITEM "  1.50",                      ID_SCRIPT_LINESPACING_150
+            MENUITEM "  1.75",                      ID_SCRIPT_LINESPACING_175
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "  &Reset Engine",             ID_SCRIPT_RESET
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "  &Contents",                 ID_HELP_CONTENTS
+        POPUP "  Examples"
+        BEGIN
+            MENUITEM "  Plot function",             ID_SCRIPT_SAMPLE01
+            MENUITEM "  Graph options",             ID_SCRIPT_SAMPLE02
+            MENUITEM "  Curve Fitting",             ID_SCRIPT_SAMPLE03
+            MENUITEM "  Photovoltaic cell",         ID_SCRIPT_SAMPLE04
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "  &About SigmaGraph",         ID_APP_ABOUT
+    END
+END
+
+IDM_DATAPOP MENU
+BEGIN
+    POPUP "Datasheet"
+    BEGIN
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "&Print...",                   ID_FILE_PRINT
+        MENUITEM "E&xport...",                  ID_FILE_EXPORTD
+        MENUITEM SEPARATOR
+        MENUITEM "&Duplicate",                  ID_WINDOW_DUP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    VK_F1,          ID_HELP_CONTENTS,       VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_EDIT_GOTO,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECTALL,      VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_ITEM_REMOVE,         VIRTKEY, NOINVERT
+    "N",            ID_SCRIPT_NEW,          VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_SCRIPT_OPEN,         VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_SCRIPT_RELOAD,       VIRTKEY, CONTROL, NOINVERT
+    VK_F12,         ID_SCRIPT_RUN,          VIRTKEY, NOINVERT
+    "S",            ID_SCRIPT_SAVE,         VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_UNDO,                VIRTKEY, ALT, NOINVERT
+    "Z",            ID_UNDO,                VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          ID_VIEW_CONSOLE,        VIRTKEY, NOINVERT
+    VK_F6,          ID_VIEW_DATA,           VIRTKEY, NOINVERT
+    VK_F7,          ID_VIEW_DATAFIT,        VIRTKEY, NOINVERT
+    VK_F8,          ID_VIEW_PLOT,           VIRTKEY, NOINVERT
+    VK_F10,         ID_VIEW_NOTE,           VIRTKEY, NOINVERT
+    VK_F11,         ID_VIEW_SCRIPT,         VIRTKEY, NOINVERT
+    "C",            IDCOPY,                 VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_VIEW_INPUT,          VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_VARLIST,        VIRTKEY, NOINVERT
+    VK_F2,          ID_SCRIPT_NEXTMARKER,   VIRTKEY, NOINVERT
+    VK_F2,          ID_SCRIPT_PREVMARKER,   VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 244, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SigmaGraph"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,5,8,21,20
+    DEFPUSHBUTTON   "OK",IDOK,188,59,50,14,WS_GROUP
+    LTEXT           "SigmaGraph, version 2.6.10",IDC_STATIC,32,7,132,8,SS_NOPREFIX
+    LTEXT           "Copyright(C) 1997-2020  Pr. Sidi HAMADY",IDC_STATIC,32,19,182,8
+    LTEXT           "All rights reserved.",IDC_STATIC,32,31,129,8
+    LTEXT           "http://www.hamady.org",IDC_STATIC,32,43,95,8
+    LTEXT           "sidi@hamady.org",IDC_STATIC,32,55,91,8
+END
+
+IDD_CONSOLE DIALOGEX 0, 0, 277, 74
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Console"
+MENU IDM_CONSOLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_CONSOLE,0,0,276,73,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_PLOTOPT_GENERAL DIALOGEX 0, 0, 340, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "?",ID_HELP_CONTENTS,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,326,0,14,14
+    EDITTEXT        IDE_TITLE,21,27,146,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TITLE_FONTCOLOR,173,27,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Font...",ID_FONTCHOOSE,222,27,43,13,BS_FLAT
+    CONTROL         "Show &Title",IDK_OTITLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,277,29,45,8
+    COMBOBOX        IDC_PLOT_COLOR,36,84,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLOT_COLORB,107,84,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_MODPOINTS,223,96,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Title",IDC_STATIC,21,15,22,8
+    LTEXT           "Font Color",IDC_STATIC,173,15,40,8
+    PUSHBUTTON      "Set as &default",ID_GENERAL_DEFAULT,9,160,77,14
+    GROUPBOX        "Graph background colors",IDC_STATIC,21,61,146,47
+    LTEXT           "Maximum points per curve that display in the graph (between 32 and 4096)",IDC_STATIC,223,62,88,29
+END
+
+IDD_PLOTOPT_AXES DIALOGEX 0, 0, 340, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Axes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "?",ID_HELP_CONTENTS,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,326,0,14,14
+    CONTROL         "&Bottom",IDO_AXIS_BOTTOM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,73,20,37,8
+    CONTROL         "&Left",IDO_AXIS_LEFT,"Button",BS_AUTORADIOBUTTON,120,20,37,8
+    CONTROL         "&Top",IDO_AXIS_TOP,"Button",BS_AUTORADIOBUTTON,167,20,37,8
+    CONTROL         "&Right",IDO_AXIS_RIGHT,"Button",BS_AUTORADIOBUTTON,214,20,37,8
+    CONTROL         "Show Axis",IDK_AXIS_STATUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,278,20,46,8
+    EDITTEXT        IDE_AXIS_TITLE,42,56,153,13,ES_AUTOHSCROLL
+    CONTROL         "Show",IDK_AXIS_OTITLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,58,32,8
+    COMBOBOX        IDC_AXIS_FONTCOLOR,238,56,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Font...",ID_AXIS_TFONT,286,56,35,13,BS_FLAT
+    COMBOBOX        IDC_AXIS_COLOR,60,76,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_AXIS_SIZE,155,76,40,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "",IDS_AXIS_SIZE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,183,75,13,13
+    COMBOBOX        IDC_AXIS_LABELCOLOR,60,99,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Font...",ID_AXIS_LFONT,60,117,44,13,BS_FLAT
+    CONTROL         "Label",IDK_AXIS_OLABEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,119,29,8
+    COMBOBOX        IDC_AXIS_GRIDCOLOR,192,94,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_AXIS_GRIDCOUNT,240,94,21,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Grid",IDK_AXIS_OGRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,267,96,25,8
+    CONTROL         "Tick",IDK_AXIS_OTICK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,299,96,24,8
+    COMBOBOX        IDC_AXIS_GRIDMCOLOR,192,117,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_AXIS_GRIDMCOUNT,240,117,21,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Grid",IDK_AXIS_OGRIDM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,267,119,25,8
+    CONTROL         "Tick",IDK_AXIS_OTICKM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,299,119,24,8
+    PUSHBUTTON      "Set as &default",ID_PLOT_DEFAULT,9,160,77,14
+    PUSHBUTTON      "Apply To &All Axes",ID_AXIS_APPLYALL,255,160,77,14
+    RTEXT           "Title:",IDC_STATIC,15,58,21,8
+    RTEXT           "Axis Color:",IDC_STATIC,16,78,39,8
+    LTEXT           "Font Color",IDC_STATIC,238,44,40,8
+    RTEXT           "Select Axis:",IDC_STATIC,21,20,40,8
+    RTEXT           "Thickness:",IDC_STATIC,112,78,38,8
+    RTEXT           "Label Color:",IDC_STATIC,16,101,39,8
+    RTEXT           "Color:",IDC_STATIC,166,96,21,8
+    RTEXT           "Grid Minor:",IDC_STATIC,121,119,37,8
+    GROUPBOX        "Axis Properties",IDC_STATIC,9,37,321,117
+    RTEXT           "Grid Major:",IDC_STATIC,121,96,37,8
+    RTEXT           "Color:",IDC_STATIC,166,119,21,8
+    EDITTEXT        IDE_AXIS_LINK,60,137,98,12,ES_AUTOHSCROLL
+    RTEXT           "Link:",IDC_STATIC,24,139,31,8
+    LTEXT           "",IDL_AXIS_LINK,162,138,160,8
+END
+
+IDD_PLOTOPT_SCALE DIALOGEX 0, 0, 340, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Scale"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "?",ID_HELP_CONTENTS,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,326,0,14,14
+    CONTROL         "&Bottom",IDO_AXIS_BOTTOM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,73,20,37,8
+    CONTROL         "&Left",IDO_AXIS_LEFT,"Button",BS_AUTORADIOBUTTON,120,20,37,8
+    CONTROL         "&Top",IDO_AXIS_TOP,"Button",BS_AUTORADIOBUTTON,167,20,37,8
+    CONTROL         "&Right",IDO_AXIS_RIGHT,"Button",BS_AUTORADIOBUTTON,214,20,37,8
+    RTEXT           "Select Axis:",IDC_STATIC,21,20,40,8
+    EDITTEXT        IDE_AXIS_MIN,53,79,76,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_AXIS_MAX,160,79,76,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&AutoScale",ID_SCALE_AUTO,246,78,65,14
+    CONTROL         "L&inear",IDO_AXIS_LINEAR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,53,117,33,8
+    CONTROL         "Lo&g",IDO_AXIS_LOG,"Button",BS_AUTORADIOBUTTON,97,117,37,8
+    CONTROL         "Absolute Value",IDK_AXIS_ABS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,135,84,9
+    COMBOBOX        IDC_AXIS_FORMAT,240,113,70,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_AXIS_PREFIX,240,131,21,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_AXIS_SUFFIX,289,131,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Set as &default",ID_SCALE_DEFAULT,9,160,77,14
+    RTEXT           "Format:",IDC_STATIC,208,115,27,9
+    RTEXT           "From:",IDC_STATIC,27,81,22,8
+    RTEXT           "To:",IDC_STATIC,138,81,18,8
+    RTEXT           "Suf:",IDC_STATIC,268,132,16,9
+    RTEXT           "Pre:",IDC_STATIC,219,132,16,9
+    GROUPBOX        "Scale Properties",IDC_STATIC,9,37,321,117
+END
+
+IDD_OUTPUT DIALOGEX 0, 0, 277, 54
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Output"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_OUTPUT,0,0,277,54,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_NOTE DIALOGEX 0, 0, 245, 66
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Note"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_NOTE,0,1,245,65,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_STATS DIALOGEX 0, 0, 309, 133
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Statistics"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_STATS_POINTS,10,19,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_MIN,84,19,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_MAX,158,19,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_SUM,232,19,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_MEAN,10,52,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_MEDIAN,84,52,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_VAR,158,52,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_STDDEV,232,52,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_COEFF,10,85,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_RMS,84,85,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_SKEW,158,85,66,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_STATS_KURT,232,85,66,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDL_STATS_COMMENT,10,110,153,15
+    PUSHBUTTON      "&Copy",IDCOPY,173,110,55,15,BS_FLAT
+    DEFPUSHBUTTON   "&OK",IDOK,243,110,55,15,BS_FLAT
+    LTEXT           "Points",IDC_STATIC,10,7,54,8
+    LTEXT           "Minimum",IDC_STATIC,84,7,54,8
+    LTEXT           "Maximum",IDC_STATIC,158,7,54,8
+    LTEXT           "Sum",IDC_STATIC,232,7,54,8
+    LTEXT           "Mean",IDC_STATIC,10,40,54,8
+    LTEXT           "Median",IDC_STATIC,84,40,54,8
+    LTEXT           "Variance",IDC_STATIC,158,40,54,8
+    LTEXT           "Std Deviation",IDC_STATIC,232,40,54,8
+    LTEXT           "RMS",IDC_STATIC,84,73,54,8
+    LTEXT           "Var. Coeff.",IDC_STATIC,10,73,54,8
+    LTEXT           "Skewness",IDC_STATIC,158,74,54,8
+    LTEXT           "Kurtosis",IDC_STATIC,232,73,54,8
+END
+
+IDD_IMPORT DIALOGEX 0, 0, 345, 196
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import ASCII"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "...",ID_ASCII_BROWSE,313,7,22,14
+    EDITTEXT        IDE_ASCII_FILENAME,51,8,257,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_ASCII_FILEINFO,51,26,257,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_ASCII_CONTENT,11,44,322,82,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    COMBOBOX        IDC_ASCII_SEP,11,148,49,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_ASCII_ROWCOUNT,68,148,29,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_ASCII_SKIP,130,148,29,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_ASCII_SELCOLS,240,148,50,13,ES_AUTOHSCROLL
+    CONTROL         "&Read Titles",IDK_ASCII_READTITLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,178,151,49,10
+    DEFPUSHBUTTON   "&OK",IDOK,196,176,61,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,271,176,61,14
+    RTEXT           "File Name:",IDC_STATIC,11,10,35,8
+    LTEXT           "ASCII Delimiter",IDC_STATIC,11,136,52,8
+    LTEXT           "Rows to skip",IDC_STATIC,130,136,45,8
+    LTEXT           "Number of rows",IDC_STATIC,68,136,53,8
+    LTEXT           "Colunms to import (1;2;3)",IDC_STATIC,240,136,100,8
+    RTEXT           "File Info:",IDC_STATIC,11,28,35,8
+END
+
+IDD_FITTER_FILTER DIALOGEX 0, 0, 379, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Mask and Filter"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "?",ID_HELP_CONTENTS,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,365,0,14,14
+    EDITTEXT        IDE_CURVE,61,34,65,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_FITTER_NPOINTS,172,34,65,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_FITTER_MINX,61,71,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_MAXX,172,71,65,12,ES_AUTOHSCROLL
+    CONTROL         "&Mask",IDK_FITTER_MASK,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,303,73,27,8
+    EDITTEXT        IDE_FITTER_BASELINE0,61,130,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_BASELINE1,172,130,65,12,ES_AUTOHSCROLL
+    CONTROL         "Base&line",IDK_FITTER_BASELINE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,201,152,36,8
+    LTEXT           "Savitzky-Golay",IDC_STATIC,262,120,64,8
+    EDITTEXT        IDE_FITTER_FILTER,318,130,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "&Filter",IDK_FITTER_FILTER,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,302,152,28,8
+    PUSHBUTTON      "&Baseline && Filter",ID_FITTER_PROCESS,17,195,84,16,BS_FLAT
+    PUSHBUTTON      "&Undo",ID_UNDO,277,195,84,16,BS_FLAT
+    CTEXT           "X-Range",IDC_STATIC,118,59,51,8
+    GROUPBOX        "Baseline && Filter",IDC_STATIC,17,106,344,68,BS_CENTER
+    RTEXT           "Y0:",IDC_STATIC,43,132,13,8
+    RTEXT           "Slope:",IDC_STATIC,148,132,20,8
+    GROUPBOX        "Data mask",IDC_STATIC,17,16,344,80,BS_CENTER
+    RTEXT           "From:",IDC_STATIC,32,72,24,8
+    RTEXT           "To:",IDC_STATIC,144,72,24,8
+    RTEXT           "Filter order:",IDC_STATIC,262,132,51,8
+    RTEXT           "Points #:",IDC_STATIC,133,36,35,8
+    RTEXT           "Curve:",IDC_STATIC,33,36,23,8
+    CTEXT           "",IDL_FITTER_OUTPUT,108,199,163,8
+END
+
+IDD_FITTER_MODEL DIALOGEX 0, 0, 379, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Fitting Model & Parameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "?",ID_HELP_CONTENTS,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,365,0,14,14
+    CONTROL         "",IDL_FITTER_MODEL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,26,189,102
+    CONTROL         IDB_FITTER_MODEL01,IDF_FITTER_MODEL,"Static",SS_BITMAP | SS_CENTERIMAGE | WS_BORDER,6,132,189,51
+    CONTROL         "User defined model",IDK_USERMODEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,192,77,8
+    COMBOBOX        IDC_USERMODEL_LIST,6,206,189,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Edit...",ID_USERMODEL_EDIT,152,188,44,12,BS_FLAT
+    EDITTEXT        IDE_CURVE,32,8,56,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_FITTER_NPOINTS,160,8,35,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Show Report on Graph",IDK_FITTER_REPORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,202,159,113,8
+    EDITTEXT        IDE_FITTER_MINX,213,18,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_MAXX,294,18,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARA,213,72,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARB,294,72,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARC,213,107,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARD,294,107,71,12,ES_AUTOHSCROLL
+    CONTROL         "Fixed",IDK_FITTER_FIXEDA,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,253,60,31,8
+    CONTROL         "",IDK_FITTER_FIXEDB,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,334,60,31,8
+    CONTROL         "",IDK_FITTER_FIXEDC,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,253,95,31,8
+    CONTROL         "",IDK_FITTER_FIXEDD,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,334,95,31,8
+    PUSHBUTTON      "Next >>",ID_FITTER_NEXTPAR,294,132,71,12,BS_FLAT
+    EDITTEXT        IDE_FITTER_ITER,230,176,29,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_FITTER_CHI2,292,176,74,12,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "&Fit",ID_FITTER_FIT,205,205,50,15,BS_FLAT
+    PUSHBUTTON      "&Guess",ID_FITTER_AUTOPAR,264,205,50,15,BS_FLAT
+    PUSHBUTTON      "&Reset",ID_FITTER_RESET,323,205,50,15,BS_FLAT
+    LTEXT           "a",IDL_FITTER_PARA,213,60,28,8
+    LTEXT           "b",IDL_FITTER_PARB,294,60,28,8
+    LTEXT           "c",IDL_FITTER_PARC,213,94,28,8
+    LTEXT           "d",IDL_FITTER_PARD,294,94,28,8
+    CONTROL         "Plot Peak Curves",IDK_FITTER_SHOWPEAKS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,132,80,12
+    GROUPBOX        "Fitting Parameters",IDL_FITTER_PARTITLE,202,42,172,112
+    RTEXT           "Iter",IDC_STATIC,210,178,14,8
+    RTEXT           "Chi�",IDC_STATIC,266,178,18,8
+    RTEXT           "Fitting points:",IDC_STATIC,110,9,46,8
+    RTEXT           "Curve:",IDC_STATIC,4,9,23,8
+    CTEXT           "Fitting Interval",IDC_STATIC,250,5,77,8
+END
+
+IDD_SERIES DIALOGEX 0, 0, 242, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Series"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_SERIES_FROM,51,8,62,13,ES_AUTOHSCROLL
+    CONTROL         "",IDK_SERIES_TO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,139,10,11,10
+    EDITTEXT        IDE_SERIES_TO,171,8,62,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_SERIES_INCREMENT,51,33,62,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_SERIES_MULTIPLIER,171,33,62,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,109,60,56,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,179,60,56,14
+    RTEXT           "From:",IDC_STATIC,13,10,33,8
+    RTEXT           "To:",IDC_STATIC,151,10,15,8
+    RTEXT           "Multiplier:",IDC_STATIC,127,35,39,8
+    RTEXT           "Increment:",IDC_STATIC,6,35,40,8
+END
+
+IDD_TEXT DIALOGEX 0, 0, 239, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_INPUT,38,8,193,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_INPUT_FONTCOLOR,38,29,43,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Font...",ID_INPUT_FONTCHOOSE,37,49,44,14,BS_FLAT
+    CONTROL         "0�",IDO_TEXT_ORIENT00,"Button",BS_AUTORADIOBUTTON | WS_GROUP,145,30,21,8
+    CONTROL         "90�",IDO_TEXT_ORIENT90,"Button",BS_AUTORADIOBUTTON,176,30,21,8
+    CONTROL         "270�",IDO_TEXT_ORIENT270,"Button",BS_AUTORADIOBUTTON,207,30,29,8
+    DEFPUSHBUTTON   "&OK",IDOK,136,51,44,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,187,51,44,14
+    RTEXT           "Text:",IDL_INPUT,3,9,29,8
+    LTEXT           "Orientation:",IDC_STATIC,98,30,40,8
+    RTEXT           "Color:",IDC_STATIC,3,31,29,8
+END
+
+IDD_COLUMN DIALOGEX 0, 0, 249, 98
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Column Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "&Label",IDO_COLUMN_SHOWLABEL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,144,9,30,8
+    CONTROL         "&Name",IDO_COLUMN_SHOWNAME,"Button",BS_AUTORADIOBUTTON,179,9,30,8
+    CONTROL         "&Both",IDO_COLUMN_SHOWBOTH,"Button",BS_AUTORADIOBUTTON,214,9,30,8
+    CONTROL         "",IDS_COLUMN_CURRENT,"msctls_updown32",UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HORZ,7,80,28,13
+    COMBOBOX        IDC_COLUMN_FORMAT,36,30,71,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_COLUMN_LABEL,36,8,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_COLUMN_PREFIX,139,30,21,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_COLUMN_SUFFIX,192,30,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "&X",IDO_COLUMN_X,"Button",BS_AUTORADIOBUTTON | WS_GROUP,38,53,19,8
+    CONTROL         "&Y",IDO_COLUMN_Y,"Button",BS_AUTORADIOBUTTON,65,53,23,8
+    CONTROL         "X &Err",IDO_COLUMN_BARX,"Button",BS_AUTORADIOBUTTON,96,53,31,8
+    CONTROL         "Y E&rr",IDO_COLUMN_BARY,"Button",BS_AUTORADIOBUTTON,135,53,31,8
+    PUSHBUTTON      "&Apply",IDAPPLY,76,79,50,14
+    DEFPUSHBUTTON   "&OK",IDOK,133,79,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,190,79,50,14
+    RTEXT           "Format:",IDC_STATIC,4,32,27,9
+    RTEXT           "Suf:",IDC_STATIC,170,32,16,9
+    RTEXT           "Pre:",IDC_STATIC,119,32,16,9
+    RTEXT           "Label:",IDC_STATIC,6,10,25,9
+    RTEXT           "Show:",IDC_STATIC,114,9,24,8
+    RTEXT           "Type:",IDC_STATIC,4,53,27,9
+END
+
+IDD_FORMULA DIALOGEX 0, 0, 253, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Column Values"
+MENU IDM_FORMULA
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_FORMULA,45,29,195,12,ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN
+    EDITTEXT        IDE_ROW_FROM,45,8,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_ROW_TO,106,8,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Apply",IDAPPLY,70,52,51,14
+    PUSHBUTTON      "&OK",IDOK,130,52,51,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,190,52,51,14
+    RTEXT           "From row:",IDC_STATIC,3,10,38,8
+    RTEXT           "To:",IDC_STATIC,84,10,17,8
+    RTEXT           "CX = ",IDL_FORMULA,3,31,38,8
+END
+
+IDD_ADDCURVE DIALOGEX 0, 0, 239, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add/Remove Curve"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDL_COLUMN_X,8,18,106,36,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDL_COLUMN_Y,123,18,106,36,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_STYLE,51,85,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_LINESIZE,112,85,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_LINECOLOR,171,85,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DOT_STYLE,51,105,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DOTSIZE,112,105,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DOTCOLOR,171,105,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "X-Y",IDO_CURVE_AXISXY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,129,27,8
+    CONTROL         "X-Y2",IDO_CURVE_AXISXY2,"Button",BS_AUTORADIOBUTTON,86,129,29,8
+    CONTROL         "X2-Y",IDO_CURVE_AXISX2Y,"Button",BS_AUTORADIOBUTTON,124,129,29,8
+    CONTROL         "X2-Y2",IDO_CURVE_AXISX2Y2,"Button",BS_AUTORADIOBUTTON,162,129,34,8
+    DEFPUSHBUTTON   "&Add",ID_CURVE_ADD,55,158,52,14
+    PUSHBUTTON      "&Remove",ID_CURVE_REMOVE,116,158,52,14
+    PUSHBUTTON      "C&lose",IDOK,177,158,52,14
+    LTEXT           "Column-Y",IDC_STATIC,123,6,31,8
+    RTEXT           "",IDL_ADDCURVE_OUTPUT,10,145,215,8
+    RTEXT           "Line:",IDC_STATIC,22,88,22,8
+    RTEXT           "Symbol:",IDC_STATIC,14,109,30,8
+    LTEXT           "Style",IDC_STATIC,51,73,21,8
+    LTEXT           "Color",IDC_STATIC,171,73,21,8
+    LTEXT           "Size",IDC_STATIC,112,73,34,8
+    LTEXT           "Column-X",IDC_STATIC,8,6,31,8
+    GROUPBOX        "Curve Properties",IDC_STATIC,8,59,221,84,BS_LEFT
+    RTEXT           "Axes:",IDC_STATIC,20,129,24,8
+END
+
+IDD_INPUT_TEXT DIALOGEX 0, 0, 198, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_INPUT1,88,7,100,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_INPUT2,88,26,100,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,88,47,44,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,144,47,44,14
+    RTEXT           "Input:",IDL_INPUT1,3,9,80,8
+    RTEXT           "Input:",IDL_INPUT2,3,28,80,8
+END
+
+IDD_GEOMETRIC_LINE DIALOGEX 0, 0, 207, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Line Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_LINE_STYLE,48,19,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_SIZE,100,19,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_COLOR,150,19,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Begin",IDO_ARROW_BEGIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,48,42,33,9
+    CONTROL         "&End",IDO_ARROW_END,"Button",BS_AUTORADIOBUTTON,84,42,33,9
+    CONTROL         "B&oth",IDO_ARROW_BOTH,"Button",BS_AUTORADIOBUTTON,121,42,33,9
+    CONTROL         "&None",IDO_ARROW_NONE,"Button",BS_AUTORADIOBUTTON,48,56,33,9
+    CONTROL         "",IDO_ARROW_STYLE00,"Button",BS_AUTORADIOBUTTON | WS_GROUP,170,42,12,9
+    CONTROL         "",IDO_ARROW_STYLE01,"Button",BS_AUTORADIOBUTTON,170,56,12,9
+    PUSHBUTTON      "&Apply",IDAPPLY,25,77,50,14
+    DEFPUSHBUTTON   "&OK",IDOK,84,77,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,143,77,50,14
+    LTEXT           "Style",IDC_STATIC,48,7,21,8
+    LTEXT           "Color",IDC_STATIC,150,7,21,8
+    LTEXT           "Size",IDC_STATIC,100,7,34,8
+    RTEXT           "Line:",IDC_STATIC,16,21,22,9
+    RTEXT           "Arrow:",IDC_STATIC,12,42,26,9
+    CONTROL         IDB_ARROW_STYLE00,IDC_STATIC,"Static",SS_BITMAP,185,44,9,7
+    CONTROL         IDB_ARROW_STYLE01,IDC_STATIC,"Static",SS_BITMAP,185,58,9,7
+END
+
+IDD_GEOMETRIC_RECT DIALOGEX 0, 0, 217, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rectangle Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_LINE_STYLE,11,21,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_SIZE,62,21,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_COLOR,111,21,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILL_COLOR,162,21,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Fill",IDK_FILL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,40,24,10
+    PUSHBUTTON      "&Apply",IDAPPLY,42,63,49,14
+    DEFPUSHBUTTON   "&OK",IDOK,100,63,49,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,158,63,49,14
+    LTEXT           "Style",-1,11,8,21,8
+    LTEXT           "Color",-1,111,8,21,8
+    LTEXT           "Size",-1,62,8,34,8
+    LTEXT           "Fill Color",-1,162,8,37,8
+END
+
+IDD_IMPORT_DROP DIALOGEX 0, 0, 329, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import ASCII"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,195,66,54,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,262,66,54,14
+    EDITTEXT        IDE_ASCII_FILENAME,49,7,267,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_ASCII_FILEINFO,49,25,267,13,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_ASCII_SEP,11,65,49,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_ASCII_SKIP,77,65,29,13,ES_MULTILINE | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "&Read Titles",IDK_ASCII_READTITLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,67,49,10
+    RTEXT           "File Name:",IDC_STATIC,9,9,35,8
+    LTEXT           "ASCII Delimiter",IDC_STATIC,11,52,52,8
+    LTEXT           "Rows to skip",IDC_STATIC,77,53,45,8
+    RTEXT           "File Info:",IDC_STATIC,9,27,35,8
+END
+
+IDD_FITTER_REPORT DIALOGEX 0, 0, 264, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fit Report"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDS_FITREPORT_CURVE,"msctls_updown32",UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HORZ,51,43,28,13
+    CONTROL         IDB_FITTER_MODEL01,IDF_FITTER_MODEL,"Static",SS_BITMAP | SS_CENTERIMAGE | WS_BORDER,85,5,173,51
+    EDITTEXT        IDE_CURVE,5,26,74,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDE_FITREPORT,5,61,253,58,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "&Close",IDOK,209,126,50,14
+    RTEXT           "Curve",IDC_STATIC,5,14,20,8
+    RTEXT           "Model:",IDC_STATIC,53,6,27,8
+END
+
+IDD_FITTER_OPTIONS DIALOGEX 0, 0, 379, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Fitting Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "?",ID_HELP_CONTENTS,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,365,0,14,14
+    EDITTEXT        IDE_FITTER_ITER,68,74,65,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_FITTER_LAMBDA,216,74,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_TOL,68,150,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_RELTOL,216,150,65,12,ES_AUTOHSCROLL
+    LTEXT           "Maximum number of iterations",IDC_STATIC,68,62,106,8
+    LTEXT           "Fitting Algorithm Parameter",IDC_STATIC,216,62,95,8
+    LTEXT           "Between 1e-12 and 1e12",IDC_STATIC,216,90,94,8
+    LTEXT           "Tolerance",IDC_STATIC,68,138,54,8
+    LTEXT           "Relative Tolerance",IDC_STATIC,216,138,74,8
+END
+
+IDD_ERRORBAR DIALOGEX 0, 0, 253, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Error Bar Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "&X Err",IDO_ERRBAR_X,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,11,29,8
+    CONTROL         "&Y Err",IDO_ERRBAR_Y,"Button",BS_AUTORADIOBUTTON,50,11,30,8
+    CONTROL         "&% of Value:",IDO_ERRBAR_PERCENT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,125,11,49,8
+    CONTROL         "&Fixed Value:",IDO_ERRBAR_FIXED,"Button",BS_AUTORADIOBUTTON,125,30,49,8
+    CONTROL         "Column &X:",IDO_ERRBAR_COLUMNX,"Button",BS_AUTORADIOBUTTON,125,49,43,8
+    CONTROL         "Column &Y:",IDO_ERRBAR_COLUMNY,"Button",BS_AUTORADIOBUTTON,125,68,43,8
+    EDITTEXT        IDE_ERRBAR_PERCENT,181,9,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_ERRBAR_FIXED,181,28,62,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ERRBAR_COLUMNX,181,46,62,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ERRBAR_COLUMNY,181,65,62,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_STYLE,34,27,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ERRBAR_LINECOLOR,34,46,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_SIZE,34,65,44,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&Add",IDOK,71,95,50,14
+    PUSHBUTTON      "&Remove",ID_ERRBAR_REMOVE,132,95,50,14
+    PUSHBUTTON      "&Close",IDCANCEL,193,95,50,14
+    RTEXT           "Style:",IDC_STATIC,8,29,21,8
+    RTEXT           "Color:",IDC_STATIC,8,48,21,8
+    RTEXT           "Size:",IDC_STATIC,8,67,21,8
+END
+
+IDD_INPUT_REAL DIALOGEX 0, 0, 155, 69
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_INPUT1,84,8,61,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_INPUT2,84,27,61,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,51,50,44,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,101,49,44,14
+    RTEXT           "Input:",IDL_INPUT1,4,10,75,8
+    RTEXT           "Input:",IDL_INPUT2,4,29,75,8
+END
+
+IDD_NUMPAD DIALOGEX 0, 0, 85, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Numeric Keypad"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "=",ID_INPUT_EQUAL,64,80,17,16,BS_FLAT
+    PUSHBUTTON      "0",ID_INPUT_ZERO,4,61,17,16,BS_FLAT
+    PUSHBUTTON      "1",ID_INPUT_ONE,4,42,17,16,BS_FLAT
+    PUSHBUTTON      "2",ID_INPUT_TWO,24,42,17,16,BS_FLAT
+    PUSHBUTTON      "3",ID_INPUT_THREE,44,42,17,16,BS_FLAT
+    PUSHBUTTON      "4",ID_INPUT_FOUR,4,23,17,16,BS_FLAT
+    PUSHBUTTON      "5",ID_INPUT_FIVE,24,23,17,16,BS_FLAT
+    PUSHBUTTON      "6",ID_INPUT_SIX,44,23,17,16,BS_FLAT
+    PUSHBUTTON      "7",ID_INPUT_SEVEN,4,4,17,16,BS_FLAT
+    PUSHBUTTON      "8",ID_INPUT_EIGHT,24,4,17,16,BS_FLAT
+    PUSHBUTTON      "9",ID_INPUT_NINE,44,4,17,16,BS_FLAT
+    PUSHBUTTON      "/",ID_INPUT_DIV,64,4,17,16,BS_FLAT
+    PUSHBUTTON      "*",ID_INPUT_MULT,64,23,17,16,BS_FLAT
+    PUSHBUTTON      "-",ID_INPUT_MINUS,64,42,17,16,BS_FLAT
+    PUSHBUTTON      "+",ID_INPUT_PLUS,64,61,17,16,BS_FLAT
+    PUSHBUTTON      ".",ID_INPUT_DOT,44,61,17,16,BS_FLAT
+    PUSHBUTTON      "E",ID_INPUT_EXP,24,61,17,16,BS_FLAT
+    PUSHBUTTON      "(",ID_INPUT_PARENTH1,4,80,17,16,BS_FLAT
+    PUSHBUTTON      ")",ID_INPUT_PARENTH2,24,80,17,16,BS_FLAT
+    PUSHBUTTON      "C",ID_INPUT_BACK,44,80,17,16,BS_FLAT
+END
+
+IDD_SCRIPT DIALOGEX 0, 0, 320, 480
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "SigmaGraph Script"
+MENU IDM_SCRIPT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_MATH DIALOGEX 0, 0, 235, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Analysis"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_ANALYSIS_OPERATION,95,9,128,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDL_ANALYSIS_INPUT,10,45,101,40,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&New",IDK_ANALYSIS_NEWCOLUMN,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,193,33,30,8
+    LISTBOX         IDL_ANALYSIS_OUTPUT,122,45,101,40,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Add To &Graph",IDK_ANALYSIS_ADDCURVE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,162,89,61,8
+    LTEXT           "",IDL_ANALYSIS_AVG,115,113,18,8
+    CONTROL         "",IDS_ANALYSIS_AVG,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,98,109,13,17
+    CONTROL         "Shift FFT",IDK_ANALYSIS_FFTSHIFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,113,45,8
+    DEFPUSHBUTTON   "&Calculate",ID_ANALYSIS_CALC,95,152,60,14
+    PUSHBUTTON      "C&lose",IDOK,164,152,60,14
+    RTEXT           "Operation on column:",IDC_STATIC,19,11,71,8
+    LTEXT           "Input Column",IDC_STATIC,10,33,44,8
+    LTEXT           "Output Column",IDC_STATIC,123,33,54,8
+    GROUPBOX        "Parameters",IDC_STATIC,10,100,214,31
+    RTEXT           "Averaging Order:",IDC_STATIC,30,113,63,10
+    LTEXT           "",IDE_ANALYSIS_OUTPUT,10,135,214,8
+END
+
+IDD_SCRIPT_FAVORITE DIALOGEX 0, 0, 217, 147
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Script Favorites"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDL_SCRIPT_FAVORITE,5,6,140,110,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "L&oad",ID_SCRIPT_LOADFAV,153,6,58,14
+    PUSHBUTTON      "&Add...",ID_SCRIPT_ADDFAV,153,24,58,14
+    PUSHBUTTON      "&Remove",ID_SCRIPT_REMFAV,153,41,58,14
+    PUSHBUTTON      "&Up",ID_SCRIPT_UPFAV,153,59,58,14
+    PUSHBUTTON      "&Down",ID_SCRIPT_DOWNFAV,153,77,58,14
+    PUSHBUTTON      "C&lose",IDOK,153,103,58,14
+    CONTROL         "Load",IDK_SCRIPT_AUTOLOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,121,29,8
+    CONTROL         "Run",IDK_SCRIPT_AUTORUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,121,29,8
+    LTEXT           "",IDL_FAV_OUTPUT,5,137,205,8
+    LTEXT           "Auto",IDC_STATIC,7,121,16,8
+    LTEXT           "on startup",IDC_STATIC,96,121,34,8
+END
+
+IDD_PLOTOPT_LINE DIALOGEX 0, 0, 340, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Lines"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "?",ID_HELP_CONTENTS,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,326,0,14,14
+    CONTROL         "Horizontal",IDO_LINE_HORZ,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,21,49,8
+    CONTROL         "Vertical",IDO_LINE_VERT,"Button",BS_AUTORADIOBUTTON,69,21,39,8
+    COMBOBOX        IDC_LINE,150,19,38,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",ID_LINE_ADD,208,18,53,14
+    PUSHBUTTON      "&Remove",ID_LINE_REMOVE,266,18,53,14
+    COMBOBOX        IDC_LINE_SIZE,170,74,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_COLOR,275,74,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_LINE_POS,61,111,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_LINE_MIN,158,111,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_LINE_MAX,265,111,54,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set as &default",ID_LINE_DEFAULT,9,160,77,14
+    PUSHBUTTON      "Apply To &All Lines",ID_LINE_APPLYALL,255,160,77,14
+    RTEXT           "Style:",IDC_STATIC,45,76,21,9
+    RTEXT           "Color:",IDC_STATIC,249,76,21,8
+    RTEXT           "Line #",IDC_STATIC,123,21,22,8
+    RTEXT           "Size:",IDC_STATIC,142,76,23,8
+    RTEXT           "Position:",IDC_STATIC,25,112,31,8
+    RTEXT           "Min.:",IDC_STATIC,132,112,21,8
+    RTEXT           "Max.:",IDC_STATIC,236,112,24,8
+    COMBOBOX        IDC_LINE_STYLE,71,74,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Line Properties",IDC_STATIC,9,37,321,117
+END
+
+IDD_PLOTOPT_CURVE DIALOGEX 0, 0, 340, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Curves"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "?",ID_HELP_CONTENTS,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,326,0,14,14
+    COMBOBOX        IDC_CURVE,11,22,38,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_CURVE_LEGEND,59,22,98,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Show &Legend:",IDK_CURVE_LEGEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,59,9,58,8
+    PUSHBUTTON      "Font...",ID_CURVE_FONT,123,6,35,13,BS_FLAT
+    PUSHBUTTON      "&Set as active",ID_CURVE_ACTIVE,168,21,51,14
+    PUSHBUTTON      "&Hide/Show",ID_CURVE_HIDE,223,21,51,14
+    PUSHBUTTON      "&Remove",ID_CURVE_REMOVE,278,21,51,14
+    COMBOBOX        IDC_CURVE_LINESTYLE,75,69,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_LINESIZE,143,68,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_LINECOLOR,209,68,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_CONNECTSTYLE,275,68,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DOTSTYLE,75,89,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DOTSIZE,143,89,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DOTCOLOR,209,89,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DROPVSTYLE,75,110,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DROPSIZE,143,110,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DROPCOLOR,209,110,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DROPHSTYLE,75,131,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DROPSIZEH,143,131,42,13,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE_DROPCOLORH,209,131,44,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Axes:",IDC_STATIC,272,89,23,8
+    CONTROL         "X-Y",IDO_CURVE_AXISXY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,275,102,27,8
+    CONTROL         "X-Y2",IDO_CURVE_AXISXY2,"Button",BS_AUTORADIOBUTTON,275,115,29,8
+    CONTROL         "X2-Y",IDO_CURVE_AXISX2Y,"Button",BS_AUTORADIOBUTTON,275,128,29,8
+    CONTROL         "X2-Y2",IDO_CURVE_AXISX2Y2,"Button",BS_AUTORADIOBUTTON,275,141,34,8
+    PUSHBUTTON      "Set as &default",ID_CURVE_DEFAULT,9,160,77,14
+    PUSHBUTTON      "Apply To &All Curves",ID_CURVE_APPLYALL,255,160,77,14
+    RTEXT           "Line:",IDC_STATIC,47,69,22,9
+    RTEXT           "Symbol:",IDC_STATIC,39,91,30,9
+    LTEXT           "Style",IDC_STATIC,76,53,21,9
+    LTEXT           "Color",IDC_STATIC,208,53,21,9
+    LTEXT           "Connect",IDC_STATIC,275,53,35,9
+    RTEXT           "Drop Lines X:",IDC_STATIC,17,113,52,9
+    CTEXT           "Curve",IDC_STATIC,11,10,22,8
+    LTEXT           "Size",IDC_STATIC,143,53,34,9
+    RTEXT           "Drop Lines Y:",IDC_STATIC,19,133,50,9
+    GROUPBOX        "Curve Properties",IDC_STATIC,9,40,321,114
+END
+
+IDD_TEMPLATES DIALOGEX 0, 0, 228, 257
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Templates Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDL_TEMPLATE_LIST,3,6,145,88,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "A&pply",ID_TEMPLATE_APPLY,158,6,61,15
+    PUSHBUTTON      "&Add",ID_TEMPLATE_ADD,158,24,61,15
+    PUSHBUTTON      "&Remove",ID_TEMPLATE_REMOVE,158,42,61,15
+    PUSHBUTTON      "&Edit",ID_TEMPLATE_EDIT,158,60,61,15
+    CONTROL         "Default",IDK_TEMPLATE_DEFAULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,85,43,8
+    CONTROL         "",IDF_TEMPLATE_PLOT,"Static",SS_GRAYFRAME | WS_BORDER,0,99,227,158
+END
+
+IDD_VARLIST DIALOGEX 0, 0, 111, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Variables"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDL_VARLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,111,111
+    PUSHBUTTON      "&Refresh",ID_VARLIST_REFRESH,0,114,34,14
+    PUSHBUTTON      "&Add",ID_VARLIST_SET,38,114,34,14
+    PUSHBUTTON      "&Delete",ID_VARLIST_UNSET,76,114,34,14
+END
+
+IDD_INPUT_VARIABLE DIALOGEX 0, 0, 143, 23
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Variable Value"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_INPUT,5,6,76,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,87,5,52,14
+END
+
+IDD_INPUT_VARSET DIALOGEX 0, 0, 178, 31
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Variable"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDE_INPUT_NAME,4,15,55,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_INPUT_VALUE,62,15,64,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,128,14,45,14
+    LTEXT           "Name",IDC_STATIC,4,3,19,8
+    LTEXT           "Value",IDC_STATIC,62,3,18,8
+END
+
+IDD_FITTER_USERMODEL DIALOGEX 0, 0, 247, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fitter: User defined models"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_USERMODEL_LIST,10,9,226,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_USERMODEL_NAME,10,24,226,12,ES_AUTOHSCROLL
+    LTEXT           "2",IDL_USERMODEL_PARAMCOUNT,223,51,11,8
+    CONTROL         "",IDS_USERMODEL_PARAMCOUNT,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,208,49,12,12
+    EDITTEXT        IDE_USERMODEL_FUNCTION,10,65,226,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_USERMODEL_DERIVATIVE,10,94,182,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_USERMODEL_DERIVATIVE,195,94,41,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_FITTER_PARA,32,132,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARB,105,132,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARC,178,132,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARD,32,150,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARE,105,150,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_FITTER_PARF,178,150,50,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "&Update",ID_USERMODEL_UPDATE,9,178,52,15,BS_FLAT
+    PUSHBUTTON      "&Add",ID_USERMODEL_ADD,68,178,52,15,BS_FLAT
+    PUSHBUTTON      "&Remove",ID_USERMODEL_REMOVE,127,178,52,15,BS_FLAT
+    DEFPUSHBUTTON   "OK",IDOK,186,178,52,15,WS_GROUP
+    LTEXT           "Function",IDC_STATIC,10,54,28,8
+    LTEXT           "Parameters #:",IDC_STATIC,155,51,48,8
+    LTEXT           "Derivative",IDC_STATIC,10,83,39,8
+    RTEXT           "a",IDC_STATIC,16,133,10,8
+    RTEXT           "b",IDC_STATIC,90,133,10,8
+    RTEXT           "d",IDC_STATIC,16,152,10,8
+    RTEXT           "e",IDC_STATIC,90,152,10,8
+    RTEXT           "c",IDC_STATIC,163,133,10,8
+    RTEXT           "f",IDC_STATIC,163,152,10,8
+    GROUPBOX        "Parameters default values",IDC_STATIC,10,113,227,58
+END
+
+IDD_SCINTILLA_FINDDLGORD DIALOGEX 100, 100, 236, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Fi&nd what:",-1,4,8,42,8
+    EDITTEXT        1152,47,7,128,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &whole word only",1040,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,4,26,100,12
+    CONTROL         "Match &case",1041,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,42,64,12
+    CONTROL         "Regular &expression",IDC_REGULAR_EXPRESSION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,58,83,12
+    GROUPBOX        "Direction",1072,107,26,68,28,WS_GROUP
+    CONTROL         "&Up",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP,111,38,25,12
+    CONTROL         "&Down",1057,"Button",BS_AUTORADIOBUTTON,138,38,35,12
+    DEFPUSHBUTTON   "&Find Next",IDOK,182,7,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,182,30,50,14
+    PUSHBUTTON      "&Help",1038,182,55,50,14
+END
+
+IDD_SCINTILLA_REPLACEDLGORD DIALOGEX 100, 100, 230, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Fi&nd what:",-1,4,9,48,8
+    EDITTEXT        1152,54,7,114,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Re&place with:",-1,4,26,48,8
+    EDITTEXT        1153,54,24,114,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &whole word only",1040,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,44,104,12
+    CONTROL         "Match &case",1041,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,61,59,12
+    CONTROL         "Regular &expression",IDC_REGULAR_EXPRESSION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,77,83,12
+    DEFPUSHBUTTON   "&Find Next",IDOK,174,4,50,14,WS_GROUP
+    PUSHBUTTON      "&Replace",1024,174,21,50,14
+    PUSHBUTTON      "Replace &All",1025,174,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,55,50,14
+    PUSHBUTTON      "&Help",1038,174,75,50,14
+END
+
+IDD_SCRIPT_COLORS DIALOGEX 100, 100, 190, 196
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Colors and Font Style"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Colors and Font Style",IDC_STATIC,10,4,170,170,BS_CENTER
+    RTEXT           "Default:",IDL_SCRIPT_FONTSTYLE_DEF,12,20,66,12
+    RTEXT           "Keyword:",IDL_SCRIPT_FONTSTYLE_KEY,12,42,66,12
+    RTEXT           "String:",IDL_SCRIPT_FONTSTYLE_STR,12,64,66,12
+    RTEXT           "Number:",IDL_SCRIPT_FONTSTYLE_NUM,12,86,66,12
+    RTEXT           "Comment:",IDL_SCRIPT_FONTSTYLE_COM,12,108,66,12
+    RTEXT           "Library:",IDL_SCRIPT_FONTSTYLE_LIB,12,130,66,12
+    RTEXT           "Line Numbers:",IDL_SCRIPT_FONTSTYLE_LINENUM,12,152,66,12
+    COMBOBOX        ID_SCRIPT_COLOR_DEF,82,20,50,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_SCRIPT_COLOR_KEY,82,42,50,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_SCRIPT_COLOR_STR,82,64,50,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_SCRIPT_COLOR_NUM,82,86,50,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_SCRIPT_COLOR_COM,82,108,50,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_SCRIPT_COLOR_LIB,82,130,50,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_SCRIPT_COLOR_LINENUM,82,152,50,12,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Bold",IDK_SCRIPT_FONTSTYLE_DEF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,20,30,12
+    CONTROL         "",IDK_SCRIPT_FONTSTYLE_KEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,42,30,12
+    CONTROL         "",IDK_SCRIPT_FONTSTYLE_STR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,64,30,12
+    CONTROL         "",IDK_SCRIPT_FONTSTYLE_NUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,86,30,12
+    CONTROL         "",IDK_SCRIPT_FONTSTYLE_COM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,108,30,12
+    CONTROL         "",IDK_SCRIPT_FONTSTYLE_LIB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,130,30,12
+    CONTROL         "",IDK_SCRIPT_FONTSTYLE_LINENUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,152,30,12
+    PUSHBUTTON      "&OK",IDOK,130,178,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,70,178,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,6,10,0
+ PRODUCTVERSION 2,6,10,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Data Plotting and Analysis Software"
+            VALUE "CompanyName", "Sidi OULD SAAD HAMADY"
+            VALUE "FileDescription", "Data Plotting and Analysis Software"
+            VALUE "FileVersion", "2.6.10.0"
+            VALUE "InternalName", "SigmaGraph.exe"
+            VALUE "LegalCopyright", "Copyright(C) 1997-2020  Pr. Sidi HAMADY"
+            VALUE "LegalTrademarks", "SigmaGraph"
+            VALUE "OriginalFilename", "SigmaGraph.exe"
+            VALUE "ProductName", "SigmaGraph"
+            VALUE "ProductVersion", "2.6.10.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_CONSOLE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 252
+    END
+
+    IDD_PLOTOPT_GENERAL, DIALOG
+    BEGIN
+    END
+
+    IDD_PLOTOPT_AXES, DIALOG
+    BEGIN
+    END
+
+    IDD_PLOTOPT_SCALE, DIALOG
+    BEGIN
+    END
+
+    IDD_NOTE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 217
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_STATS, DIALOG
+    BEGIN
+    END
+
+    IDD_IMPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_FITTER_FILTER, DIALOG
+    BEGIN
+    END
+
+    IDD_FITTER_MODEL, DIALOG
+    BEGIN
+    END
+
+    IDD_SERIES, DIALOG
+    BEGIN
+        RIGHTMARGIN, 233
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_TEXT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 230
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_COLUMN, DIALOG
+    BEGIN
+    END
+
+    IDD_FORMULA, DIALOG
+    BEGIN
+        RIGHTMARGIN, 252
+    END
+
+    IDD_ADDCURVE, DIALOG
+    BEGIN
+    END
+
+    IDD_INPUT_TEXT, DIALOG
+    BEGIN
+    END
+
+    IDD_GEOMETRIC_LINE, DIALOG
+    BEGIN
+    END
+
+    IDD_GEOMETRIC_RECT, DIALOG
+    BEGIN
+    END
+
+    IDD_IMPORT_DROP, DIALOG
+    BEGIN
+    END
+
+    IDD_FITTER_REPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_FITTER_OPTIONS, DIALOG
+    BEGIN
+    END
+
+    IDD_ERRORBAR, DIALOG
+    BEGIN
+    END
+
+    IDD_INPUT_REAL, DIALOG
+    BEGIN
+    END
+
+    IDD_NUMPAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_SCRIPT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 269
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_MATH, DIALOG
+    BEGIN
+    END
+
+    IDD_SCRIPT_FAVORITE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 208
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_PLOTOPT_LINE, DIALOG
+    BEGIN
+    END
+
+    IDD_PLOTOPT_CURVE, DIALOG
+    BEGIN
+    END
+
+    IDD_TEMPLATES, DIALOG
+    BEGIN
+        RIGHTMARGIN, 219
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_INPUT_VARIABLE, DIALOG
+    BEGIN
+    END
+
+    IDD_INPUT_VARSET, DIALOG
+    BEGIN
+    END
+
+    IDD_FITTER_USERMODEL, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "\nSigmaGraph\nSigmaGraph\nSigmaGraph Documents (*.sid)\n.sid\nSigmaGraph.Document\nSigmaGraph.Document"
+    IDR_DOCTYPE_DATA        "\nSigmaGraph\nSigmaGraph\nSigmaGraph Documents (*.sid)\n.sid\nSigmaGraph.Document\nSigmaGraph.Document"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_DOCTYPE_PLOT        "\nSigmaGraph\nSigmaGraph\nSigmaGraph Documents (*.sid)\n.sid\nSigmaGraph.Document\nSigmaGraph.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "SigmaGraph"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_AA         "                                       "
+    ID_INDICATOR_BB         "                                       "
+    ID_INDICATOR_ANGLEUNIT  "Radian  "
+    ID_INDICATOR_PAR        "                                       "
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Display the Index of the Help file\nDisplay Index"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_HELP                 "Shows the help file\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nShow ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nShow Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FITTER_FILTER        "Filter data\nFilter data"
+    ID_FITTER_BASELINE      "Substract baseline from data\nSubstract baseline from data"
+    ID_FITTER_LINEAR        "Linear Fitting\nLinear Fitting"
+    ID_FITTER_NONLINEAR     "Nonlinear Fitting\nNonlinear Fitting"
+    ID_FITTER_PEAK          "Lorentzian Fitting"
+    ID_FITTER_EXPONENTIAL   "Exponential Fit\nExponential Fit"
+    ID_FITTER_LOGARITHMIC   "Logarithmic Fit\nLogarithmic Fit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FITTER_POWER         "Power Fit\nPower Fit"
+    ID_FITTER_OPTIONS       "Fitting Options\nFitting Options"
+    ID_FITTER_POLYNOMIAL    "Polynomial Fitting\nPolynomial Fitting"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FITTER_LORENTZIAN    "Lorentzian Fitting\nLorentzian Fitting"
+    ID_DATA_IMPORT          "Import data from ASCII file\nImport data from ASCII file"
+    ID_DATA_IMPORTDLG       "Import data from ASCII file with options\nImport data from ASCII file with options"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_OUTPUT          "Show the output window\nShow Output Window"
+    ID_VIEW_CONSOLE         "Show the console window\nShow Console Window"
+    ID_VIEW_NOTE            "Show the note window\nShow Note Window"
+    ID_VIEW_PLOT            "Show the graph window\nShow Graph Window"
+    ID_VIEW_DATA            "Show the data window\nShow Data Window"
+    ID_VIEW_DATAFIT         "Show the fit window\nShow Fit Window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FITTER_NOTE          "Show the note window\nShow Note Window"
+    ID_DATA_STATS           "Show column statistics\nShow column statistics"
+    ID_DATA_COPY            "Copy\nCopy"
+    ID_FITTER_GAUSSIAN      "Gaussian Fitting\nGaussian Fitting"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PARSER_CONST13       "Planck constant (Js)"
+    ID_PARSER_CONST14       "Speed of Light in vacuum (m/s)"
+    ID_PARSER_CONST15       "Dielectric permittivity in vacuum (F/m)"
+    ID_PARSER_CONST16       "Avogadro constant (mole-1)"
+    ID_CONSOLE_RESET        "Reset console content"
+    ID_PARSER_RAD           "Angle in radian"
+    ID_PARSER_DEG           "Angle in degree"
+    ID_PARSER_GRAD          "Angle in grad"
+    ID_CONSOLE_FONT         "Set the console font"
+    ID_CONSOLE_FONTCOLOR    "Set the console font color"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CONSOLE_SAVEAS       "Save console content"
+    ID_CONSOLE_OPEN         "Open console file"
+    ID_CONSOLE_CLOSE        "Close the console window"
+    ID_CONSOLE_KEYPAD       "Show the Numeric Keypad\nShow the Numeric Keypad"
+    ID_PARSER_CONST10       "Elementary charge (C)"
+    ID_PARSER_CONST11       "Electron mass (kg)"
+    ID_PARSER_CONST12       "Boltzmann constant (J/K)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PARSER_FUNC20        "exp(x)"
+    ID_PARSER_FUNC30        "x^y"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PARSER_FUNC10        "ln(x)"
+    ID_PARSER_FUNC01        "sin(x)"
+    ID_PARSER_FUNC02        "cos(x)"
+    ID_PARSER_FUNC03        "tan(x)"
+    ID_PARSER_FUNC04        "asin(x)"
+    ID_PARSER_FUNC05        "acos(x)"
+    ID_PARSER_FUNC06        "atan(x)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PARSER_FUNC80        "sqrt(x)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PARSER_CONST01       "3.14159..."
+END
+
+STRINGTABLE
+BEGIN
+    ID_CONSOLE_CUT          "Cut"
+    ID_CONSOLE_COPY         "Copy"
+    ID_CONSOLE_PASTE        "Paste"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PLOT_OPTIONS         "Show the graph options\nShow the graph options"
+    ID_PLOT_AUTOSCALE       "Auto Scale\nAuto Scale"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLBAR              "Show or hide the standard toolbar\nShow Standard Toolbar"
+    ID_TOOLBAR_PLOT         "Show or hide the graph toolbar\nShow Graph Toolbar"
+    ID_TOOLBAR_FITTER       "Show or hide the fitting toolbar\nShow Fitting Toolbar"
+    ID_TOOLBAR_TOOLS        "Show or hide the tools toolbar\nShow Tools Toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PLOT_ZOOMIN          "Zoom In\nZoom In"
+    ID_PLOT_ZOOMOUT         "Zoom Out\nZoom Out"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FITTER_TRANSLATEH    "Translate data horizontally\nTranslate data horizontally"
+    ID_FITTER_TRANSLATEV    "Translate data vertically\nTranslate data vertically"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DATA_SORTASC         "Sort column - Ascending\nSort column - Ascending"
+    ID_DATA_SORTDESC        "Sort column - Descending\nSort column - Descending"
+    ID_DATA_CUT             "Cut\nCut"
+    ID_DATA_PASTE           "Paste\nPaste"
+    ID_DATA_SETCOLVAL       "Set column values\nSet column values"
+    ID_DATA_AUTORESIZE      "Automatically resize the datasheet cells\nAutoResize"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DATA_MASK            "Mask data\nMask data"
+    ID_DATA_UNMASK          "Unmask data\nUnmask data"
+    ID_DATA_INVERTMASK      "Invert mask\nInvert mask"
+    ID_DATA_APPENDCOL       "Append columns\nAppend columns"
+    ID_DATA_INSERTCOL       "Insert columns\nInsert columns"
+    ID_DATA_DELETECOL       "Delete columns\nDelete columns"
+    ID_DATA_INSERTROW       "Insert one row\nInsert one row"
+    ID_DATA_DELETEROW       "Delete row\nDelete row"
+    ID_DATA_APPENDROW       "Append rows\nAppend rows"
+    ID_DATA_CREATESERIES    "Create series\nCreate series"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PLOT_ADDTEXT         "Add text to graph\nAdd Text"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PLOT_ADDLINE         "Add line to graph\nAdd Line"
+    ID_PLOT_ADDRECT         "Add rectangle to graph\nAdd Rectangle"
+    ID_PLOT_ADDELLIPSE      "Add ellipse to graph\nAdd Ellipse"
+    ID_ITEM_REMOVE          "Remove item\nRemove item"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PLOT_ADDCURVE        "Add or Remove Curve\nAdd or Remove Curve"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_EXPORTG         "Export Graph to Bitmap File\nExport Graph to Bitmap File"
+    ID_FILE_EXPORTD         "Export Data to ASCII File\nExport Data to ASCII File"
+    ID_FILE_AUTOEXPORT      "Automatically Export Data to ASCII File and Plot to SVG File\nAuto Export Data and Plot"
+    ID_VIEW_INPUT           "View the Numeric Keypad\nView the Numeric Keypad"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLBAR_DATA         "Show or hide the data toolbar\nShow Data Toolbar"
+    ID_WINDOW_DUP           "Duplicate Datasheet\nDuplicate Datasheet"
+    ID_WINDOW_COPYFORMAT    "Copy the plot style\nCopy Style"
+    ID_WINDOW_CLOSEALL      "Close All Documents\nClose All Documents"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SCRIPT_NEW           "New Script\nNew Script"
+    ID_SCRIPT_SAVEAS        "Save Script\nSave Script"
+    ID_SCRIPT_OPEN          "Open Script\nOpen Script"
+    ID_SCRIPT_CLOSE         "Close the Script Window\nClose the Script Window"
+    ID_SCRIPT_RUN           "Run all the script\nRun all the script"
+    ID_SCRIPT_RUNLINE       "Run only the active line\nRun only the active line"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SCRIPT_ADDMARKER     "Add/Remove marker to/from the active line\nAdd/Remove marker"
+    ID_SCRIPT_NEXTMARKER    "Go the the next marker\nNext marker"
+    ID_SCRIPT_PREVMARKER    "Go the the previous marker\nPrevious marker"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SCRIPT_DELETEALLMARKERS "Remove all markers\nRemove all markers"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SCRIPT_COLOR_LINENUM "Show/hide line numbers\nLine numbers"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SCRIPT_ZOOMIN        "Zoom In\nZoom In"
+    ID_SCRIPT_ZOOMOUT       "Zoom Out\nZoom Out"
+    ID_SCRIPT_ZOOMNONE      "Normal viewing\nNormal viewing"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_SCRIPT          "Show the script window\nShow Script Window"
+    ID_SCRIPT_SAVE          "Save Script\nSave Script"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SCRIPT_RELOAD        "Reload script from file\nReload script"
+    ID_SCRIPT_LINE          "Line number\nLine number"
+    ID_EDIT_GOTO            "Goto line\nGoto line"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ANALYSIS_DIFF        "Numerically differentiate a column\nNumerically differentiate a column"
+    ID_ANALYSIS_INTEGRATE   "Numerically integrate a column\nNumerically integrate a column"
+    ID_ANALYSIS_AVERAGE     "Numerically average a column\nNumerically average a column"
+    ID_SCRIPT_FAVORITE      "Show the favorites window\nShow the favorites window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SCRIPT_RESET         "Reset the Script Engine\nReset the Script Engine"
+    ID_PLOT_TEMPLATES       "Show the graph templates manager\nShow the graph templates manager"
+    ID_PLOT_MASKTO          "Mask to this position\nMask to this position"
+    ID_PLOT_MASKFROM        "Mask from this position\nMask from this position"
+    ID_PLOT_UNMASK          "Unmask all data\nUnmask all data"
+    ID_ANALYSIS_FFT         "Fast Fourier Transform\nFast Fourier Transform"
+    ID_ANALYSIS_AUTOCORR    "Autocorrelation\nAutocorrelation"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SCRIPT_ADDFAV        "Add Script to Favorites\nAdd Script to Favorites"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR_DATA    "Show or hide the datasheet toolbar\nShow Datasheet ToolBar"
+    ID_VIEW_TOOLBAR_PLOT    "Show or hide the graph toolbar\nShow Graph ToolBar"
+    ID_VIEW_STATUSBAR       "Show or hide the statusbar\nShow Statusbar"
+    ID_PLOT_ADDHLINE        "Add Horizontal Line\nAdd Horizontal Line"
+    ID_PLOT_ADDVLINE        "Add Vertical Line\nAdd Vertical Line"
+    ID_VIEW_VARLIST         "Show the Variables List\nShow the Variables List"
+END
+
+STRINGTABLE
+BEGIN
+    ID_HELP_CONTENTS        "Display the Table of Contents of the Help file\nDisplay Contents"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""../Target/targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Sigma.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Sigma.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

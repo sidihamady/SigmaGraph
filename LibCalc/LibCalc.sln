@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 12.0.30110.0
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibMath", "LibMath\LibMath.vcxproj", "{C50811AE-7E4D-421D-9DFE-10679CC1876A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lua", "Lua\Lua.vcxproj", "{E1867E03-B560-4FFB-8609-112397833D89}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibElec", "LibElec\LibElec.vcxproj", "{41264192-D1D8-4CEF-B0C8-3757F259AC07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C50811AE-7E4D-421D-9DFE-10679CC1876A}.Release|Win32.ActiveCfg = Release|Win32
+		{C50811AE-7E4D-421D-9DFE-10679CC1876A}.Release|Win32.Build.0 = Release|Win32
+		{E1867E03-B560-4FFB-8609-112397833D89}.Release|Win32.ActiveCfg = Release|Win32
+		{E1867E03-B560-4FFB-8609-112397833D89}.Release|Win32.Build.0 = Release|Win32
+		{41264192-D1D8-4CEF-B0C8-3757F259AC07}.Release|Win32.ActiveCfg = Release|Win32
+		{41264192-D1D8-4CEF-B0C8-3757F259AC07}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

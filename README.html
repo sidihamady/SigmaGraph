@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1><a id="SigmaGraph_Data_Plotting_and_Analysis_Software_0"></a>SigmaGraph: Data Plotting and Analysis Software</h1>
+<p>(C) 1997-2020  Pr. Sidi HAMADY<br>
+<a href="http://www.hamady.org">http://www.hamady.org</a><br>
+<a href="mailto:sidi@hamady.org">sidi@hamady.org</a></p>
+<p>See Copyright Notice in COPYRIGHT</p>
+<p>SigmaGraph is a data plotting and analysis software designed to be lightweight, reliable and easy to use.<br>
+SigmaGraph runs on Windows XP, Vista and Windows 7/8/10. SigmaGraph offers almost all the functionality needed by scientists and engineers:</p>
+<ul>
+<li>editable datasheets (column properties, create series, set column values by using any mathematical expression, show column statistics, import/export from/to ASCII file, mask and unmask cells, printing, etc.);</li>
+<li>scientific graphing with a complete control of the graph (line/symbol style, colors, fonts, legends, axis properties, grid, tick, labels, scale, auto scale, log/linear scale, zoom in/out, copy format to another graph, export<br>
+as image, printing, graph templates, etc.);</li>
+<li>curve fitting (24 models including linear, polynomial, exponential, Gaussian (up to 5 peaks), Lorentzian (up to 5 peaks), Pearson VII, logistic, power, etc.);</li>
+<li>error bars (percentage, constant or any user defined data); drawing tools (line,rectangle, ellipse); mathematical console;</li>
+<li>powerful scripting engine; customizable script editor with syntax highlighting, code completion, etc.</li>
+</ul>
+<p>SigmaGraph is now open-source and released under the MIT license since its version 2.6.10.</p>
+<p><img src="screenshot.png" alt="SigmaGraph Screenshot"></p>
+<h2><a id="Install_20"></a>Install</h2>
+<p>To install SigmaGraph just copy the portable binary distribution from the Dist\SigmaGraph directory to any location (such as usb key)<br>
+and run SigmaGraph.exe (located in the bin directory). The zipped binary distribution is also available to download here: <a href="https://github.com/sidihamady/SigmaGraph/blob/master/Dist/sigmagraph.zip">Dist/sigmagraph.zip</a>.<br>
+The SigmaGraph documentation is included in the help directory.</p>
+<h2><a id="Build_27"></a>Build</h2>
+<p>SigmaGraph uses the Microsoft Foundation Classes (MFC) and Visual C++ (VC). The last VC version I used (and still using now (2018)) was Visual C++ 2013.</p>
+<p>If you do not have VC already installed, download the Community version of VC (included in Visual Studio) with the MFC libraries.</p>
+<p>All the build process is handled by the batch file msvcbuild.bat.<br>
+Edit msvcbuild.bat to adapt it to your VC configuration. Open the solutions to upgrade to the installed VC release.<br>
+The MFC is statically linked to the SigmaGraph modules.</p>
+<p>When ready, open a VC developper command prompt and run msvcbuild.bat.<br>
+The binary distribution is built and copied to the Dist\SigmaGraph directory.<br>
+Just copy this distribution directory ( Dist\SigmaGraph ) to any location (usb key for instance) to use SigmaGraph.<br>
+The zipped binary distribution is also available to download here: <a href="https://github.com/sidihamady/SigmaGraph/blob/master/Dist/sigmagraph.zip">Dist/sigmagraph.zip</a></p>
+<p>SigmaGraph consists of the following modules (each in a separate VC solution):</p>
+<ul>
+<li>LibCalc: Mathematical and scientific routines and the Lua engine.</li>
+<li>LibGraph: 2D plotting core.</li>
+<li>LibScintilla: Lua editor control.</li>
+<li>SigmaConsole: the mathematical expression-based calculator.</li>
+<li>SigmaGraph: the SigmaGraph main module.</li>
+</ul>
+<p>I have been commenting the code, sometimes in french and in english sometimes. As far as possible, I will translate everything to english.</p>
+<h2><a id="Changelog_52"></a>Changelog</h2>
+<ul>
+<li>SigmaGraph v2.6.10 (release: november 23, 2018)<br>
+Source code released under the MIT license. Available in github.<br>
+Added an auto-export option to automatically save data in ASCII format and plot in SVG format.<br>
+Bugfixes.</li>
+</ul>
+<ul>
+<li>SigmaGraph v2.6.9 (release: january 05, 2017)<br>
+Multi-peak fitting updated;<br>
+New ‘Auto Export’ option, to automatically save data in text file and plot in SVG format;<br>
+Bugfixes.</li>
+</ul>
+<ul>
+<li>SigmaGraph v2.6.8 (release: january 01, 2017)<br>
+bugfixes.<br>
+autoscale improved.</li>
+</ul>
+<ul>
+<li>SigmaGraph v2.6.8 (release: february 21, 2016)<br>
+Improvements and bug fixes, including:<br>
+SVG support improved with Unicode support.<br>
+Datasheet performance improved.<br>
+Plot autoscale function rewritten with a new fast algorithm.</li>
+</ul>
+<ul>
+<li>SigmaGraph v2.6.6 (release: december 28, 2015)<br>
+bugfixes; EMF and SVG vector format.</li>
+</ul>
+<ul>
+<li>SigmaGraph v2.6.4 (release: october 30, 2014)<br>
+bugfixes; Keyboard arrows to move graphical objects.</li>
+</ul>
+<ul>
+<li>SigmaGraph v2.6 (release: may 13, 2014)<br>
+New fitting functions: Multi-peak Gauss and Lorentz (up to 5 peaks);<br>
+Scripting engine updated with new mathematical and statistical functions;<br>
+Script editor enhanced with new options: syntax highlighting, line numbers, markers, autocompletion, …<br>
+Data importing new options;<br>
+Graph printing bug on some devices corrected;<br>
+Help system redesigned (integrated HTML Help and PDF);<br>
+User interface enhancements;<br>
+Performance improvement.<br>
+Bugfixes.</li>
+</ul>
+<ul>
+<li>SigmaGraph v2.4 (release: january 06, 2010)<br>
+First public release.</li>
+</ul>
+<ul>
+<li>SigmaGraph v1.0 up to v2.2 (release: 1998 up to 2010): non-public versions.<br>
+Used only in my own academic projects to replace commercial tools.<br>
+The first public version (v2.4) was released back in 2010.</li>
+</ul>
+
+</body>
+</html>
