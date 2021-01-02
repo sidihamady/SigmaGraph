@@ -21,7 +21,7 @@ SigmaGraph is now open-source and released under the MIT license since its versi
 ## Install
 
 To install SigmaGraph just copy the portable binary distribution from the Dist\SigmaGraph directory to any location (such as usb key)
-and run SigmaGraph.exe (located in the bin directory). The zipped binary distribution is also available to download here: [Dist/sigmagraph_windows.zip](https://github.com/sidihamady/SigmaGraph/blob/master/Dist/sigmagraph_portable_windows.zip).
+and run SigmaGraph.exe (located in the bin directory). The zipped binary distribution is also available to download here: [Dist/sigmagraph_portable_windows.zip](https://github.com/sidihamady/SigmaGraph/blob/master/Dist/sigmagraph_portable_windows.zip).
 The SigmaGraph documentation is included in the help directory.
 
 
