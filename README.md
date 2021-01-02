@@ -38,7 +38,7 @@ The MFC is statically linked to the SigmaGraph modules.
 When ready, open a VC developper command prompt and run msvcbuild.bat.  
 The binary distribution is built and copied to the Dist\SigmaGraph directory.  
 Just copy this distribution directory ( Dist\SigmaGraph ) to any location (usb key for instance) to use SigmaGraph.  
-The zipped binary distribution is also available to download here: [Dist/sigmagraph_windows.zip](https://github.com/sidihamady/SigmaGraph/blob/master/Dist/sigmagraph_windows.zip)
+The zipped binary distribution is also available to download here: [Dist/sigmagraph_portable_windows.zip](https://github.com/sidihamady/SigmaGraph/blob/master/Dist/sigmagraph_portable_windows.zip)
 
 SigmaGraph consists of the following modules (each in a separate VC solution):  
 * LibCalc: Mathematical and scientific routines and the Lua engine.
