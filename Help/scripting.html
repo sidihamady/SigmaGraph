@@ -1,0 +1,943 @@
+﻿<!-- 
+    Copyright 1997-2020  Pr. Sidi HAMADY
+    http://www.hamady.org 
+    sidi@hamady.org
+    Released under the MIT License
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scripting</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Reply-to" content="http://www.hamady.org/index.html" />
+<meta name="Description" content="Software for Science and Technology" />
+<meta name="Keywords" content="Hamady, Software, Science, Engineering, Scientists, Engineers, SigmaGraph, Graph, Plot, Datasheet, Calculation, Simulation, Simulator, Semiconductors, Devices, Poisson, Continuity, Current, Voltage, Logiciel, Tracé, Graphe, X-Y, Visualisation, Données, Analyse, Traitement, Simulation, Semi-conducteurs, Sidi, Ould, Saad, Hamady" />
+<meta name="robots" content="all" />
+<link rel="stylesheet" href="./hamady.css" type="text/css" />
+</head>
+<body>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFDFE">
+  <tr bgcolor="#245280">
+    <td width="15" height="25" nowrap="nowrap" bgcolor="#E4E8EA"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td width="100%" height="25" nowrap="nowrap" bgcolor="#E4E8EA">&nbsp;</td>
+    <td width="15" height="25" nowrap="nowrap" bgcolor="#E4E8EA">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#245280">
+    <td height="75" nowrap="nowrap"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td nowrap="nowrap" bgcolor="#245280" class="logo"><b>SigmaGraph</b> Data plotting and analysis software</td>
+    <td nowrap="nowrap"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td height="4" colspan="3" bgcolor="#C2D2E0"><img src="./images/spacer.gif" alt="" width="1" height="4" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td height="4" colspan="3" bgcolor="#C2D2E0"><img src="./images/spacer.gif" alt="" width="1" height="4" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td valign="top" bgcolor="#FCFDFE"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td height="400" valign="top" bgcolor="#FCFDFE">
+      <table border="0" cellpadding="2" cellspacing="0" bgcolor="#FCFDFE">
+        <tr>
+          <td><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFDFE">
+              <tr height="20" align="center">
+                <td width="17%" align="center" nowrap="nowrap" class="navText"><a href="quickstart.html">Start Guide</a></td>
+                <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="datasheet.html"> Datasheet</a></td>
+                <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="graph.html">Graph</a></td>
+                <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="fitting.html">Curve Fitting</a></td>
+                <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="console.html">Math Console</a></td>
+                <td width="16.5%" align="center" nowrap="nowrap" class="navText" bgcolor="#FFCC00"><a href="scripting.html">Scripting</a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td valign="top" bgcolor="#FCFDFE" class="bodyText" width="100%"><p>&nbsp;</p>
+            <p class="styleH2"><a name="scripting" id="scripting"></a>SigmaGraph Scripting </p>
+            <p class="styleH3"><a name="scripting_intro" id="scripting_intro"></a>1.  Presentation</p>
+            <p> SigmaGraph  integrates the Lua scripting language, which gives you the possibility to programmatically control the application and program you own algorithms. Lua was chosen to be embedded in SigmaGraph mainly because of its high speed and its relatively small size. To learn Lua, you can read the official documentation (http://www.lua.org/manual/) or tutorials. </p>
+            <p><img src="images/scripting.gif" width="520" height="580" alt="Scripting" longdesc="Scripting" /></p>
+            <p> To write and run script, open the Script Window by selecting ‘View/Script Window’ menu (or press F11 key). The script output will be redirected to the Output Window. The SigmaGraph editor supports <span class="styleOrange">syntax highlighting</span>, <span class="styleOrange">line numbering</span>, <span class="styleOrange">markers</span> (bookmarks), <span class="styleOrange">code completion</span>, etc. You can customize all the editor options (font, colors, line spacing, ...); Menu/Options.</p>
+            <p>With SigmaGraph scripting capabilities, you can either control the application throw three objects (‘classes’): Doc, Data and Plot or write and run you own general-purpose Lua programs.</p>
+            <p> With the <span class="styleH4">Doc</span> class, you can access document specific methods, like creating, saving, opening or closing document.</p>
+            <p> With the <span class="styleH4">Data</span> class, you can manipulate datasheet: adding, deleting columns or rows, setting cells values, masking/unmasking cells …</p>
+            <p> With the <span class="styleH4">Plot</span> class, you can control graph: adding or removing curves, changing axis style …</p>
+            <p> Note that all the Doc methods are accessible to Data and Plot classes (throw the inheritance mechanism).
+              
+              Note also that all the SigmaConsole mathematical functions are accessible in the script with the same syntax (cf. §3.8).</p>
+            <p> In order to use SigmaGraph classes, the first step is to create a class instance: </p>
+            <blockquote>
+              <p class="subHeader">tD = Data:create()    -- create a Data class instance </p>
+            </blockquote>
+            <p>When class instance created, you can use all the class methods.</p>
+            <p> Example: The following script will create a new datasheet named “SigmaGraph” and fill the first column A with values from 0 to 4.5 with 0.5 step and the second column B by a formula.  The B versus A curve is then added to graph:</p>
+            <blockquote>
+              <p class="subHeader"> cls() 							&nbsp;&nbsp;&nbsp; -- clear the Output Window<br />
+                tD = Data:create()            							&nbsp;&nbsp;&nbsp; -- create an instance of the Data class<br />
+                tD:new(&quot;SigmaGraph&quot;)          							&nbsp;&nbsp;&nbsp; -- create a new datasheet named SigmaGraph<br />
+                x = {}<br />
+                y = {}<br />
+                for ii=1,10 do                    						&nbsp;&nbsp;&nbsp; -- filling columns A and B<br />
+                &nbsp;&nbsp;&nbsp; x[ii] = 0.5 * (ii - 1)<br />
+                &nbsp;&nbsp;&nbsp; y[ii] = 1 - exp(-x[ii])<br />
+                end<br />
+                tD:set(&quot;A&quot;, x)<br />
+                tD:set(&quot;B&quot;, y)<br />
+                tP = Plot:create()            							&nbsp;&nbsp;&nbsp; -- create an instance of the Plot class<br />
+                tP:add(&quot;A&quot;, &quot;B&quot;, 1)           							&nbsp;&nbsp;&nbsp; -- add B versus A curve to the graph, Line style<br />
+              </p>
+            </blockquote>
+            <p class="styleH3"> <a name="scripting_ref" id="scripting_ref"></a>2.         Reference </p>
+            <p class="styleH4"> <a name="scripting_ref_math" id="scripting_ref_math"></a>2.1         Mathematical functions</p>
+            The math functions are mapped to global functions (e.g. : user can use <strong>cos</strong> or <strong>math.cos</strong>).<br />
+            Below is a summary of the Lua math functions:<br />
+            &nbsp;&nbsp;&nbsp;math.abs   		&nbsp;&nbsp;&nbsp;math.acos   	&nbsp;&nbsp;&nbsp;math.asin<br />
+            &nbsp;&nbsp;&nbsp;math.atan   	&nbsp;&nbsp;&nbsp;math.atan2   	&nbsp;&nbsp;&nbsp;math.ceil<br />
+            &nbsp;&nbsp;&nbsp;math.cos   		&nbsp;&nbsp;&nbsp;math.cosh   	&nbsp;&nbsp;&nbsp;math.deg<br />
+            &nbsp;&nbsp;&nbsp;math.exp   		&nbsp;&nbsp;&nbsp;math.floor   	&nbsp;&nbsp;&nbsp;math.fmod<br />
+            &nbsp;&nbsp;&nbsp;math.frexp   	&nbsp;&nbsp;&nbsp;math.huge   	&nbsp;&nbsp;&nbsp;math.ldexp<br />
+            &nbsp;&nbsp;&nbsp;math.log   		&nbsp;&nbsp;&nbsp;math.log10   	&nbsp;&nbsp;&nbsp;math.max<br />
+            &nbsp;&nbsp;&nbsp;math.min   		&nbsp;&nbsp;&nbsp;math.modf   	&nbsp;&nbsp;&nbsp;math.pi<br />
+            &nbsp;&nbsp;&nbsp;math.pow   		&nbsp;&nbsp;&nbsp;math.rad   	&nbsp;&nbsp;&nbsp;math.random<br />
+            &nbsp;&nbsp;&nbsp;math.randomseed 		&nbsp;&nbsp;&nbsp;math.sin 		&nbsp;&nbsp;&nbsp;math.sinh<br />
+            &nbsp;&nbsp;&nbsp;math.sqrt   		&nbsp;&nbsp;&nbsp;math.tanh 		&nbsp;&nbsp;&nbsp;math.tan<br />
+            And a summary of the SigmaScript global math functions:<br />
+            &nbsp;&nbsp;&nbsp;abs   		&nbsp;&nbsp;&nbsp;acos   	&nbsp;&nbsp;&nbsp;asin<br />
+            &nbsp;&nbsp;&nbsp;atan   		&nbsp;&nbsp;&nbsp;atan2   	&nbsp;&nbsp;&nbsp;ceil<br />
+            &nbsp;&nbsp;&nbsp;cos   		&nbsp;&nbsp;&nbsp;cosh   	&nbsp;&nbsp;&nbsp;deg<br />
+            &nbsp;&nbsp;&nbsp;exp   		&nbsp;&nbsp;&nbsp;floor   	&nbsp;&nbsp;&nbsp;fmod
+            &nbsp;&nbsp;&nbsp;frexp   		&nbsp;&nbsp;&nbsp;huge   	&nbsp;&nbsp;&nbsp;ldexp<br />
+            &nbsp;&nbsp;&nbsp;log   		&nbsp;&nbsp;&nbsp;log10   	&nbsp;&nbsp;&nbsp;max<br />
+            &nbsp;&nbsp;&nbsp; min   		&nbsp;&nbsp;&nbsp;modf   	&nbsp;&nbsp;&nbsp;pi<br />
+            &nbsp;&nbsp;&nbsp;pow   		&nbsp;&nbsp;&nbsp;rad   	&nbsp;&nbsp;&nbsp;random<br />
+            &nbsp;&nbsp;&nbsp;randomseed    &nbsp;&nbsp;&nbsp;sin<br />
+            &nbsp;&nbsp;&nbsp;sinh   		&nbsp;&nbsp;&nbsp;sqrt   	&nbsp;&nbsp;&nbsp;tanh<br />
+            &nbsp;&nbsp;&nbsp;tan<br />
+            <br />
+            NB: Lua gives the neperian logarithm the name log and the decimal logarithm is named log10, as in C language. Mathematical Console uses ln for neperian logarithm and log for decimal logarithm.<br />
+            <br />
+            Special math functions are included (lmath namespace), extending the Lua math functions.<br />
+            Summary of lmath functions and constants:<br />
+            <span class="styleH5">Functions</span>:<br />
+            &nbsp;&nbsp;&nbsp;lmath.exp2(x)   		&nbsp;&nbsp;&nbsp;2^x<br />
+            &nbsp;&nbsp;&nbsp;lmath.logb(x)   		&nbsp;&nbsp;&nbsp;exponent of x<br />
+            &nbsp;&nbsp;&nbsp;lmath.cbrt(x)   		&nbsp;&nbsp;&nbsp;cubic root<br />
+            &nbsp;&nbsp;&nbsp;lmath.hypot(x,y)   	&nbsp;&nbsp;&nbsp;sqrt(x²+y²)<br />
+            &nbsp;&nbsp;&nbsp;lmath.erf(x)   		&nbsp;&nbsp;&nbsp;error function<br />
+            &nbsp;&nbsp;&nbsp;lmath.erfc(x)   		&nbsp;&nbsp;&nbsp;complementary error function<br />
+            &nbsp;&nbsp;&nbsp;lmath.lgamma(x)   	&nbsp;&nbsp;&nbsp;ln(gamma(x))<br />
+            &nbsp;&nbsp;&nbsp;lmath.tgamma(x)   	&nbsp;&nbsp;&nbsp;gamma(x)<br />
+            &nbsp;&nbsp;&nbsp;lmath.trunc(x)   		&nbsp;&nbsp;&nbsp;nearest integer<br />
+            &nbsp;&nbsp;&nbsp;lmath.round(x)   		&nbsp;&nbsp;&nbsp;nearest integer, rounding<br />
+            &nbsp;&nbsp;&nbsp;lmath.isinf(x)   		&nbsp;&nbsp;&nbsp;number is infinite ?<br />
+            &nbsp;&nbsp;&nbsp;lmath.isnan(x)   		&nbsp;&nbsp;&nbsp;not a number ?<br />
+            &nbsp;&nbsp;&nbsp;lmath.isnormal(x)   	&nbsp;&nbsp;&nbsp;number is normal ?<br />
+            &nbsp;&nbsp;&nbsp;lmath.asinh(x)<br />
+            &nbsp;&nbsp;&nbsp;lmath.acosh(x)<br />
+            &nbsp;&nbsp;&nbsp;lmath.atanh(x)<br />
+            &nbsp;&nbsp;&nbsp;lmath.gauss(x,b,c)   &nbsp;&nbsp;&nbsp;G(x) = exp(-(x - b)² / 2c²)<br />
+            &nbsp;&nbsp;&nbsp;lmath.lorentz(x,b,c) &nbsp;&nbsp;&nbsp;L(x) = ((1/pi)*c / ((x - b)² + c²))<br />
+            <br />
+            <span class="styleH5">Constants</span>:<br />
+            Universal constants in international units (SI)<br />
+            &nbsp;&nbsp;&nbsp;lmath.q   		&nbsp;&nbsp;&nbsp;Electron charge (in C)<br />
+            &nbsp;&nbsp;&nbsp;lmath.me   		&nbsp;&nbsp;&nbsp;Electron mass (kg)<br />
+            &nbsp;&nbsp;&nbsp;lmath.kb   		&nbsp;&nbsp;&nbsp;Boltzmann constant (J/K)<br />
+            &nbsp;&nbsp;&nbsp;lmath.h   		&nbsp;&nbsp;&nbsp;Planck constant (Js)<br />
+            &nbsp;&nbsp;&nbsp;lmath.c   		&nbsp;&nbsp;&nbsp;Speed of Light in vacuum (m/s)<br />
+            &nbsp;&nbsp;&nbsp;lmath.na   		&nbsp;&nbsp;&nbsp;Avogadro constant (1/mole)<br />
+
+            <p class="styleH4"> <a name="scripting_ref_stats" id="scripting_ref_stats"></a>2.2         Data analysis functions</p>
+            <p>The data namespace includes functions to calculate the <span class="styleOrange">descriptive parameters</span> of a list of values, perform data <span class="styleOrange">fitting</span> and <span class="styleOrange">sorting</span>:<br />
+              Minimum (data.min(t)), Maximum (data.max(t)), Sum (data.sum(t)), Mean (data.mean(t)), Median (data.median(t)), Variance (data.var(t)), Standard Deviation (data.dev(t)), Coefficient of Variation (data.coeff(t)), Root Mean Square (data.rms(t)), Skewness (data.skew(t)) and Kurtosis excess (data.kurt(t)).<br />
+              Example:
+            </p>
+            <blockquote> <span class="subHeader">&nbsp;&nbsp;&nbsp; -- Stats<br />
+              &nbsp;&nbsp;&nbsp; cls()<br />
+              &nbsp;&nbsp;&nbsp; t = {1,1,2,3,4,4,5}<br />
+              &nbsp;&nbsp;&nbsp; m = data.mean(t)<br />
+              &nbsp;&nbsp;&nbsp; print(m)</span><br />
+            </blockquote>
+            <p> With the data module, you can also perform <span class="styleOrange">data fitting</span> by using the function fit:<br />
+              <span class="styleOrange">pars,chi,iters,msg = data.fit(model, x, y, fpar, ipar, tol, iters)</span><br />
+              where:<br />
+                </p>
+            <blockquote><span class="styleOrange">model</span> is one of the builtin fitting models: 
+              &quot;Linear&quot;, Poly2&quot;, &quot;Poly3&quot;, &quot;Poly4&quot;,<br />
+              &quot;Gauss1&quot;, &quot;Gauss2&quot;, &quot;Gauss3&quot;, &quot;Gauss4&quot;, &quot;Gauss5&quot;,<br />
+              &quot;Lorentz1&quot;, &quot;Lorentz2&quot;, &quot;Lorentz3&quot;, &quot;Lorentz4&quot;, &quot;Lorentz5&quot;,<br />
+              &quot;Pearson&quot;, &quot;Exp&quot;, &quot;Exp2&quot;, &quot;ExpDec&quot;, &quot;ExpDec2&quot;,<br />
+              &quot;Hyperbola&quot;, &quot;Log&quot;, &quot;Power&quot;, &quot;Logistic&quot;,  &quot;Wave&quot;.<br />
+              <span class="styleOrange">x</span> and <span class="styleOrange">y</span> are the data to fit<br />
+              <span class="styleOrange">fpar</span> is the fitting parameters table with the initial values<br />
+              <span class="styleOrange">ipar</span> (optional) is a table with, for each parameter, value 1 if the parameter is varying or 0 if it is fixed<br />
+              <span class="styleOrange">tol</span> (optional) is the desired relative tolerance (10<sup>-6</sup> by default)<br />
+              <span class="styleOrange">iters</span> (optional) is the maximum iterations (100 by default)<br />
+              The function returns the obtained parameters <span class="styleOrange">pars</span>, the <span class="styleOrange">chi</span> value, the number of iterations <span class="styleOrange">iters</span> and a message <span class="styleOrange">msg</span> from the fitting engine.<br />
+              <br />
+            </blockquote>
+            <p> Example:
+            </p>
+            <blockquote> <span class="subHeader">-- Linear Fitting y = a + b * x<br />
+              cls()<br />
+              x = {1,1,2,3,4}<br />
+              y = {2.1,1.8,2.9,3.8,5.2}<br />
+              fpar = {0.1,0.1}<br />
+              pars,chi,iters,msg = data.fit(&quot;Linear&quot;, x, y, fpar)<br />
+              io.write(&quot;a = &quot;, pars[1], &quot; b = &quot;, pars[2], &quot;\n&quot;)</span>
+              </blockquote>
+
+            <p> You can also perform <span class="styleOrange">sort data</span> by using the function sort:<br />
+              <span class="styleOrange">ts = data.sort(t, asc)</span><br />
+              where:<br />
+              <span class="styleOrange">t</span> is the data to sort.<br />
+              <span class="styleOrange">asc</span> = 1 if sort in ascending order or 0 in descending order<br />
+              The function returns the sorted table <span class="styleOrange">ts</span>.<br />
+            </p>
+            <p> Example:
+            </p>
+            <blockquote> <span class="subHeader">-- Sorting data<br />
+              cls()<br />
+              t = {1,8,2,5,1,3,9,7}<br />
+              asc = 1<br />
+              ts = data.sort(t, asc) </span>
+             </blockquote>
+            
+            <p class="styleH4"> <a name="scripting_ref_sigmagraph" id="scripting_ref_sigmagraph"></a>2.3         SigmaGraph functions</p>
+            <p> The following table summarizes the <span class="styleH5">Doc</span>, <span class="styleH5">Data</span> and <span class="styleH5">Plot</span> methods: </p>
+             
+           <table style="border-collapse:collapse;" align="center" border="1" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td style="width:8%;border:none;border-bottom: solid #4F81BD 3.0pt;background:white; padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height: normal"> <span style="font-size:9.0pt;font-family:&quot;Courier New&quot;; color:#17365D">Class</span></p></td>
+                <td style="width:26%;border:none;border-bottom: solid #4F81BD 3.0pt;background:white;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Method</p></td>
+                <td style="width:26%;border:none;border-bottom:
+  solid #4F81BD 3.0pt;background:white;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Purpose</p></td>
+                <td style="width:48%;border:none;border-bottom:
+  solid #4F81BD 3.0pt;background:white;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">Arguments</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal"><b><span class="styleH4" style="font-family:&quot;Courier New&quot;;color:#17365D">Doc</span></b></p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">create()</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Create an instance of the Doc class</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">—</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">new(name)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Create a new document</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: the new document <i>name</i></p>
+                  <p style="margin-bottom:0cm;line-height:
+  normal">Out: return the document name</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">find(name)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Find an existing document</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: the document <i>name</i></p>
+                  <p style="margin-bottom:0cm;line-height:
+  normal">Out: return the document name</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">print()</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Print the current document</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">—</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">save()</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Save the current document</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">—</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">open()</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Open a document</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">—</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">update()</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Update the current document</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">—</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">close()</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Close the current document</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">—</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td colspan="3" style="width:92.08%;border:none;
+  border-right:solid #4F81BD 1.0pt;background:#95B3D7;padding:0cm 5pt 0cm 5pt" valign="top" width="92%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal"><b><span class="styleH4" style="font-family:&quot;Courier New&quot;;color:#17365D">Data</span></b></p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">create()</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Create an instance of the Data class (inherited from the Doc
+                    class)</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">—</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">new(name)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Create a new datasheet(inherited from the Doc class)</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: the new datasheet <i>name</i></p>
+                  <p style="margin-bottom:0cm;line-height:
+  normal">Out: return the document name</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">dim()</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Get the number of columns and rows</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">Out: number of column and number of rows</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">appendcol(dim,ctype)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Append a column to the datasheet</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: the column <i>dim</i>ension and the column type (ctype = 1 for X-column and 2 for Y-column)</p>
+                  <p style="margin-bottom:0cm;line-height:
+  normal">Out: return the column name</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">insertcol(after, dim, ctype)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Insert a column into the datasheet</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>after</i>, the name of the column to insert after; <i>dim</i>,
+                    the new column dimension;  <i>ctype</i>, column type (1 for X-column and 2 for Y-column)</p>
+                  <p style="margin-bottom:0cm;line-height:
+  normal">Out: return the column name</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">format(name, fmt)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Set the column numeric format</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>name</i>, the name of the column; <i>fmt</i>, the
+                    numeric format (C-style: &quot;%.3f&quot;, &quot;%.6e&quot;, &quot;%e&quot;,
+                    …)</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">appendrow(count)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Append rows to the datasheet</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>count</i>, the number of rows to append</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">insertrow(iafter)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Insert a row into the datasheet</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>iafter</i>, the index of the row to insert after</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">deletecol(name)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Delete column</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>name</i>, the name of the column to delete</p>
+                  <p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">deleterow(ii)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Delete row</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>ii</i>, the index of the row to delete</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">set(name, ii, val)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Set cell value </p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>name</i>, the name of the column; <i>ii</i>, the index
+                    of the cell; <i>val</i>, the new cell value</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">set(name, t)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Set column values</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>name</i>, the name of the column; <i>t</i>, table containing the column values</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">get(name, ii)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Get cell value</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:normal">In: <i>name</i>, the name of the column; <i>ii</i>, the index
+                    of the cell</p>
+                  <p style="margin-bottom:0cm;line-height:
+    normal">Out: the cell value</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">get(name)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Get the column</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:normal">In: <i>name</i>, the name of the column; <i>ii</i>, the index
+                    of the cell</p>
+                  <p style="margin-bottom:0cm;line-height:
+  normal">Out: table containing the column values</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">mask(name, ii)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Mask cell</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>name</i>, the name of the column; <i>ii</i>, the index
+                    of the cell to mask</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">unmask(name, ii)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Unmask cell</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>name</i>, the name of the column; <i>ii</i>, the index
+                    of the cell to unmask</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">sort(name, order)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Sort column</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: <i>name</i>, the name of the column to sort; <i>order</i> = 1 if ascending order and 0 otherwise</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td colspan="3" style="width:92.08%;border:none;
+  border-right:solid #4F81BD 1.0pt;background:#95B3D7;padding:0cm 5pt 0cm 5pt" valign="top" width="92%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal"><b><span style="font-family:&quot;Courier New&quot;;color:#17365D">Plot</span></b></p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:8.75pt;text-indent:-7.1pt;line-height:normal">title(stitle)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Set the graph title</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: Graph title</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:8.75pt;text-indent:-7.1pt;line-height:normal">frame(backr,
+                    backg, backb, plotr, plotg, plotb)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Set the graph colors</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In: RGB window and graph colors components</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:8.75pt;text-indent:-7.1pt;line-height:normal">add(namex, namey, istyle, iaxis)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Add curve to the graph</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In:<i> namex, namey</i>, name of the X and Y columns; <i>istyle</i> = 1 for line, 2 for scatter and 3 for both; <i>iaxis</i> = 1 for XY axis, 2
+                    for XY2, 3 for X2Y and 4 for X2Y2</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:8.75pt;text-indent:-7.1pt;line-height:normal">remove(name)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Remove curve from the graph</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In:<i> name</i>, name of the X or Y column</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:8.75pt;text-indent:-7.1pt;line-height:normal">axis(iaxis,
+                    iscale, iautoscale, fmin, fmax, ititle, stitle)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Set the axis properties</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In:<i> iaxis</i> = 1 for X, 2 for Y, 3 for X2 and 4 for Y2; <i>iscale</i> = 1 for linear and 2 for log; <i>iautoscale</i> = 1 if AutoScale and 0
+                    otherwise; <i>fmin, fmax</i> = axis min and max; <i>ititle</i> = 1 if title
+                    visible and 0 otherwise; <i>stitle</i> = axis title</p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:8.75pt;text-indent:-7.1pt;line-height:normal">label(iaxis,
+                    ilabel)</p></td>
+                <td style="width:26%;border:none;border-right:solid #365F91 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">Activate the axis label</p></td>
+                <td style="width:48%;border:none;border-right:solid #4F81BD 1.0pt;
+  background:#D3DFEE;padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">In:<i> iaxis</i> = 1 for X, 2 for Y, 3 for X2 and 4 for Y2;<i> </i>ilabel = 1 to activate axis label and 0 otherwise. </p></td>
+              </tr>
+              <tr>
+                <td style="width:8%;border:none;border-right:
+  solid #4F81BD 1.0pt;background:white;padding:0cm 5pt 0cm 5pt" nowrap="nowrap" valign="top" width="7%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:26%;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:8.75pt;text-indent:-7.1pt;line-height:normal">&nbsp;</p></td>
+                <td style="width:26%;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #365F91 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="26%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+                <td style="width:48%;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;
+  padding:0cm 5pt 0cm 5pt" valign="top" width="48%"><p style="margin-bottom:0cm;line-height:
+  normal">&nbsp;</p></td>
+              </tr>
+            </table>
+            
+            <p>&nbsp;</p>
+            <p>In addition to the SigmaGraph classes (Doc, Data and Plot), you can use the Physics table containing the fundamental constants and some useful functions:</p>
+            <p class="styleH4"> -- Constants</p>
+            <p> <span class="styleH5">Physics.k</span> -- Boltzmann constant</p>
+            <p> <span class="styleH5">Physics.q</span> -- electron charge</p>
+            <p> <span class="styleH5">Physics.h</span> -- Planck constant </p>
+            <p><span class="styleH5">Physics.c</span> -- speed of light in vacuum </p>
+            <p><span class="styleH5">Physics.e</span> -- vacuum permittivity </p>
+            <p><span class="styleH5">Physics.n</span> -- Avogadro constant </p>
+            <p><span class="styleH5">Physics.m</span> -- electron mass</p>
+            <p class="styleH4"> -- Functions</p>
+            <p class="styleH5"> Physics.Current(V, T, ISC, RP, IS1, n1, IS2, n2, RS, I1, I2)</p>
+            <p> Calculate the current versus voltage of a photovoltaic cell by solving the two-diode model nonlinear equation:</p>
+            <p><img src="images/scripting_forumlai.gif" alt="Scripting" width="520" height="60" border="1" longdesc="Scripting" /></p>
+            <p> with: </p>
+            <p><span class="styleH5">V</span>: Applied voltage.</p>
+            <p> <span class="styleH5">T</span>: Temperature.</p>
+            <p> <span class="styleH5">ISC</span>: Short-circuit current.</p>
+            <p> <span class="styleH5">RP</span>: Parallel resistance.</p>
+            <p> <span class="styleH5">RS</span>: Series resistance.</p>
+            <p> <span class="styleH5">IS1</span>: Saturation current for diode 1.</p>
+            <p><span class="styleH5">n1</span>: Ideality factor for diode 1.</p>
+            <p> <span class="styleH5">IS2</span>: Saturation current for diode 2.</p>
+            <p> <span class="styleH5">n2</span>: Ideality factor for diode 2.</p>
+            <p> This function is used in CurrentModel ( http://www.hamady.org ).</p>
+            <p class="styleH4"> Physics.Capacitance(Freq, r, L, GLF, CHF, C1, Tau1, C2, Tau2)</p>
+            <p class="styleH4"> Physics.Conductance(Freq, r, L, GLF, CHF, C1, Tau1, C2, Tau2)</p>
+            <p> Calculate the admittance (capacitance and conductance/w) of a PN or Schottky junction, with two trap levels:</p>
+            <p><img src="images/scripting_forumlaa.gif" alt="Scripting" width="520" height="110" border="1" longdesc="Scripting" /> </p>
+            <p>with:</p>
+            <p><span class="styleH5">L</span>: Equivalent series inductance.</p>
+            <p> <span class="styleH5">r</span>: Series resistance.</p>
+            <p> <span class="styleH5">GLF</span> is the low-frequency parallel conductance, CHF the high-frequency parallel capacitance, Ck the difference between the “low” (relatively to the transition frequency of the level) and “high” frequency capacitances for the level k, ant Tauk its time response.</p>
+            <p> NB: the function Physics.Conductance return the conductance divided by the angular frequency w (= 2*pi*f). </p>
+            <p>These functions are used in AdmittanceModel ( http://www.hamady.org/tools/admittance.html ).</p>
+            <p class="styleH3"> <a name="scripting_examples" id="scripting_examples"></a>3.         Script Examples</p>
+            <p> All script examples are available in Help/Examples Menu.</p>
+            <p class="styleH4"> Example 1: Plot function:</p>
+            
+            <blockquote> <span class="subHeader">-- SigmaGraph script sample<br />
+              <br />
+              NN = 100						&nbsp;&nbsp;&nbsp;-- Number of points<br />
+              <br />
+              tD = Data:create()			&nbsp;&nbsp;&nbsp;-- Create a Data object<br />
+              tD:new(&quot;SigmaGraph&quot;)			&nbsp;&nbsp;&nbsp;-- Create a new datasheet<br />
+              nc,nr = tD:dim()				&nbsp;&nbsp;&nbsp;-- Get the number of column and rows<br />
+              <br />
+              if (nc &lt; 3) then				&nbsp;&nbsp;&nbsp;-- Append one column, if necessary<br />
+              &nbsp;&nbsp;&nbsp;tD:appendcol()<br />
+              end<br />
+              <br />
+              if (nr &lt; NN) then				&nbsp;&nbsp;&nbsp;-- Append rows, if necessary<br />
+              &nbsp;&nbsp;&nbsp;tD:appendrow(NN - nr)<br />
+              end<br />
+              <br />
+              tD:format(&quot;A&quot;, &quot;%.3f&quot;)		&nbsp;&nbsp;&nbsp;-- Set numeric format for columns A, B and C<br />
+              tD:format(&quot;B&quot;, &quot;%.3f&quot;)		
+              tD:format(&quot;C&quot;, &quot;%.3f&quot;)<br />
+              Xinit = 0						&nbsp;&nbsp;&nbsp;-- Initial value<br />
+              Xstep = 0.05					&nbsp;&nbsp;&nbsp;-- Step value<br />
+              <br />
+				x = {}<br />
+                y1 = {}<br />
+                y2 = {}<br />
+              for ii=1,NN do
+              <blockquote> 
+              	x[ii] = Xstep * (ii - 1)<br />
+                y1[ii] = 1 - exp(-x[ii])<br />
+                y2[ii] = 1 - exp(-2 * x[ii])
+
+                 </blockquote> 
+              end<br />
+              tD:set(&quot;A&quot;, x)<br />
+              tD:set(&quot;B&quot;, y1)<br />
+              tD:set(&quot;C&quot;, y2)<br />
+              <br />
+              tP = Plot:create()			&nbsp;&nbsp;&nbsp;-- Create a Plot object<br />
+              tP:add(&quot;A&quot;, &quot;B&quot;, 1, 1)		&nbsp;&nbsp;&nbsp;-- Add Y1(X) curve<br />
+              tP:add(&quot;A&quot;, &quot;C&quot;, 1, 1)		&nbsp;&nbsp;&nbsp;-- Add Y2(X) curve<br />
+              <br />
+              -- Set X-axis properties<br />
+              tP:axis(1, 1, 1, 0, 0, 1, &quot;Time (a.u.)&quot;)<br />
+              <br />
+              -- Set Y-axis properties<br />
+              tP:axis(2, 1, 1, 0, 0, 1, &quot;Charge (a.u.)&quot;)<br />
+              tP:color(1,255,0,0)			&nbsp;&nbsp;&nbsp;-- Curve color (red)<br />
+              tP:color(2,0,0,255)			&nbsp;&nbsp;&nbsp;-- Curve color (blue)<br />
+              tP:update()					&nbsp;&nbsp;&nbsp;-- Update the graph</span><br />
+              </span> </blockquote>
+            <p class="styleH4"> Example 2: Curve fitting: </p>
+            <blockquote> <span class="subHeader"> -- SigmaGraph script sample<br />
+              <br />
+              tD = Data:create()              -- Create a Data object<br />
+              tD:new(&quot;Fitting&quot;)               -- Create a new datasheet<br />
+              nc, nr = tD:dim()               -- Get the number of column and rows<br />
+              <br />
+              if (nc &lt; 3) then                   -- Append one column, if necessary<br />
+              tD:appendcol()<br />
+              end<br />
+              <br />
+              x = {}<br />
+              y = {}<br />
+              z = {}<br />
+              a = 1<br />
+              b = 2<br />
+              for ii = 1, 10 do
+              <blockquote>
+             	 x[ii] = (ii - 1) * 0.1<br />
+             	 y[ii] = a + b * x[ii] + 0.3 * math.random()
+              </blockquote>
+              end<br />
+              pars, chi, iers, msg = data.fit(&quot;Linear&quot;, x, y, {0.1,0.1})<br />
+              <br />
+              for ii = 1, 10 do<br />
+              <blockquote>z[ii] = pars[1] + pars[2] * x[ii]</blockquote>
+              end<br />
+              <br />
+              tD:set(&quot;A&quot;, x)<br />
+              tD:set(&quot;B&quot;, y)<br />
+              tD:set(&quot;C&quot;, z)<br />
+              <br />
+              tP = Plot:create()         -- Create a Plot object<br />
+              tP:add(&quot;A&quot;, &quot;B&quot;, 2, 1)     -- Add data curve<br />
+              tP:add(&quot;A&quot;, &quot;C&quot;, 1, 1)     -- Add fit curve<br />
+              </span> </blockquote>
+     
+            <p class="styleH4"> Example 3: calculate and plot the current-voltage characteristic curve of a photovoltaic cell: </p>
+            <blockquote> <span class="subHeader"> -- SigmaGraph script sample<br />
+              <br />
+              tic()				&nbsp;&nbsp;&nbsp;-- Start timer.<br />
+              clear()				&nbsp;&nbsp;&nbsp;-- Clear the output window<br />
+              NN = 100			&nbsp;&nbsp;&nbsp;-- Number of points<br />
+              <br />
+              tD = Data:create()<br />
+              tD:new(&quot;Current&quot;)<br />
+              nc,nr = tD:dim()<br />
+              if (nc &lt; 3) then
+              <blockquote>tD:appendcol()</blockquote>
+              end<br />
+              if (nr &lt; NN) then
+              <blockquote>tD:appendrow(NN - nr)</blockquote>
+              end<br />
+              <br />
+              tD:format(&quot;A&quot;, &quot;%.3f&quot;)<br />
+              tD:format(&quot;B&quot;, &quot;%.4e&quot;)<br />
+              tD:format(&quot;C&quot;, &quot;%.4e&quot;)<br />
+              <br />
+              V = 0				&nbsp;&nbsp;&nbsp;-- Voltage (V)<br />
+              T = 300				&nbsp;&nbsp;&nbsp;-- Temperature (K)<br />
+              ISC = 1e-4			&nbsp;&nbsp;&nbsp;-- Short-circuit current (A)<br />
+              RP1 = 1e6			&nbsp;&nbsp;&nbsp;-- Parallel resistance (Ohms)<br />
+              RP2 = 1e4			&nbsp;&nbsp;&nbsp;-- Parallel resistance (Ohms)<br />
+              IS1 = 1e-11			&nbsp;&nbsp;&nbsp;-- Ideality factor for diode 1<br />
+              n1 = 1				&nbsp;&nbsp;&nbsp;-- Ideality factor for diode 2<br />
+              IS2 = 1e-9			&nbsp;&nbsp;&nbsp;-- Saturation current for diode 2 (A)<br />
+              n2 = 2				&nbsp;&nbsp;&nbsp;-- Ideality factor for diode 2<br />
+              RS1 = 10			&nbsp;&nbsp;&nbsp;-- Series resistance (Ohms)<br />
+              RS2 = 10			&nbsp;&nbsp;&nbsp;-- Series resistance (Ohms)<br />
+              I0 = 1				&nbsp;&nbsp;&nbsp;-- Current max value (for the nonlinear solver)<br />
+              Vinit = 0<br />
+              Vfin = 0.5<br />
+              DV = (Vfin - Vinit) / NN<br />
+              <br />
+              V = {}<br />
+              I1 = {}<br />
+              I2 = {}<br />
+              for ii=1,NN do
+              	<blockquote>
+              	V[ii] = DV * (ii - 1) <br />
+                I1[ii] = Physics.current(V[ii], T, ISC, RP1, IS1, n1, IS2, n2, RS1, I0)<br />
+                I2[ii] = Physics.current(V[ii], T, ISC, RP2, IS1, n1, IS2, n2, RS1, I0)<br />
+                if (I1[ii] >= 0) and (I2[ii] >= 0) then<br />
+                &nbsp;&nbsp;&nbsp;break<br />
+                end
+               </blockquote>
+              end<br />
+               tD:set(&quot;A&quot;, V)<br />
+               tD:set(&quot;B&quot;, I1)<br />
+               tD:set(&quot;C&quot;, I2)<br />
+              <br />
+              tP = Plot:create()<br />
+              tP:add(&quot;A&quot;, &quot;B&quot;, 1)<br />
+              tP:add(&quot;A&quot;, &quot;C&quot;, 1)<br />
+              tP:axis(1, 1, 1, 0, 0, 1, &quot;Voltage (V)&quot;)<br />
+              tP:axis(2, 1, 1, 0, 0, 1, &quot;Current (A)&quot;)<br />
+              tP:color(1,255,0,0)<br />
+              tP:color(2,0,0,255)<br />
+              tP:update()<br />
+              <br />
+              print(toc())		&nbsp;&nbsp;&nbsp;-- Print the elapsed time (sec.) since tic was used </span> </blockquote>
+            
+            <p>&nbsp;</p>
+            <p class="styleH3"> <a name="scripting_favorites" id="scripting_favorites"></a>4.         Favorites Manager</p>
+            <p>SigmaGraph allows you to organize very easily your scripts with the integrated favorites manager (select ‘Favorites’ menu or click the corresponding toolbar button). You can (i) group all your most used scripts and load them very quickly; (ii) automatically run multiple scripts and open one script at SigmaGraph startup (very useful feature for specialized library or frequently used/modified scripts). With the favorites manager, you can add, remove, move up or down, load, auto-run or auto-load script by clicking the corresponding button.</p>
+            <p><img src="images/scripting_favorites.gif" width="338" height="268" alt="Scripting Favorites" longdesc="Scripting Favorites" /></p>
+            <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td><p>&nbsp;</p></td>
+        </tr>
+      </table></td>
+    <td valign="top" bgcolor="#FCFDFE"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" height="20" bgcolor="#245280"><span class="styleWhite">&nbsp;Copyright(C) 1997-2020 <a href="http://www.hamady.org/about.html"><span class="styleWhite">Pr. Sidi HAMADY</span></a></span></td>
+  </tr>
+</table>
+<br />
+<div style="display:none;"> <a href="http://www.alexa.com/siteinfo/http://www.hamady.org"> 
+  <script type='text/javascript' language='JavaScript' src='http://xslt.alexa.com/site_stats/js/t/a?url=http://www.hamady.org'>
+</script> 
+  </a> </div>
+</body>
+</html>

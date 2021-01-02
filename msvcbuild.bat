@@ -92,11 +92,10 @@ if "%release%" == "true" (
     del /f /q %DISTDIR%\SigmaGraph\bin\SigmaConsole.exe >nul 2>&1
     del /f /q %DISTDIR%\SigmaGraph\sigmagraph_windows.zip >nul 2>&1
 
-    echo %CDIR%\SigmaGraph\Help\sigmagraph.pdf %DISTDIR%\SigmaGraph\help\
-    copy /y %CDIR%\SigmaGraph\Help\sigmagraph.pdf %DISTDIR%\SigmaGraph\help\
-    copy /y %CDIR%\SigmaGraph\Help\sigmaconsole.pdf %DISTDIR%\SigmaGraph\help\
-    copy /y %CDIR%\SigmaGraph\Help\sigmagraph.chm %DISTDIR%\SigmaGraph\help\
-    copy /y %CDIR%\SigmaGraph\Help\sigmaconsole.chm %DISTDIR%\SigmaGraph\help\
+    copy /y %CDIR%\Help\sigmagraph.pdf %DISTDIR%\SigmaGraph\help\
+    copy /y %CDIR%\Help\sigmaconsole.pdf %DISTDIR%\SigmaGraph\help\
+    copy /y %CDIR%\Help\sigmagraph.chm %DISTDIR%\SigmaGraph\help\
+    copy /y %CDIR%\Help\sigmaconsole.chm %DISTDIR%\SigmaGraph\help\
 
     copy /y %OUTPUTDIR%\bin\SigmaGraph.exe %DISTDIR%\SigmaGraph\bin\
     copy /y %OUTPUTDIR%\bin\SigmaConsole.exe %DISTDIR%\SigmaGraph\bin\

@@ -1,0 +1,173 @@
+/* 
+    Copyright 1997-2020  Pr. Sidi HAMADY
+    http://www.hamady.org 
+    sidi@hamady.org
+    Released under the MIT License
+*/
+
+body {
+	background-color: #E4E8EA;
+	margin:0px;
+}
+
+table {
+	border-width: 0px; 
+	border-style: outset;
+	border-collapse: collapse;
+	border-spacing: 0px;
+ } 
+td {
+	border-width:thin; 
+	border-style:none;
+	font:0.9em Arial, Helvetica, sans-serif;
+	color:#000000;
+}
+
+a {
+	color: #334A63;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #0000FF;
+}
+
+a:link {
+	color: #000066;
+}
+
+#navigation a {
+	font:0.9em Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color: #245280;
+	text-align:center;
+	text-decoration: none;
+	letter-spacing:.2em;
+	line-height:2.0em;
+	display:block;
+}
+
+#navigation a:hover {
+	font:0.9em Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#ffffff;
+	background: #245280;
+	text-align:center;
+	text-decoration: none;
+	letter-spacing:.2em;
+	line-height:2.0em;
+	display:block;
+}
+
+#padding {
+	padding:14px;
+}
+
+#noborder td {
+	border: 0px;
+}
+
+.logo {
+	font:1.5em Arial, Helvetica, sans-serif;
+	color: #FFBA00;
+	letter-spacing:.2em;
+	line-height:2.0em;
+}
+	
+.tagline {
+	font:0.9em Arial, Helvetica, sans-serif;
+	color: #D3DCE6;
+	line-height:1.2em;
+}
+	
+.bodyText {
+	font:0.9em Arial, Helvetica, sans-serif;
+	line-height:1.4em;
+	color:#245280;
+	letter-spacing:.1em;
+}
+	
+.pageName {
+	font:1.6em Arial, Helvetica, sans-serif;
+	color: #FF6600;
+	letter-spacing:0.2em;
+	line-height:2.0em;
+	border-color: #FF9900;
+}
+	
+.styleH1 {
+	font:bold 1.4em Arial, Helvetica, sans-serif;
+	color: #FF6600;
+	letter-spacing:0.2em;
+	line-height:2.0em;
+	border-color: #FF9900;
+}
+	
+.styleH2 {
+	font:bold 1.3em Arial, Helvetica, sans-serif;
+	color: #FF6600;
+	letter-spacing:0.2em;
+	line-height:2.0em;
+	border-color: #FF9900;
+}
+	
+.styleH3 {
+	font:bold 1.2em Arial, Helvetica, sans-serif;
+	color: #FF6600;
+	letter-spacing:0.2em;
+	line-height:2.0em;
+	border-color: #FF9900;
+}
+	
+.styleH4 {
+	font:bold 1.1em Arial, Helvetica, sans-serif;
+	color: #FF6600;
+	letter-spacing:0.2em;
+	line-height:2.0em;
+	border-color: #FF9900;
+}
+	
+.styleH5 {
+	font:bold 1.0em Arial, Helvetica, sans-serif;
+	color: #FF6600;
+	letter-spacing:0.2em;
+	line-height:2.0em;
+	border-color: #FF9900;
+}
+	
+.subHeader {
+	font:bold 0.9em Arial, Helvetica, sans-serif;
+	color: #2D374D;
+	font-weight:bold;
+	line-height:2.0em;
+	letter-spacing:.1em;
+}
+	
+.navText {
+	font:0.9em Arial, Helvetica, sans-serif;
+	color: #245280;
+	letter-spacing:.1em;
+	line-height:2.0em;
+}
+
+.styleWhite {
+	color: #FFFFFF
+}
+
+.styleOrange {
+	color: #FF6600;
+	font-weight: bold;
+}
+
+.styleWarn {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #990000;
+}
+
+.style14px {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+

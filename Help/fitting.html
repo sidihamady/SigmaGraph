@@ -1,0 +1,126 @@
+﻿<!-- 
+    Copyright 1997-2020  Pr. Sidi HAMADY
+    http://www.hamady.org 
+    sidi@hamady.org
+    Released under the MIT License
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Curve Fitting</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Reply-To" content="http://www.hamady.org/index.html" />
+<meta name="description" content="Software for Science and Technology" />
+<meta name="keywords" content="Hamady, Software, Science, Engineering, Scientists, Engineers, SigmaGraph, Graph, Plot, Datasheet, Calculation, Simulation, Simulator, Semiconductors, Devices, Poisson, Continuity, Current, Voltage, Logiciel, Tracé, Graphe, X-Y, Visualisation, Données, Analyse, Traitement, Simulation, Semi-conducteurs, Sidi, Ould, Saad, Hamady" />
+<meta name="robots" content="all" />
+<link rel="stylesheet" href="./hamady.css" type="text/css" />
+</head>
+<body>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFDFE">
+  <tr bgcolor="#245280">
+    <td width="15" height="25" nowrap="nowrap" bgcolor="#E4E8EA"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td width="100%" height="25" nowrap="nowrap" bgcolor="#E4E8EA">&nbsp;</td>
+    <td width="15" height="25" nowrap="nowrap" bgcolor="#E4E8EA">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#245280">
+    <td height="75" nowrap="nowrap"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td nowrap="nowrap" bgcolor="#245280" class="logo"><b>SigmaGraph</b> Data plotting and analysis software</td>
+    <td nowrap="nowrap"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td height="4" colspan="3" bgcolor="#C2D2E0"><img src="./images/spacer.gif" alt="" width="1" height="4" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td height="4" colspan="3" bgcolor="#C2D2E0"><img src="./images/spacer.gif" alt="" width="1" height="4" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td valign="top" bgcolor="#FCFDFE"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td height="400" valign="top" bgcolor="#FCFDFE">
+    <table border="0" cellpadding="2" cellspacing="0" bgcolor="#FCFDFE">
+    
+     	<tr>
+          <td><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+       </tr>
+
+        <tr>
+          <td>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFDFE">
+              <tr height="20" align="center">
+                      <td width="17%" align="center" nowrap="nowrap" class="navText"><a href="quickstart.html">Start Guide</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="datasheet.html"> Datasheet</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="graph.html">Graph</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText" bgcolor="#FFCC00"><a href="fitting.html">Curve Fitting</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="console.html">Math Console</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="scripting.html">Scripting</a></td>
+               </tr>
+            </table>
+        </td>
+       </tr>
+    
+        <tr>
+          <td valign="top" bgcolor="#FCFDFE" class="bodyText" width="100%"><p>&nbsp;</p>
+<p class="styleH2"> <a name="fitting" id="fitting"></a>Curve Fitting</p>
+            <p> SigmaGraph gives you the fitting functionality you need in order to analyze data (e.g. data obtained from experiment).</p>
+            <p> 24 models are available, including <span class="styleH4">linear</span>, <span class="styleH4">polynomial</span>, <span class="styleH4">exponential</span>, <span class="styleH4">Gaussian</span> (up to 5 peaks), <span class="styleH4">Lorentzian</span> (up to 5 peaks), <span class="styleH4">Pearson VII</span>, <span class="styleH4">logistic</span>, <span class="styleH4">power</span>… </p>
+            <p><img src="images/fittingdlg.gif" width="601" height="466" alt="Fitting" longdesc="Fitting" /></p>
+            <p>To perform a curve fitting, select the graph and activate the curve (‘Graph Options / Activate’ or right click the curve legend and select ‘Activate’). Then click the ‘Nonlinear Fitting’ toolbar button, or select ‘Fitting/ Nonlinear Fitting’ menu. The fitting dialog appears letting you to select the model, mask or smooth data or set fitting options.</p>
+            <p> The <span class="styleH4">Fitting Model Parameters</span>: you can select the model to use by the fitting algorithm. The model function is shown, with the parameters: <span class="subHeader">a, b, c, …</span>. In order to calculate quickly and precisely the best estimation of these parameters values, the fitting algorithm needs an initial guess. This can be done automatically for some models (Gauss, Lorentz, Pearson VII, Exponential,…). Simply click the ‘Guess’ button. You can select the X fitting interval (by default it’s the same than the data range), and change the fitting number of points (usually few times the data number of points).</p>
+            <p> When done, click the ‘Fit’ button. The fitting curve will be plotted and the parameters values will be printed out on the graph window (if the ‘Show Fitting Report on Graph’ button is checked). You can view the fitting datasheet by clicking the ‘View/Fit Datasheet’ menu or the fitting report by clicking ‘View/Fit Report’.</p>
+            <p> <a name="fitting_user" id="fitting_user"></a>You can also define and use your own fitting models. Click the ‘Edit…’ button to show the <span class="styleH4">user-defined models</span> window:
+              
+              
+              
+              Enter the name of your fitting model;</p>
+            <p><img src="images/userfit.gif" width="297" height="59" alt="User Fitting" longdesc="User Fitting" /></p>
+            <p>Define the number of the fitting parameters (between 2 and 6); </p>
+            <p>Enter the fitting function f(x,a,b,…). The fitting parameters are named a, b, c, d, and so on;</p>
+            <p><img src="images/userfitdlg.gif" width="383" height="352" alt="User Fitting" longdesc="User Fitting" /></p>
+            <p>Enter the derivative (df/da) expression;        Give the parameters default/starting values;
+              
+              Click the ‘Add’ button;
+              
+              Select parameter b and enter the derivative (df/db) expression, and then c, d, and so on.
+              
+              Click the ‘Update’ button to save the fitting model;
+              
+              Click ‘OK’ to close the user-defined models window and return to the fitter main window.</p>
+            <p> Now you can select your fitting model from the list and use it.</p>
+            <p> <span class="styleH4"><a name="fitting_mask" id="fitting_mask"></a>Mask and Smooth</span>: before performing curve fit, you can mask, smooth and/or subtracting a baseline from the data. To select the fitting range in the data (and then mask the data outside this range), give the start (‘From’) and the end (‘To’) values for X-Range and check the ‘Mask’ button. To smooth the data, enter the smooth order (high number means more smooth) and check the ‘Smooth’ button. To subtract a baseline (y = y<sub>0</sub> + slope*x) from the curve, enter the line parameters (y0 and slope) and check the ‘Baseline’ button.
+              
+              When ready, click the ‘Baseline and Smooth’ button to perform calculations.</p>
+            <p><img src="images/fittingdlg_mask.gif" width="602" height="464" alt="Fitting Mask" longdesc="Fitting Mask" /></p>
+            <p> <a name="fitting_options" id="fitting_options"></a>You can set some <span class="styleH4">fitting algorithm options</span> like the maximum number of iterations, the relative and absolute tolerance… The fitting parameter is an internal number used by the fitter. You can try different value if convergence problem occurred.</p>
+            <p><img src="images/fittingdlg_options.gif" width="599" height="465" alt="Fitting Options" longdesc="Fitting Options" /></p>
+            <p> <br />
+          </p></td>
+        </tr>
+        
+       <tr>
+          <td><p>&nbsp;</p></td>
+       </tr>
+ 
+      </table></td>
+    <td valign="top" bgcolor="#FCFDFE"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" height="20" bgcolor="#245280"><span class="styleWhite">&nbsp;Copyright(C) 1997-2020 <a href="http://www.hamady.org/about.html"><span class="styleWhite">Pr. Sidi HAMADY</span></a></span></td>
+  </tr>
+</table>
+<br />
+<div style="display:none;"> <a href="http://www.alexa.com/siteinfo/http://www.hamady.org"> 
+  <script type='text/javascript' language='JavaScript' src='http://xslt.alexa.com/site_stats/js/t/a?url=http://www.hamady.org'>
+</script> 
+  </a> </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=sigmaconsole.chm
+Contents file=sigmaconsole.hhc
+Default topic=console.html
+Display compile progress=No
+Full-text search=Yes
+Index file=index.hhk
+Language=0x409 Anglais (États-Unis)
+Title=SigmaConsole
+
+
+[FILES]
+console.html
+
+[INFOTYPES]
+

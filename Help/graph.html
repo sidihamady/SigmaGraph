@@ -1,0 +1,139 @@
+﻿<!-- 
+    Copyright 1997-2020  Pr. Sidi HAMADY
+    http://www.hamady.org 
+    sidi@hamady.org
+    Released under the MIT License
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Working with Graph</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Reply-To" content="http://www.hamady.org/index.html" />
+<meta name="description" content="Software for Science and Technology" />
+<meta name="keywords" content="Hamady, Sidi, Ould, Saad, Software, Science, Engineering, Scientists, Engineers, SigmaGraph, Graph, Plot, Datasheet, Calculation, Simulation, Simulator, Semiconductors, Devices, Poisson, Continuity, Current, Voltage, Logiciel, Tracé, Graphe, X-Y, Visualisation, Données, Analyse, Traitement, Simulation, Semi-conducteurs" />
+<meta name="robots" content="all" />
+<link rel="stylesheet" href="./hamady.css" type="text/css" />
+</head>
+<body>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFDFE">
+  <tr bgcolor="#245280">
+    <td width="15" height="25" nowrap="nowrap" bgcolor="#E4E8EA"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td width="100%" height="25" nowrap="nowrap" bgcolor="#E4E8EA">&nbsp;</td>
+    <td width="15" height="25" nowrap="nowrap" bgcolor="#E4E8EA">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#245280">
+    <td height="75" nowrap="nowrap"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td nowrap="nowrap" bgcolor="#245280" class="logo"><b>SigmaGraph</b> Data plotting and analysis software</td>
+    <td nowrap="nowrap"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td height="4" colspan="3" bgcolor="#C2D2E0"><img src="./images/spacer.gif" alt="" width="1" height="4" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td height="4" colspan="3" bgcolor="#C2D2E0"><img src="./images/spacer.gif" alt="" width="1" height="4" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td valign="top" bgcolor="#FCFDFE"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td height="400" valign="top" bgcolor="#FCFDFE">
+    <table border="0" cellpadding="2" cellspacing="0" bgcolor="#FCFDFE">
+    
+     	<tr>
+          <td><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+       </tr>
+
+        <tr>
+          <td>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFDFE">
+              <tr height="20" align="center">
+                      <td width="17%" align="center" nowrap="nowrap" class="navText"><a href="quickstart.html">Start Guide</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="datasheet.html"> Datasheet</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText" bgcolor="#FFCC00"><a href="graph.html">Graph</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="fitting.html">Curve Fitting</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="console.html">Math Console</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="scripting.html">Scripting</a></td>
+               </tr>
+            </table>
+        </td>
+       </tr>
+    
+        <tr>
+          <td valign="top" bgcolor="#FCFDFE" class="bodyText" width="100%"><p>&nbsp;</p>
+<p class="styleH2"> <a name="graph" id="graph"></a>Working with Graph</p>
+            <p class="styleH3"> <a name="graph_addcurve" id="graph_addcurve"></a>1.      Create graph/add curve</p>
+            <p> When you create a SigmaGraph document, a blank graph is automatically associated with the datasheet. When the datasheet is active, you can show or hide the graph by clicking the ‘View Graph’ toolbar button or select ‘View/Graph’ menu. To add curve to the graph, select the column to be plotted and click the ‘Add Curve’ toolbar button (or right click the column and select ‘Add/Remove Curve’, or select the ‘Graph/Add Curve’ menu). With the ‘Add/Remove Curve’ dialog you can select the X and Y columns, and set the curve style (line/symbol), size and color. You can also remove or modify the existing curves by selecting the plotted column and press the ‘Modify’ or ‘Remove’ button.
+              
+              You can choose the curve axes by clicking the X-Y, X-Y2, X2-Y or X2-Y2 button. </p>
+            <p><img src="images/addcurve.gif" width="371" height="319" alt="Add Curve" longdesc="Add Curve" /></p>
+            <p class="styleH3"> <a name="graph_options" id="graph_options"></a>2.      Graph options</p>
+            <p> You can modify the graph options, including curve style, axis, scale… To show the ‘Graph Options’ dialog, click the toolbar button or select ‘Graph/Options’ menu.</p>
+            <p><img src="images/plotopt.gif" width="253" height="65" alt="Plot Options" longdesc="Plot Options" /></p>
+            <p class="styleH4"> <a name="graph_options_curves" id="graph_options_curves"></a>2.1     Curves</p>
+            <p> To change the selected curve legend font, click the ‘Font’ button. You can modify also the line, symbol st  yle, size and color of each curve. You can add X and Y drop lines and change their style, size and color.
+              
+              To activate the selected curve, click the ‘Set as active’ button (the active curve is used for the fitting for example). To hide or show curve, press ‘Hide/Show’. To remove the curve from graph, press ‘Remove’.
+              
+              You can apply the current curve style to all curves by clicking the ‘Apply to All Curves’ button. To set the current style as the default one, click the ‘Set as default’ button.</p>
+            <p><img src="images/plotopt_curves.gif" width="541" height="391" alt="Curve Options" longdesc="Curve Options" /></p>
+            <p class="styleH4"> <a name="graph_options_axes" id="graph_options_axes"></a>2.2     Axes</p>
+            <p> To change axis properties, select the axis (bottom (X), left (Y),  top (X2) or right (Y2)). To show or hide the axis, check or uncheck the ‘Show Axis’ button. You can modify the axis title, show or hide this title, choose its font and color. The axis style (color, thickness, and label) can be be changed easily. The grid and tick options can also be modified by selecting color, grid count, … You can apply the current axis style to all axes by clicking the ‘Apply to All Axes’ button. To set the current style as the default one, click the ‘Set as default’ button. In the ‘Link’ input, you can optionally enter the axis link formula (example: 1/(2*pi*x) for Bottom axis, or 20*log(y) for the Left axis), and the corresponding value will be displayed in the status bar when the mouse moves over the graph.</p>
+            <p><img src="images/plotopt_axes.gif" width="541" height="391" alt="Axes Options" longdesc="Axes Options" /></p>
+            
+                        
+            <p class="styleH4"> <a name="graph_options_scale" id="graph_options_scale"></a>2.3     Scale</p>
+            <p> The X and Y scale can be manually entered, or automatically calculated. For each axis (bottom (X), left (Y),  top (X2) or right (Y2)), select the range manually (‘From’ and ‘To’ values) or click the ‘AutoScale’ button. You can use the logarithmic or Linear scale (‘Log’ and ‘Linear’ buttons). The numerical format of the axis label can be selected (decimal or scientific), and the format prefix (‘Pre’ = number of digits before the decimal point) and suffix (‘Suf’ = number of digits after the decimal point) can be entered. To set the current style as the default one, click the ‘Set as default’ button. </p>
+            <p><img src="images/plotopt_scale.gif" width="542" height="391" alt="Scale Options" longdesc="Scale Options" /></p>
+
+            <p class="styleH4"><a name="graph_options_lines" id="graph_options_lines"></a>2.4     Lines</p>
+            <p> You can add horizontal (y = constant) or vertical (x = constant) lines to the graph. To do so, select style, size, color, position (the x-position for vertical line, and y-position for horizontal line), line limits (min. and max.) and click ‘Add’. You can change the line properties and click ‘Apply’, or remove the line by clicking the ‘Remove’ button.</p>
+            <p><img src="images/plotopt_lines.gif" width="541" height="391" alt="Lines Options" longdesc="Lines Options" /></p>
+            
+            <p class="styleH4"><a name="graph_options_general" id="graph_options_general"></a>2.5     General options</p>
+            <p> The general options include the graph title text, font, color and the maximum points displayed in the graph. To show or hide the graph title, check or unchek the ‘Show Title’ button. To change the graph or window background color, click inside the rectangle (in the center for the graph, and close to the border for the window) and select the color. To set the current style as the default one, click the ‘Set as default’ button.</p>
+            <p><img src="images/plotopt_general.gif" width="541" height="391" alt="General Options" longdesc="General Options" /></p>
+            <p class="styleH3"> <a name="graph_copypaste" id="graph_copypaste"></a>3.      Copy/Paste graph format </p>
+            <p>With SigmaGraph you can apply one graph format (colors, fonts, axis and curves style, …) to another graph. Simply right click the graph title bar and select ‘Copy Format’. Then select the graph to modify, right click its title bar and select ‘Paste Format’. The copied format will be applied to the selected graph.</p>
+            <p><img src="images/graphcopy.gif" width="320" height="200" alt="Copy Graph" longdesc="Copy Graph" /></p>
+            <p class="styleH3"> <a name="graph_templates" id="graph_templates"></a>4.      Templates Manager</p>
+            <p> With the SigmaGraph Templates Manager (‘Graph/Templates’ menu), you can customize and save all of the properties of your graph and reuse them very quickly. With this useful feature, you will save time by using a predetermined style (i.e. template) to create a new graph. With the Template Manager, you can add, remove or edit up to sixteen templates, covering your needs. When clicking the ‘Apply’ button, the selected template will be applied to the active graph.</p>
+            <p><img src="images/templates.gif" width="352" height="447" alt="Templates" longdesc="Templates" /></p>
+            <p class="styleH3"><a name="graph_text" id="graph_text"></a>5.       Adding text</p>
+            <p> To add text to the graph, click the ‘Add Text’ toolbar button and then click somewhere in the graph window and enter the text. To modify an existing text, double click it. You can change the text font, color… </p>
+            <p><img src="images/addtext.gif" width="159" height="58" alt="Add Text" longdesc="Add Text" /></p>
+            <p>To move a text, simply select it and move it with the mouse.</p>
+            <p> You can create superscript or subscript text by using <span class="subHeader">^</span> or <span class="subHeader">_</span> character. Example: <span class="subHeader">x^2</span> will be displayed as <span class="subHeader">x<sup>2</sup></span> and <span class="subHeader">x_2</span> will be displayed as <span class="subHeader">x<sub>2</sub></span>. You can use parenthesis if you need more complex expression. Example: T^(3/2) will be displayed as T<sup>3/2</sup>.</p>
+            <p class="styleH3"> <a name="graph_geo" id="graph_geo"></a>6.       Adding Line, Rectangle or Ellipse</p>
+            <p> To add line, rectangle or ellipse to the graph, click the ‘Add Line’, ‘Add Rectangle’ or ‘Add Ellipse’ toolbar button and then click somewhere in the graph window, hold down the mouse button and draw the line, rectangle or ellipse. To modify an existing item, double click it. You can change the size, style, color, fill, arrow… To move item, simply select it and move it with the mouse.</p>
+            <p><br />
+          </p></td>
+        </tr>
+        
+       <tr>
+          <td><p>&nbsp;</p></td>
+       </tr>
+  
+      </table></td>
+    <td valign="top" bgcolor="#FCFDFE"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" height="20" bgcolor="#245280"><span class="styleWhite">&nbsp;Copyright(C) 1997-2020 <a href="http://www.hamady.org/about.html"><span class="styleWhite">Pr. Sidi HAMADY</span></a></span></td>
+  </tr>
+</table>
+<br />
+<div style="display:none;"> <a href="http://www.alexa.com/siteinfo/http://www.hamady.org"> 
+  <script type='text/javascript' language='JavaScript' src='http://xslt.alexa.com/site_stats/js/t/a?url=http://www.hamady.org'>
+</script> 
+  </a> </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+﻿<!-- 
+    Copyright 1997-2020  Pr. Sidi HAMADY
+    http://www.hamady.org 
+    sidi@hamady.org
+    Released under the MIT License
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Working with Datasheet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Reply-To" content="http://www.hamady.org/index.html" />
+<meta name="description" content="Software for Science and Technology" />
+<meta name="keywords" content="Hamady, Software, Science, Engineering, Scientists, Engineers, SigmaGraph, Graph, Plot, Datasheet, Calculation, Simulation, Simulator, Semiconductors, Devices, Poisson, Continuity, Current, Voltage, Logiciel, Tracé, Graphe, X-Y, Visualisation, Données, Analyse, Traitement, Simulation, Semi-conducteurs, Sidi, Ould, Saad, Hamady" />
+<meta name="robots" content="all" />
+<link rel="stylesheet" href="./hamady.css" type="text/css" />
+</head>
+<body>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFDFE">
+  <tr bgcolor="#245280">
+    <td width="15" height="25" nowrap="nowrap" bgcolor="#E4E8EA"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td width="100%" height="25" nowrap="nowrap" bgcolor="#E4E8EA">&nbsp;</td>
+    <td width="15" height="25" nowrap="nowrap" bgcolor="#E4E8EA">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#245280">
+    <td height="75" nowrap="nowrap"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td nowrap="nowrap" bgcolor="#245280" class="logo"><b>SigmaGraph</b> Data plotting and analysis software</td>
+    <td nowrap="nowrap"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td height="4" colspan="3" bgcolor="#C2D2E0"><img src="./images/spacer.gif" alt="" width="1" height="4" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td height="4" colspan="3" bgcolor="#C2D2E0"><img src="./images/spacer.gif" alt="" width="1" height="4" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td colspan="3"><img src="./images/spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+  <tr bgcolor="#D3DCE6">
+    <td valign="top" bgcolor="#FCFDFE"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+    <td height="400" valign="top" bgcolor="#FCFDFE">
+    <table border="0" cellpadding="2" cellspacing="0" bgcolor="#FCFDFE">
+    
+     	<tr>
+          <td><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+       </tr>
+
+        <tr>
+          <td>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFDFE">
+              <tr height="20" align="center">
+                      <td width="17%" align="center" nowrap="nowrap" class="navText"><a href="quickstart.html">Start Guide</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText" bgcolor="#FFCC00"><a href="datasheet.html"> Datasheet</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="graph.html">Graph</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="fitting.html">Curve Fitting</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="console.html">Math Console</a></td>
+                      <td width="16.5%" align="center" nowrap="nowrap" class="navText"><a href="scripting.html">Scripting</a></td>
+               </tr>
+            </table>
+        </td>
+       </tr>
+    
+        <tr>
+          <td valign="top" bgcolor="#FCFDFE" class="bodyText" width="100%"><p>&nbsp;</p>
+<p class="styleH2"> <a name="datasheet" id="datasheet"></a>Working with Datasheet</p>
+            <p class="styleH3"> <a name="datasheet_create" id="datasheet_create"></a>1.      Creating a datasheet </p>
+            <p>To create a datasheet you can either:</p>
+            <p> (i)       import a data from an ASCII file. Click the ‘Open’ button (in the main toolbar) and select the file to be imported. The Import ASCII dialog appears, giving you the possibility to select the delimiter (TAB, SPACE or ;), to set the number of rows to skip at the beginning of the file, to set the number of rows to read from the file. When ready, press ‘OK’ to import the file content into a new datasheet. A posted note is associated to the datasheet. To view and modify it, select ‘View/Note’.</p>
+            <p><img src="images/importdlg.gif" width="505" height="174" alt="Import Data" longdesc="Import Data" /></p>
+            <p> (ii)     create a blank document by clicking the ‘New’ button (or click ‘File/New’ menu). A new datasheet, with two blank columns, will be created</p>
+            <p class="styleH3"> <a name="datasheet_columns" id="datasheet_columns"></a>2.      Column properties</p>
+            <p>To show and set the column properties, right click the column and choose ‘Properties’. The ‘Column Properties’ appears giving you the possibility to:</p>
+            <p> (i)        To change the column label. You can select to show column name (A, B, C, and so on), label or both.</p>
+            <p> (ii)      To change numeric format of the column data. You can choose between decimal (1000.0) and scientific (1e3). You can also set the format prefix (‘Pre’ = number of digits before the decimal point) and suffix (‘Suf’ = number of digits after the decimal point).</p>
+            <p> (iii)     To change the column type: X, Y, X-Err (Error Bars on X) and Y-Err (Error Bars on Y).</p>
+            <p>When ready press ‘Apply’ and then ‘OK’. You can change the active column by using the left-right arrows.</p>
+            <p class="styleH3"> <a name="datasheet_addcol" id="datasheet_addcol"></a>3.      Inserting, Appending and Deleting columns</p>
+            <p> To insert a new column after an existing one, right click the latter and choose ‘Insert Column’. A new blank column will be created. You can also append columns (inserting column after the last one) by right clicking on any column and choose ‘Append columns’. To delete a column, right click it and choose ‘Delete columns’.            </p>
+            <p class="styleH3"> <a name="datasheet_series" id="datasheet_series"></a>4.      Creating series </p>
+            <p>You can fill a column with a series of numbers, by setting the initial (‘From’) value y<sub>0</sub>, Increment δ and, if needed, a multiplier m. At index i (varying from 0 to n-1 (n = number of rows)), the value y<sub>i</sub> is given by y<sub>i</sub> = m * y<sub>i-1</sub> + δ. To create a series, right click the column and select ‘Create Series’. The ‘Create Series’ dialog appears, giving you the possibility to set the initial value y<sub>0</sub>, the increment δ and the multiplier m. If you check the ‘To’ button, the calculation will be stopped when yi reach the final (‘To’) value.</p>
+            <p><img src="images/series.gif" width="373" height="161" alt="Create Series" longdesc="Create Series" /></p>
+            <p class="styleH3"> <a name="datasheet_values" id="datasheet_values"></a>5.      Setting column values </p>
+            <p>You can set the column values by using any mathematical expression. Right click the column and choose ‘Set Column Values’ With the shown dialog you can set the column values. The columns are alphabetically named: A, B, C, … (the names are not case sensitive). To set the column values, write down the expression and click the ‘Apply’ button. You can use the dialog menu to quickly include functions and constants in your expression. For more details cf. the paragraph on the mathematical console.</p>
+            <p><img src="images/columnvalues.gif" width="390" height="166" alt="Column Values" longdesc="Column Values" /></p>
+            <p class="styleH3"> <a name="datasheet_stats" id="datasheet_stats"></a>6.      Statistics on column</p>
+            <p>To view the column descriptive statistics, right click the column and select ‘Statistics’. The statistics dialog appears with the standard parameters: Minimum, Maximum, Sum, Mean, Median, Variance, Standard Deviation, Variance Coefficient, Root Mean Square (RMS), Skewness and Kurtosis. You can copy statistics to the clipboard by clicking the ‘Copy’ button.</p>
+            <p><img src="images/columnstats.gif" width="475" height="244" alt="Column Statistics" longdesc="Column Statistics" /></p>
+            <p class="styleH3"> <a name="datasheet_analysis" id="datasheet_analysis"></a>7.      Analysis on column</p>
+            <p>You can perform some useful calculations on column (e.g. integrate, differentiate, average, calculate the FFT (Fast Fourier Transform) or the autocorrelation function of a transient signal), by selecting the ‘Analysis’ menu.</p>
+            <p> You can then select, in the ‘Output Column’ list, an existing column to update with the calculation results, or create a new column by checking the ‘New’ button. To add the integral, derivative, averaged or FFT curve to the graph, check the ‘Add to Graph’ button.</p>
+            <p> Note that you can program you own algorithms by using the SigmaGraph scripting capabilities.</p>
+            <p> SigmaGraph use a centered difference formula to approximate the derivative:</p>
+            <p><img src="images/formuladiff.gif" alt="Formula Differentiate" width="209" height="53" border="1" longdesc="Formula Differentiate" /> </p>
+            <p>For integration, the trapezoidal rule is used.              </p>
+            <p>The averaging formula used is the following (where m is the averaging order):</p>
+            <p><img src="images/formulamean.gif" alt="Formula Mean" width="311" height="75" border="1" longdesc="Formula Mean" /></p>
+            <p> For FFT, the module is calculated and normalized by the number of points (this number of points should be a power of two). The frequency is calculated based on the sampling period (X-step in second).
+              
+              The Autocorrelation function is calculated by using the following formula:
+              
+              For equi-spaced measurements y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>N</sub>.            </p>
+            <p class="styleH3"><a name="datasheet_mask" id="datasheet_mask"></a>8.      Masking data</p>
+            <p> You can mask selected cells in a column (or group of columns) by right clicking and selecting ‘Mask’. The masked cell will be printed out in red and the corresponding data will not be plotted or used in fitting. You can invert mask or unmask cells: right click the selected cells and choose ‘Invert Mask’ or ‘Unmask’. You can also use the datasheet toolbar buttons to perform these operations.</p>
+            <p><img src="images/maskdata.gif" width="107" height="59" alt="Mask Data" longdesc="Mask Data" /></p>
+            <p class="styleH3"> <a name="datasheet_sort" id="datasheet_sort"></a>9.      Sorting column</p>
+            <p> To sort a column, select it, right click and choose ‘Sort Column’ (ascending or descending).</p>
+            <p class="styleH3"> <a name="datasheet_ascii" id="datasheet_ascii"></a>10.  Importing ASCII data</p>
+            <p> SigmaGraph gives you two ways to import ASCII data into a datasheet:</p>
+            <p> (i)            Importing with options. Select the datasheet to import in, and click ‘Import with options’ toolbar button. The importing dialog will appears. Click the browse button (‘…’) and select the ASCII file. The file content and info will be displayed. You can select the delimiter (TAB, SPACE or ;), set the number of rows to skip at the beginning of the file, set the number of rows to read from the file, and select whether or not to read titles into the datasheet. You can select the columns to import by entering their indexes (example: <span class="subHeader">1;3</span> means importing the first and the third columns) or leaving the default behavior (<span class="subHeader">*</span> means import all columns). When ready, press ‘OK’ to import the selected columns into datasheet.</p>
+            <p><img src="images/importdlgopt.gif" width="528" height="347" alt="Import Data" longdesc="Import Data" /></p>
+            <p> (ii)          Importing directly from file. Select the datasheet to import in, click ‘Import’ toolbar button, and choose the ASCII file to import from. The default importing options are used (ASCII separator, rows to skip…).</p>
+            <p class="styleH3"> <a name="datasheet_copypaste" id="datasheet_copypaste"></a>11.  Copy/Paste data</p>
+            <p> You can copy/paste cells, rows, column… by selecting the data and clicking the ‘Copy’ toolbar button (or Ctrl+C or right-click and select ‘Copy’). To paste data, select destination cells, rows or column and click the ‘Paste’ toolbar button (or Ctrl+V or right-click and select ‘Paste’).</p>
+            <p><br />
+            </p></td>
+        </tr>
+        
+       <tr>
+          <td><p>&nbsp;</p></td>
+       </tr>
+ 
+      </table></td>
+    <td valign="top" bgcolor="#FCFDFE"><img src="./images/spacer.gif" alt="" width="15" height="1" border="0" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" height="20" bgcolor="#245280"><span class="styleWhite">&nbsp;Copyright(C) 1997-2020 <a href="http://www.hamady.org/about.html"><span class="styleWhite">Pr. Sidi HAMADY</span></a></span></td>
+  </tr>
+</table>
+<br />
+<div style="display:none;"> <a href="http://www.alexa.com/siteinfo/http://www.hamady.org"> 
+  <script type='text/javascript' language='JavaScript' src='http://xslt.alexa.com/site_stats/js/t/a?url=http://www.hamady.org'>
+</script> 
+  </a> </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Start Guide">
+		<param name="Local" value="quickstart.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="1. Install">
+			<param name="Local" value="quickstart.html#install">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="2. Importing and analyzing data">
+			<param name="Local" value="quickstart.html#importdata">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.1 Importing data">
+				<param name="Local" value="quickstart.html#importdata_import">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.2 Creating a Line/Scatter Graph">
+				<param name="Local" value="quickstart.html#importdata_plot">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.3 Fitting">
+				<param name="Local" value="quickstart.html#importdata_fit">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.4 Adding Error Bars">
+				<param name="Local" value="quickstart.html#importdata_errbars">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.5 Exporting Graph">
+				<param name="Local" value="quickstart.html#importdata_export">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="3. Plotting function">
+			<param name="Local" value="quickstart.html#plotfunction">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="4. Error Bars">
+			<param name="Local" value="quickstart.html#importdata_errbars">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="5. Exporting Data and Graph">
+			<param name="Local" value="quickstart.html#export">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="6. Printing">
+			<param name="Local" value="quickstart.html#printing">
+			<param name="URL" value="quickstart.html#printing">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="7. Saving/Opening document">
+			<param name="Local" value="quickstart.html#savedoc">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="8. Specifications">
+			<param name="Local" value="quickstart.html#specifications">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="8.1 System requirements">
+				<param name="Local" value="quickstart.html#sysreq">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="8.2 Contact">
+				<param name="Local" value="quickstart.html#contact">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="8.3 Copyright">
+				<param name="Local" value="quickstart.html#copyright">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="8.4 License">
+				<param name="Local" value="quickstart.html#license">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Working with Datasheet">
+		<param name="Local" value="datasheet.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="1. Creating a datasheet ">
+			<param name="Local" value="datasheet.html#datasheet_create">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="2. Column properties">
+			<param name="Local" value="datasheet.html#datasheet_columns">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="3. Inserting, Appending and Deleting columns">
+			<param name="Local" value="datasheet.html#datasheet_addcol">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="4. Creating series">
+			<param name="Local" value="datasheet.html#datasheet_series">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="5. Setting column values">
+			<param name="Local" value="datasheet.html#datasheet_values">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="6. Statistics on column">
+			<param name="Local" value="datasheet.html#datasheet_stats">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="7. Analysis on column">
+			<param name="Local" value="datasheet.html#datasheet_analysis">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="8. Masking data">
+			<param name="Local" value="datasheet.html#datasheet_mask">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="9. Sorting column">
+			<param name="Local" value="datasheet.html#datasheet_sort">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="10. Importing ASCII data">
+			<param name="Local" value="datasheet.html#datasheet_ascii">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="11. Copy/Paste data">
+			<param name="Local" value="datasheet.html#datasheet_copypaste">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Working with Graph">
+		<param name="Local" value="graph.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="1. Create graph/add curve">
+			<param name="Local" value="graph.html#graph_addcurve">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="2. Graph options">
+			<param name="Local" value="graph.html#graph_options">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.1 Curves">
+				<param name="Local" value="graph.html#graph_options_curves">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.2 Axes">
+				<param name="Local" value="graph.html#graph_options_axes">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.3 Scale">
+				<param name="Local" value="graph.html#graph_options_scale">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.4 Lines">
+				<param name="Local" value="graph.html#graph_options_lines">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.5 General options">
+				<param name="Local" value="graph.html#graph_options_general">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="3. Copy/Paste graph format">
+			<param name="Local" value="graph.html#graph_copypaste">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="4. Templates Manager">
+			<param name="Local" value="graph.html#graph_templates">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="5. Adding text">
+			<param name="Local" value="graph.html#graph_text">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="6. Adding Line, Rectangle or Ellipse">
+			<param name="Local" value="graph.html#graph_geo">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Curve Fitting">
+		<param name="Local" value="fitting.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fitting Models">
+			<param name="Local" value="fitting.html#fitting">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="User-defined Models">
+			<param name="Local" value="fitting.html#fitting_user">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mask and Smooth">
+			<param name="Local" value="fitting.html#fitting_mask">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fitting Algorithm Options">
+			<param name="Local" value="fitting.html#fitting_options">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mathematical Console">
+		<param name="Local" value="console.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Presentation">
+			<param name="Local" value="console.html#console">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mathematical Functions">
+			<param name="Local" value="console.html#console_functions">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Constants">
+			<param name="Local" value="console.html#console_constants">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Commands">
+			<param name="Local" value="console.html#console_commands">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SigmaGraph Scripting">
+		<param name="Local" value="scripting.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="1. Presentation">
+			<param name="Local" value="scripting.html#scripting_intro">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="2. Reference">
+			<param name="Local" value="scripting.html#scripting_ref">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.1 Mathematical functions">
+				<param name="Local" value="scripting.html#scripting_ref_math">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.2 Statistics functions">
+				<param name="Local" value="scripting.html#scripting_ref_stats">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="2.3 SigmaGraph functions">
+				<param name="Local" value="scripting.html#scripting_ref_sigmagraph">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="3. Script Examples">
+			<param name="Local" value="scripting.html#scripting_examples">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="4. Favorites Manager">
+			<param name="Local" value="scripting.html#scripting_favorites">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>
